@@ -1,1 +1,9 @@
 # Funkcionális specifikáció
+
+## 10. Képernyőtervek
+Weboldalunk egy gyűjtőoldal, mely menükbe rendezve, katogorizálva szolgáltat startup cégeknek egy közös platformot, ahonnan elérhetőek a weboldalaik, melyeket szintén mi fejlesztünk a megrendelők számára. Azonban ezek megjelenése, felépítése, nagysága és funkciói teljesen eltérőek is lehetnek, nem kell követniük semmilyen szabályt. A gyűjtőoldal megjelenése és felépítése egyszerű, stílusa és logója a vadnyugati időket idézi, neve az indián Eagle Flies, mely kifejezi a weboldal küldetését, mely nem más, mint kezdő kisvállalkozások segítése a felemelkedésben. Az alábbi képernyőterven ennek az oldalnak a vázlata látható. A főoldalon majd az információk és elérhetőségek találhatóak meg.  
+![A főoldal képernyőterve](Kepek/fooldal.png)  
+Az oldal kezdetben kevés menüponttal indul, melyek száma később bővülni fog, ha majd egyre több megrendelő weboldalát készítjük el és kategorizáljuk, a menüpontokon belül ezeket szintén kisebb csoportokba fogjuk sorolni és kereshetővé tesszük. Az egyes menüpontok alatt rövid leírással, képpel érhetőek el a weboldalakra vezető linkek.  
+![Az egyik menüpont képernyőterve](Kepek/menupont.png)  
+Az elkészített oldalak stílusa a weboldalunktól és egymástól is teljesen független, a megrendelők maguk dönthetnek róla. Nemcsak a színekről, hanem a menü, a tartalom elrendezéséről is. Egyszerű navigációs szabályok betartása mellett a fejlesztők szabadon elkészíthetik a megrendelőnek leginkább megfelelő oldalt. A képernyőterv is azért szürke színű és általános, mert ezt a szabadságot fejezi ki.  
+![Az egyik weboldal képernyőterve](Kepek/aloldal.png)
