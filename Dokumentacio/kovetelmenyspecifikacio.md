@@ -18,6 +18,25 @@ Projektünk célja egy olyan gyűjtő weboldalt létrehozni, amely startup váll
 |10|Ingatlanos oldal: vagyonszerzési illeték meghatározása|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó vagyonszerzési illeték pontos összegét|
 |11|Ingatlanos oldal: személyi jövedelemadó meghatározása|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó személyi jövedelemadó pontos összegét|
 
+## 07. A rendszerre vonatkozó szabályok
+#### Általános szabályok:
+- A felhasználók számára könnyen érthetőnek és használhatónak kell lennie a felületeknek.
+-  Átláthatóan, logikusan kell, hogy működjön.
+- Többnyire a jelenlegi legfejlettebb technológiákat kell használnia.
+#### Bőngésző követelmények:
+A webalkamazásoknak megfelelően kell működniük és megjelnniuk a leggyakrabban használt böngészőkben:
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Safari
+#### Süti tájékoztató
+Adatok kiértékelése révén értékes ismereteket lehet nyerni a felhasználók igényeiről. Ezek az ismeretek hozzájárulnak a szolgáltatás minőségének további javításához. Konkrétan minden egyes hozzáféréssel kapcsolatban az alábbi adatok kerülnek korlátlanul tárolásra:
+- hozzáférés, illetve a kérés napja és időpontja
+- a felkeresett oldal, illetve fájl neve
+- hivatkozás az oldalra, ahonnan hozzáfértek ehhez az oldalhoz
+- a felhasználó által alkalmazott böngésző, beleértve a böngésző verzióját
+- a felhasználó által használt operációs rendszer
+
 ## 08. Fogalomszótár 
 #### Startup:
 A startup mint szó az utóbbi évek egyik legjelentősebb kifejezésévé vált a vállalkozói és gazdasági létben. Magyarországra csak az elmúlt pár évben szivárgott be a magyar nyelvbe, bár az emberek többsége még mindig széttárja karját, ha pontosan meg kellene fogalmazni a szó tényleges jelentését. Tulajdonképpen nem hiába. Pontos definíciót talán nem is tudunk rá mondani, mégis ha felsoroljuk a jellemzőit, akkor meg tudjuk határozni egy vállalkozás startup mivoltát. A startup mondhatni egy kultúra, egy vállalti forma, modell, egy módszertan. Már ebből a felsorolásból láthatjuk, hogy egy igen sokrétegű fogalomról van szó. Ha nagyon le szeretnék egyszerűsíteni, akkor mondhatjuk azt, hogy a startup egy olyan vállalat, amely nagyon gyors – pár éves – növekedési potenciállal kecsegtet, nemzetközi piacokat céloz és valami innovatív szolgáltatást vagy terméket vezet be, mindezt minimális saját tőkével.
