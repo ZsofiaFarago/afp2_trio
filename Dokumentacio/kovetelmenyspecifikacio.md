@@ -17,3 +17,21 @@ Projektünk célja egy olyan gyűjtő weboldalt létrehozni, amely startup váll
 |09|Ingatlanos oldal: ingatlan-értékbecslés igénylése|A felhasználó lakásról vagy családi házról kérhet ingatlan-értékbecslést és/ vagy energetikaitanúsítványt|
 |10|Ingatlanos oldal: vagyonszerzési illeték meghatározása|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó vagyonszerzési illeték pontos összegét|
 |11|Ingatlanos oldal: személyi jövedelemadó meghatározása|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó személyi jövedelemadó pontos összegét|
+
+## 08. Fogalomszótár 
+#### Startup:
+A startup mint szó az utóbbi évek egyik legjelentősebb kifejezésévé vált a vállalkozói és gazdasági létben. Magyarországra csak az elmúlt pár évben szivárgott be a magyar nyelvbe, bár az emberek többsége még mindig széttárja karját, ha pontosan meg kellene fogalmazni a szó tényleges jelentését. Tulajdonképpen nem hiába. Pontos definíciót talán nem is tudunk rá mondani, mégis ha felsoroljuk a jellemzőit, akkor meg tudjuk határozni egy vállalkozás startup mivoltát. A startup mondhatni egy kultúra, egy vállalti forma, modell, egy módszertan. Már ebből a felsorolásból láthatjuk, hogy egy igen sokrétegű fogalomról van szó. Ha nagyon le szeretnék egyszerűsíteni, akkor mondhatjuk azt, hogy a startup egy olyan vállalat, amely nagyon gyors – pár éves – növekedési potenciállal kecsegtet, nemzetközi piacokat céloz és valami innovatív szolgáltatást vagy terméket vezet be, mindezt minimális saját tőkével.
+#### Reszponzív felület:
+Az okostelefonok, táblagépek, laptop-ok hatalmas fejlődésen mennek keresztül az utóbbi években. A reszponzív webdesign lehetőséget ad arra, hogy ugyanaz a weboldal eszköztől, operációs rendszertől, böngészőtől függetlenül bármilyen környezetben tökéletesen jelenjen meg. Tökéletes megjelenés alatt a képernyőhöz igazodó ablak méretet, a könnyű olvashatóságot jelentő betű méretet és kontrasztot, a kijelzőhöz igazodó kép méretet és a könnyű navigációt értem. 
+#### Front-End 
+A front-end, a weboldal legfelsőbb rétege, ami kapcsolatban van a felhasználóval. Feladata az adatok megjelenése, befogadása a felhasználó (vagy ritkábban egy másik rendszer) felől. Weboldal esetén a front-end foglalkozik a HTML, a CSS vagy egyes JavaScript kódokkal. 
+#### Back-End
+A back-end a, weboldalnak a hátsó, a felhasználó elől rejtett, a tényleges számításokat végző része. Feladata a front-end, a felhasználóval kapcsolatban lévő rész felől érkező adatok feldolgozása, és az eredményeknek a front-end felé történő visszaírása. Weboldal esetén a back-end foglalkozik a PHP kóddal és az adatbázissal.
+#### HTML:
+Hyper Text Makeup Langauge - hiperszöveges jelölőnyelv- weboldalak készítéséhez kifejlesztett leírónyelv.
+#### CSS:
+Cascading Style Sheets - egymásba ágyazott stílusalapok - stílusleíró nyelv, mely a HTML típusú strukturált dokumentumok stílusát, megjelenését írja le
+#### Javascript:
+A JavaScriptet (röviden JS) első sorban arra használt, hogy gazdagabb, felhasználóbarát élményeket teremtsenek vele az internetet böngészők számára. Dinamikusan frissülő weboldalak, intuitív felhasználói felületek menük, párbeszédpanelek, grafikák, térképek, videólejátszók, és számos egyéb eleme illetve funkció megvalósítésa.
+#### PHP:
+A PHP egy általános szerveroldali szkriptnyelv. Az első szkriptnyelvek egyike, amely külső fájl használata helyett HTML oldalba ágyazható. A kódot a webszerver PHP feldolgozómodulja értelmezi.
