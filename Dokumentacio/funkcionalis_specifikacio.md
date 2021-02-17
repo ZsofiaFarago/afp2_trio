@@ -39,6 +39,18 @@ A jelenlegi járványidőszakban a vállalkozások jelentős része rendkívül 
 Ehhez azonban arra van szükség, hogy az emberek elérjék, megtalálják őket, ehhez pedig egy közös gyűjtőoldlara van szükség, ahonnan könnyen elérhetővé válnak. Ezek nem csupán linkeket biztosítanak ezekre a helyekre, hanem a fejlesztőik maguk készítik el a weboldalakat a megrendelők számára ennek a gyűjtőoldalnak a részeként.  
 A jelenleg ismert ilyen jellegű weboldalak azonban megkövetelik, hogy a rajtuk megjelenő oldalak stílusa és felépítése egységes, sablonos legyen, milyen funkciókat lehet vagy nem lehet megvalósítani. A céljuk az, hogy a megrendelők alkalmazkodjanak hozzájuk, nem pedig az, hogy a megrendelők megvalósíthassák elképzeléseiket. A célunk az, hogy ez a jelenlegi helyzet az ellenkezőjére változzon.
 
+## 08. Igényelt üzleti folyamatok modellje
+A jelenlegi helyzettel ellentétben az elvárásunk az, hogy a megrendelők számára az igényeiknek megfelelő, általuk meghatározott elrendezés és stílus szerint készítsük el weboldalaikat az igényelt funkciókkal. Nemcsak ezekkel kapcsolatban korlátolt a jelenlegi helyzet, hanem abban is, hogy a felhasználók csak úgy vehették igénybe egy őket érdeklő oldal szolgáltatásait, ha a gyűjtő weboldalra regisztráltak, így a megrendelők sem tudták külön menedzselni a saját felhasználóikat. A célunk az, hogy mindegyik aloldalra önállóan tudjanak regisztrálni és bejelentkezni a felhasználók, így csak a számukra érdeklő weboldalakkal kell foglalkozniuk, a megrendelők, illetve adminjaik pedig képesek kezelni a saját felhasználói fiókjaikat. A lényeg, hogy teljesen függetlenül éljenek a gyűjtő weboldalon belül, de annak a részeként.
+Üzleti szereplők:  
+- Fejlesztők: elkészítik a megrendelő által meghatározott funkciókkal rendelkező, meghatározott designnal és felépítéssel bíró oldalt, és elérhetővé teszik azt a weboldalon  
+- Megrendelők (illetve adminok): az egyes oldalakon kezelik a termékeket és a felhasználókat.  
+- Felhasználók: az őket érdeklő oldalakra külön tudnak regisztrálni, bejelentkezni és igénybe venni a szolgáltatásokat, rendelni a webshopból
+Üzleti folyamatok:
+- Weboldalszerkesztés
+- Vásárlás
+- Szolgáltatások igénybevétele
+![Üzleti folyamatok](Kepek/usecase.png)
+
 ## 09. Használati esetek
 
 Két felhasználói szerepkör atrtozik az oldalhoz: user és admin. Az adminok kezelik a weboldalat, javítják a fejlesztési hibákat, felülvizsgálják az adott aloldalak működését. A weboldalnak 4 darab főadminja lesz (fejlesztő), újabb admint csak meglévő user státuszának módosításával lehet felvenni. Az újonnan regisztráltak csak user státuszúak lehetnek, kivéve ha jogosultságot kapnak az oldal fejlesztőitől.
