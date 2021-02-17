@@ -17,7 +17,6 @@ Megkeresést kaptunk, egy gyűtő weboldal megvalósítására amelynek célja, 
 | Vásárlás    | V#002  | Kosár                    | 1.0    | Webshopokban bejelentkezés után a kosár tartalmának elérése, szerkesztése           |
 | Vásárlás    | V#003  | Rendelés                 | 1.0    | Rendelés leadása a webshopokban. |
 
-
 ## 10. Képernyőtervek
 Weboldalunk egy gyűjtőoldal, mely menükbe rendezve, katogorizálva szolgáltat startup cégeknek egy közös platformot, ahonnan elérhetőek a weboldalaik, melyeket szintén mi fejlesztünk a megrendelők számára. Azonban ezek megjelenése, felépítése, nagysága és funkciói teljesen eltérőek is lehetnek, nem kell követniük semmilyen szabályt. A gyűjtőoldal megjelenése és felépítése egyszerű, stílusa és logója a vadnyugati időket idézi, neve az indián Eagle Flies, mely kifejezi a weboldal küldetését, mely nem más, mint kezdő kisvállalkozások segítése a felemelkedésben. Az alábbi képernyőterven ennek az oldalnak a vázlata látható. A főoldalon majd az információk és elérhetőségek találhatóak meg.  
 ![A főoldal képernyőterve](Kepek/fooldal.png)  
@@ -25,3 +24,9 @@ Az oldal kezdetben kevés menüponttal indul, melyek száma később bővülni f
 ![Az egyik menüpont képernyőterve](Kepek/menupont.png)  
 Az elkészített oldalak stílusa a weboldalunktól és egymástól is teljesen független, a megrendelők maguk dönthetnek róla. Nemcsak a színekről, hanem a menü, a tartalom elrendezéséről is. Egyszerű navigációs szabályok betartása mellett a fejlesztők szabadon elkészíthetik a megrendelőnek leginkább megfelelő oldalt. A képernyőterv is azért szürke színű és általános, mert ezt a szabadságot fejezi ki.  
 ![Az egyik weboldal képernyőterve](Kepek/aloldal.png)
+
+## 11. Forgatókönyvek
+A weboldal kezdőlapjának meglátogatásakor az Eagle Flies oldala jelenik meg. A menüsávban külön kategórát választhat pl. Szolgáltatások, az ahoz tartozó promótált oldalok jelennek meg, kerülnek kilistázásra a hozzá tartozó tartalommal. A pársoros tömör leírás olvasása után a felhasználó el tudja dönteni meg szeretné-e látogatni az adott vállalkozás weblapját. Akármelyik oldalra megyünk tovább innentől fogva egyedi sítlusokkal fogunk találkozni, hiszen minden cég szeretné saját magát saját arculatával reklámozni. Az általunk megjelenített vállalkozások mind ellenőrzöttek, ezáltal bármilyen webshop, szolgáltatás és egyebet biztosan megtekinthetik a felhasználók anélkül, hogy csalás áldozatává válnának.
+<br>
+Egy online bolt látogatása esetén amelyet a webshopok menüből bármely tetszőleges oldalra tovább lépve tudunk válogatni az ő általuk kínált termékekből. A weboldalak ellenőrzés után kerülnek ki, ámbár ha bármiféle minőségi problémát észlel a felhasználó azt tudja jelezni felénk a kapcsolattartói elérhetőségek közt talált információk közül egyikével és mi utána nézünk. Viszont ha számára mindent rendben talál és esetlegesen egy jó termékre is rá bukkan azt regisztrációval vagy anélkül (ezt oldala válogatja) meg tudja rendelni attól a vállalkozástól.
+<br>
