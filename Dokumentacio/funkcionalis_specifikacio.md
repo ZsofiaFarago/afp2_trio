@@ -1,4 +1,5 @@
 # Funkcionális specifikáció
+
 ## 02. Jelenlegi helyzet
 Megkeresést kaptunk, egy gyűtő weboldal megvalósítására amelynek célja, hogy az itthoni, Magyarországi startup vállakozások megjelenítése. Ezzel segítve a munkájukat a nagyközösség elérésevel azoknak akik nem rendelkeznek - vagy nem megfelelő - média csapattal. Napjainkban egyébként is nagy szerepet játszik az online médiában történő megjelenés, mondhatni amelyik cég nincs fent az interneten az nem is működik teljes erővel (bár ez erős túlzással azért). Mindazonáltal még mindig napjain része a COVID-19, az emberek amúgy is a számítógép és a telefon előtt töltött ideje mégjobban megnőtt a vírusra és bezártságra való tekintettel, emiatt még inkább érdemes minnél több helyen megjelenni az interneten a vállakozások számára. A gyűjtői oldalon akár saját weboldallal is megjelenhetnek a vállalkozások, ám ha nincs még nekik vagy nem készült el valamilyen oknál fogva, akkor sem kell csüggedni, a fejlesztőink igénybe vehetőek webfejlesztési munkálatokra vagy annak besegítésére. A menüben megjelenő menüpontok felosztják és különböző kategóriákba rendezik a cégeket, ezáltal bárki aki a fő honlapon jár könnyen átlátja és megtalálja az általa keresett dolgokat, valamint ezzel a kategorizálással segítjük, hogy a vállalkozások csak a számukra releváns részben jelenjenek meg.
 
@@ -16,6 +17,22 @@ Megkeresést kaptunk, egy gyűtő weboldal megvalósítására amelynek célja, 
 | Vásárlás    | V#001  | Termékek                 | 1.0    | A webshopokban megjelenő termékek megjelenítése részletes leírással.         |
 | Vásárlás    | V#002  | Kosár                    | 1.0    | Webshopokban bejelentkezés után a kosár tartalmának elérése, szerkesztése           |
 | Vásárlás    | V#003  | Rendelés                 | 1.0    | Rendelés leadása a webshopokban. |
+
+## 06. Megfeleltetés - traceability
+|01|Főoldal: megvalósítás napirendre téve.|Elérhetőségek, beágyazott Google maps térkép, üzenet a fejlesztőknek| Információk
+|02|Webshopok menüpont: megvalósítás napirendre téve.|Itt található meg az összes, webshop kategóriába sorolható oldal. Később ezen belül több kategória lesz kialakítva és kereshető is lesz, ha elég sok weboldal lesz.|
+|03|Szolgáltatások menüpont: megvalósítás napirendre téve.|Olyan vállalkozások weboldalai, melyek valamilyen online elérhető ingyenes vagy díjköteles szolgáltatást nyújtanak. Ezek később szintén több kisebb kategóriába lesznek rendezve és kereshetőek lesznek, ha elég sok lesz belőlük.|
+|04|Marketing menüpont: megvalósítás napirendre téve.|Azoknak a startup vállalkozásoknak a weboldalai tartoznak ide, melyek az előbbi két kategória közül bármelyikbe vagy egyikbe sem sorolhatók be. Később ezek is kereshetőek lesznek és több kategóriára oszlanak majd.|
+|05|Reszponzivitás: megvalósítás napirendre téve.|Alapkövetelmény a gyűjtőoldallal és a weboldalakkal szemben is, hogy minden kijelzőméreten megjelenthető legyen a tartalom.|
+|06|Edzséssel kapcsolatos webshop: regisztráció, bejelentkezés: megvalósítás napirendre téve.|A webshopot regisztrált felhasználók használhatják.|
+|07|Edzsés webshop: termékek rendelése: megvalósítás napirendre téve.|Webshop, melyen keresztül a felhasználók edzőtermi kellékeket, étrendkiegészítőket, vitaminokat stb rendelhetnek.|
+|08|Edzés webshop: felugró ablak chat funkció: megvalósítás napirendre téve.|A vevőszolgálatnak egy felugró chat ablakban lehet üzenetet küldeni, melyre az ügyeletes admin lehetőleg perceken belül reagál.|
+|09|Ingatlanos oldal: ingatlan-értékbecslés igénylése: megvalósítás napirendre téve.|A felhasználó lakásról vagy családi házról kérhet ingatlan-értékbecslést és/ vagy energetikaitanúsítványt|
+|10|Ingatlanos oldal: vagyonszerzési illeték meghatározása: megvalósítás napirendre téve.|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó vagyonszerzési illeték pontos összegét|
+|11|Ingatlanos oldal: személyi jövedelemadó meghatározása: megvalósítás napirendre téve.|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó személyi jövedelemadó pontos összegét|
+|12|Mozi oldal: elérhető filmlista a következő filmekről: megvalósítás napirendre téve.|a felhasználó felsorolva lássa a következő filmeket
+|13|Mozi oldal: elérhető foglalóhelyek: megvalósítás napirendre téve.|a felhasználó grafikusan láthassa az elérhető helyeket, és legyen lehetősége online foglalni, majd nyomon követni a helyeit
+|14|Mozi oldal: online fizetés: megvalósítás napirendre téve.|online fizetés biztosítása a felhasználónak
 
 ## 07. Jelenlegi üzleti folyamatok modellje
 A jelenlegi járványidőszakban a vállalkozások jelentős része rendkívül nehéz helyzetbe került. A személyes kommunikáció szinte teljesen lehetetlenné vált, az üzlethelyiségek, irodák jelentős része bezárt vagy a forgalmuk nagy mértékben visszaesett. A cégek arra kényszerülnek egyre inkább, hogy az interneten keresztül tegyék elérhetővé termékeiket és szolgáltatásaikat.  
