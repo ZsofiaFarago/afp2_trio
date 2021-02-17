@@ -23,6 +23,9 @@ Léteznek portálok, amely gyűjtő szerepet töltenek be az interneten. Itt egy
 |09|Ingatlanos oldal: ingatlan-értékbecslés igénylése|A felhasználó lakásról vagy családi házról kérhet ingatlan-értékbecslést és/ vagy energetikaitanúsítványt|
 |10|Ingatlanos oldal: vagyonszerzési illeték meghatározása|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó vagyonszerzési illeték pontos összegét|
 |11|Ingatlanos oldal: személyi jövedelemadó meghatározása|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó személyi jövedelemadó pontos összegét|
+|12|Mozi oldal: elérhető filmlista a következő filmekről|a felhasználó felsorolva lássa a következő filmeket
+|13|Mozi oldal: elérhető foglalóhelyek|a felhasználó grafikusan láthassa az elérhető helyeket, és legyen lehetősége online foglalni, majd nyomon követni a helyeit
+|14|Mozi oldal: online fizetés|online fizetés biztosítása a felhasználónak
 
 ## 07. A rendszerre vonatkozó szabályok
 #### Általános szabályok:
