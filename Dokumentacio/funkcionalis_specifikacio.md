@@ -39,6 +39,11 @@ A jelenlegi járványidőszakban a vállalkozások jelentős része rendkívül 
 Ehhez azonban arra van szükség, hogy az emberek elérjék, megtalálják őket, ehhez pedig egy közös gyűjtőoldlara van szükség, ahonnan könnyen elérhetővé válnak. Ezek nem csupán linkeket biztosítanak ezekre a helyekre, hanem a fejlesztőik maguk készítik el a weboldalakat a megrendelők számára ennek a gyűjtőoldalnak a részeként.  
 A jelenleg ismert ilyen jellegű weboldalak azonban megkövetelik, hogy a rajtuk megjelenő oldalak stílusa és felépítése egységes, sablonos legyen, milyen funkciókat lehet vagy nem lehet megvalósítani. A céljuk az, hogy a megrendelők alkalmazkodjanak hozzájuk, nem pedig az, hogy a megrendelők megvalósíthassák elképzeléseiket. A célunk az, hogy ez a jelenlegi helyzet az ellenkezőjére változzon.
 
+## 09. Használati esetek
+
+Két felhasználói szerepkör atrtozik az oldalhoz: user és admin. Az adminok kezelik a weboldalat, javítják a fejlesztési hibákat, felülvizsgálják az adott aloldalak működését. A weboldalnak 4 darab főadminja lesz (fejlesztő), újabb admint csak meglévő user státuszának módosításával lehet felvenni. Az újonnan regisztráltak csak user státuszúak lehetnek, kivéve ha jogosultságot kapnak az oldal fejlesztőitől.
+Az alap felhasználók is elérik a weboldal kulcsfunkcióit, esetleges kínálatszintű felhasználók (pl. eladók) hozzáadása lehetséges az adminisztrátor által.
+
 ## 10. Képernyőtervek
 Weboldalunk egy gyűjtőoldal, mely menükbe rendezve, katogorizálva szolgáltat startup cégeknek egy közös platformot, ahonnan elérhetőek a weboldalaik, melyeket szintén mi fejlesztünk a megrendelők számára. Azonban ezek megjelenése, felépítése, nagysága és funkciói teljesen eltérőek is lehetnek, nem kell követniük semmilyen szabályt. A gyűjtőoldal megjelenése és felépítése egyszerű, stílusa és logója a vadnyugati időket idézi, neve az indián Eagle Flies, mely kifejezi a weboldal küldetését, mely nem más, mint kezdő kisvállalkozások segítése a felemelkedésben. Az alábbi képernyőterven ennek az oldalnak a vázlata látható. A főoldalon majd az információk és elérhetőségek találhatóak meg.  
 ![A főoldal képernyőterve](Kepek/fooldal.png)  
