@@ -19,20 +19,22 @@ Megkeresést kaptunk, egy gyűtő weboldal megvalósítására amelynek célja, 
 | Vásárlás    | V#003  | Rendelés                 | 1.0    | Rendelés leadása a webshopokban. |
 
 ## 06. Megfeleltetés - traceability
-|01|Főoldal: megvalósítás napirendre téve.|Elérhetőségek, beágyazott Google maps térkép, üzenet a fejlesztőknek| Információk
+|Id|Név|Leírás|
+|--|---|------|
+|01|Főoldal: megvalósítás napirendre téve.|Elérhetőségek, beágyazott Google maps térkép, üzenet a fejlesztőknek|
 |02|Webshopok menüpont: megvalósítás napirendre téve.|Itt található meg az összes, webshop kategóriába sorolható oldal. Később ezen belül több kategória lesz kialakítva és kereshető is lesz, ha elég sok weboldal lesz.|
 |03|Szolgáltatások menüpont: megvalósítás napirendre téve.|Olyan vállalkozások weboldalai, melyek valamilyen online elérhető ingyenes vagy díjköteles szolgáltatást nyújtanak. Ezek később szintén több kisebb kategóriába lesznek rendezve és kereshetőek lesznek, ha elég sok lesz belőlük.|
 |04|Marketing menüpont: megvalósítás napirendre téve.|Azoknak a startup vállalkozásoknak a weboldalai tartoznak ide, melyek az előbbi két kategória közül bármelyikbe vagy egyikbe sem sorolhatók be. Később ezek is kereshetőek lesznek és több kategóriára oszlanak majd.|
 |05|Reszponzivitás: megvalósítás napirendre téve.|Alapkövetelmény a gyűjtőoldallal és a weboldalakkal szemben is, hogy minden kijelzőméreten megjelenthető legyen a tartalom.|
-|06|Edzséssel kapcsolatos webshop: regisztráció, bejelentkezés: megvalósítás napirendre téve.|A webshopot regisztrált felhasználók használhatják.|
-|07|Edzsés webshop: termékek rendelése: megvalósítás napirendre téve.|Webshop, melyen keresztül a felhasználók edzőtermi kellékeket, étrendkiegészítőket, vitaminokat stb rendelhetnek.|
+|06|Edzéssel kapcsolatos webshop: regisztráció, bejelentkezés: megvalósítás napirendre téve.|A webshopot regisztrált felhasználók használhatják.|
+|07|Edzés webshop: termékek rendelése: megvalósítás napirendre téve.|Webshop, melyen keresztül a felhasználók edzőtermi kellékeket, étrendkiegészítőket, vitaminokat stb rendelhetnek.|
 |08|Edzés webshop: felugró ablak chat funkció: megvalósítás napirendre téve.|A vevőszolgálatnak egy felugró chat ablakban lehet üzenetet küldeni, melyre az ügyeletes admin lehetőleg perceken belül reagál.|
 |09|Ingatlanos oldal: ingatlan-értékbecslés igénylése: megvalósítás napirendre téve.|A felhasználó lakásról vagy családi házról kérhet ingatlan-értékbecslést és/ vagy energetikaitanúsítványt|
 |10|Ingatlanos oldal: vagyonszerzési illeték meghatározása: megvalósítás napirendre téve.|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó vagyonszerzési illeték pontos összegét|
 |11|Ingatlanos oldal: személyi jövedelemadó meghatározása: megvalósítás napirendre téve.|A szükséges adatok megadása után a felhasználó megkapja az ingatlanjához tartozó személyi jövedelemadó pontos összegét|
-|12|Mozi oldal: elérhető filmlista a következő filmekről: megvalósítás napirendre téve.|a felhasználó felsorolva lássa a következő filmeket
-|13|Mozi oldal: elérhető foglalóhelyek: megvalósítás napirendre téve.|a felhasználó grafikusan láthassa az elérhető helyeket, és legyen lehetősége online foglalni, majd nyomon követni a helyeit
-|14|Mozi oldal: online fizetés: megvalósítás napirendre téve.|online fizetés biztosítása a felhasználónak
+|12|Mozi oldal: elérhető filmlista a következő filmekről: megvalósítás napirendre téve.|a felhasználó felsorolva lássa a következő filmeket|
+|13|Mozi oldal: elérhető foglalóhelyek: megvalósítás napirendre téve.|a felhasználó grafikusan láthassa az elérhető helyeket, és legyen lehetősége online foglalni, majd nyomon követni a helyeit|
+|14|Mozi oldal: online fizetés: megvalósítás napirendre téve.|online fizetés biztosítása a felhasználónak|
 
 ## 07. Jelenlegi üzleti folyamatok modellje
 A jelenlegi járványidőszakban a vállalkozások jelentős része rendkívül nehéz helyzetbe került. A személyes kommunikáció szinte teljesen lehetetlenné vált, az üzlethelyiségek, irodák jelentős része bezárt vagy a forgalmuk nagy mértékben visszaesett. A cégek arra kényszerülnek egyre inkább, hogy az interneten keresztül tegyék elérhetővé termékeiket és szolgáltatásaikat.  
@@ -44,12 +46,12 @@ A jelenlegi helyzettel ellentétben az elvárásunk az, hogy a megrendelők szá
 Üzleti szereplők:  
 - Fejlesztők: elkészítik a megrendelő által meghatározott funkciókkal rendelkező, meghatározott designnal és felépítéssel bíró oldalt, és elérhetővé teszik azt a weboldalon  
 - Megrendelők (illetve adminok): az egyes oldalakon kezelik a termékeket és a felhasználókat.  
-- Felhasználók: az őket érdeklő oldalakra külön tudnak regisztrálni, bejelentkezni és igénybe venni a szolgáltatásokat, rendelni a webshopból
+- Felhasználók: az őket érdeklő oldalakra külön tudnak regisztrálni, bejelentkezni és igénybe venni a szolgáltatásokat, rendelni a webshopból  
 Üzleti folyamatok:
 - Weboldalszerkesztés
 - Vásárlás
-- Szolgáltatások igénybevétele
-![Üzleti folyamatok](Kepek/usecase.png)
+- Szolgáltatások igénybevétele  
+![Üzleti folyamatok](Kepek/usecase.PNG)
 
 ## 09. Használati esetek
 
