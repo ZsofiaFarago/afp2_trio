@@ -17,6 +17,11 @@ Megkeresést kaptunk, egy gyűtő weboldal megvalósítására amelynek célja, 
 | Vásárlás    | V#002  | Kosár                    | 1.0    | Webshopokban bejelentkezés után a kosár tartalmának elérése, szerkesztése           |
 | Vásárlás    | V#003  | Rendelés                 | 1.0    | Rendelés leadása a webshopokban. |
 
+## 07. Jelenlegi üzleti folyamatok modellje
+A jelenlegi járványidőszakban a vállalkozások jelentős része rendkívül nehéz helyzetbe került. A személyes kommunikáció szinte teljesen lehetetlenné vált, az üzlethelyiségek, irodák jelentős része bezárt vagy a forgalmuk nagy mértékben visszaesett. A cégek arra kényszerülnek egyre inkább, hogy az interneten keresztül tegyék elérhetővé termékeiket és szolgáltatásaikat.  
+Ehhez azonban arra van szükség, hogy az emberek elérjék, megtalálják őket, ehhez pedig egy közös gyűjtőoldlara van szükség, ahonnan könnyen elérhetővé válnak. Ezek nem csupán linkeket biztosítanak ezekre a helyekre, hanem a fejlesztőik maguk készítik el a weboldalakat a megrendelők számára ennek a gyűjtőoldalnak a részeként.  
+A jelenleg ismert ilyen jellegű weboldalak azonban megkövetelik, hogy a rajtuk megjelenő oldalak stílusa és felépítése egységes, sablonos legyen, milyen funkciókat lehet vagy nem lehet megvalósítani. A céljuk az, hogy a megrendelők alkalmazkodjanak hozzájuk, nem pedig az, hogy a megrendelők megvalósíthassák elképzeléseiket. A célunk az, hogy ez a jelenlegi helyzet az ellenkezőjére változzon.
+
 ## 10. Képernyőtervek
 Weboldalunk egy gyűjtőoldal, mely menükbe rendezve, katogorizálva szolgáltat startup cégeknek egy közös platformot, ahonnan elérhetőek a weboldalaik, melyeket szintén mi fejlesztünk a megrendelők számára. Azonban ezek megjelenése, felépítése, nagysága és funkciói teljesen eltérőek is lehetnek, nem kell követniük semmilyen szabályt. A gyűjtőoldal megjelenése és felépítése egyszerű, stílusa és logója a vadnyugati időket idézi, neve az indián Eagle Flies, mely kifejezi a weboldal küldetését, mely nem más, mint kezdő kisvállalkozások segítése a felemelkedésben. Az alábbi képernyőterven ennek az oldalnak a vázlata látható. A főoldalon majd az információk és elérhetőségek találhatóak meg.  
 ![A főoldal képernyőterve](Kepek/fooldal.png)  
