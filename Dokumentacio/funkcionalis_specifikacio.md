@@ -1,7 +1,13 @@
 # Funkcionális specifikáció
 
+## 01. Áttekintés
+Egy több aloldalat működtető központi weboldal szolgáltatásról szól a projektünk. Célunk, hogy több érdeklődési körű felhasználó is megtalálja a saját foglalkozásának megfelelő szolgáltatást. Több aloldal fog szerepelni a weboldalunkon, melyek például szabadidős aloldal, sportlap, ingatlanokkal foglalkozó alvállalkozás oldala. Lehetőség lesz mindet megtekinteni egy portálon keresztül, és értesülni a például a sportlap híreiről, ingatlanvásárlásokról. A felhasználók a menüben fognak tudni váltani a szolgáltatások között. A weboldal tartalmazni fog képeket, elérhetőségeket, szükséges információkat. Igény esetén nyomtatható formátumban is. A felület biztosítani fogja különböző elérhetőségeit az aloldalak szerkesztőinek, szolgáltatóinak. Számítógépről és telefonról is optimalizált felület lesz, mindenhonnan látogatható lesz a webhely.
+
 ## 02. Jelenlegi helyzet
 Megkeresést kaptunk, egy gyűtő weboldal megvalósítására amelynek célja, hogy az itthoni, Magyarországi startup vállakozások megjelenítése. Ezzel segítve a munkájukat a nagyközösség elérésevel azoknak akik nem rendelkeznek - vagy nem megfelelő - média csapattal. Napjainkban egyébként is nagy szerepet játszik az online médiában történő megjelenés, mondhatni amelyik cég nincs fent az interneten az nem is működik teljes erővel (bár ez erős túlzással azért). Mindazonáltal még mindig napjain része a COVID-19, az emberek amúgy is a számítógép és a telefon előtt töltött ideje mégjobban megnőtt a vírusra és bezártságra való tekintettel, emiatt még inkább érdemes minnél több helyen megjelenni az interneten a vállakozások számára. A gyűjtői oldalon akár saját weboldallal is megjelenhetnek a vállalkozások, ám ha nincs még nekik vagy nem készült el valamilyen oknál fogva, akkor sem kell csüggedni, a fejlesztőink igénybe vehetőek webfejlesztési munkálatokra vagy annak besegítésére. A menüben megjelenő menüpontok felosztják és különböző kategóriákba rendezik a cégeket, ezáltal bárki aki a fő honlapon jár könnyen átlátja és megtalálja az általa keresett dolgokat, valamint ezzel a kategorizálással segítjük, hogy a vállalkozások csak a számukra releváns részben jelenjenek meg.
+
+## 03. Rendszerre vonatkozó szabályok
+A weboldalt a jelenlegi helyzet szerint, minden tag a saját projektrészét köteles elkészíteni, figyelembe véve a projektben dolgozó társai munkáját, a követelménylista és az egyéb pontok szerint hiánytalanul, hogy az igénylő tökéletes terméket kaphasson.
 
 ## 05. Követelménylista
 | Modul       | ID      | Név                     | Verzió | Kifejtés                                 |
