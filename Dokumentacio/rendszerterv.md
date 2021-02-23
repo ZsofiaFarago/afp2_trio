@@ -1,5 +1,13 @@
 # Rendszerterv
 
+## 01. A rendszer célja
+
+### Amit ez a dokumentum tartalmaz:
+A rendszerterv célja, hogy leírja milyen rendszert szeretnénk létrehozni, ennek mi is a célja, hogyan, milyen technológiák használatával, milyen időbeosztással rendelkezik a projekt, milyen erőforrások szükségesek az alkalmazáshoz.
+
+### A projekt áttekintése:
+Célünk egy olyan weboldal létrehozása mellyel támogatni tudjuk reklámozással esetleges saját vagy külsős itthoni startupokat weboldalaik megjelenítésével.
+
 ## 02. Projektterv
 **Rendelkezésre álló szoftvererőforrások:**
 - Windows 10 operációs rendszer
