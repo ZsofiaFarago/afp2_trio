@@ -22,6 +22,52 @@
 - Faragó Zsófia: Ingatlanos cég weboldalának fejlesztése ingatlan hirdetésekkel, kalkulátorokkal
 - Faragó Zsófia: A gyűjtőoldal létrehozása, menü, navigáció kialakítása
 
+## 04. Követelménylista
+
+### Felhasználók kezelése:
+
+**Regisztráció:** A felhasználók be tudnak regisztrálni az oldalakra, ezáltal hozzá férnek a kosárhoz és tudnak rendelni a webshopból, jegyet lefoglalni a mozifilmekre.
+
+**Ki és bejelentkezés:** A felhasználóknak lehetőségük van ki és bejelentkezni a létrehozott felhasználókkal.
+
+**Elfelejtett jelszó/Jelszó cseréje:** A felhasználók jelszót tudnak cserélni vagy a profilból vagy pedig elfelejtett jelszó esétén az bejelentkezési képernyőn megjelenő megfelelő felüettel.
+
+**Felhasználói profil:** A felhasználók hozzáférnek a saját profilukhoz ahol a megadott adatokat tudják szerkezteni, megrendelt termékekről/jegyekről tudnak tudakozódni.
+
+### Webshop funkciói:
+
+**Tárgyak kilistázása és böngészés:** Az oldalon a felhasnzálók szabadon hozzáférnek az értékesített áruhoz/tárgyakhoz. Ezeket ki tudják listázni és tudnak is keresni közöttük kulcsszavak használatával.
+
+**Kosár:** A felhasználók a kosárhoz adják hozzá a megrendelni kívánt dolgokat, vagy onnan tudja kitörölni ha mégse kívánja megrendelni.
+
+### Mozi weboldal funkciói:
+
+**Filmek kilistázása és keresés:** Az éppen aktuálisan játszott mozifilmek között lehetőség van azok kilistázására és keresésre cím alapján.
+
+**Jegy lefoglalása:** Lehetőség van az oldalon a mozifilmekre történő jegy lefogalalására.
+
+### Ingatlanos weboldal funkciói:
+
+**Ingatlanok megjelenítése és keresés köztük:** A hírdetett ingatlanok átláthatóan jelennek meg, lehetőség van köztük keresni bizonyos paraméterek alapján.
+
+**Kalkulátorok:** Az oldal különböző kalkulátorokat kínál azoknak akik érdeklődnek egy-egy ingatlan után.
+
+### Egyéb követelmények:
+
+### A webalkalmazás:
+- Könnyen használható, felhasználó barát dizájnok használta.
+- Az oldalak és szolgáltatások között gördülékeny váltás.
+- Minden oldal reszponziv, hogy bármekkora kijelzőn használhatóak legyenek.
+
+### Támogatott böngészők:
+A mostanában használt böngészők legfrisebb verziói közül bármelyik használható minden hiba nélkülk.
+- Safari
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Opera
+- Brave
+
 ## 06. Fizikai környezet
 Ez egy webalkalmazás ami egy olyan szoftver, amit az internetes böngészőkben használhatnak a felhasználók.<br>
 #### Az általunk használt szoftverek ás külső rendszerek: <br>
