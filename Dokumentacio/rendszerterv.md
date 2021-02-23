@@ -22,6 +22,37 @@
 - Faragó Zsófia: Ingatlanos cég weboldalának fejlesztése ingatlan hirdetésekkel, kalkulátorokkal
 - Faragó Zsófia: A gyűjtőoldal létrehozása, menü, navigáció kialakítása
 
+## 06. Fizikai környezet
+Ez egy webalkalmazás ami egy olyan szoftver, amit az internetes böngészőkben használhatnak a felhasználók.<br>
+#### Az általunk használt szoftverek ás külső rendszerek: <br>
+* Dokumentáció és kód verzió követése:
+    - Git, Github
+    - Gitkraken
+    - Trello
+
+* Kapcsolattartás a fejlesztők között:
+    - discord
+    - facebook csoport
+
+* Markdown Monster md file-ok írásához, formázásához<br>
+
+**Hardver és hálózati követelmények:**<br>
+
+* Általános felhasználásra alkalmas számítógép/laptop internet hozzáféréssel<br>
+
+**Fejlesztői eszközök:**<br>
+
+- Visual Studio Code
+- Sublime Text Editor
+
+#### Technológiák:
+
+**Bootstrap:** Egy nyílt forráskódú keretrendszerk, ami HTML, CSS és JavaScript technológiákat használ. Könnyen, minimális energia befektetéssel tudunk jól kinéző, bármilyen képernyéméreten (resposinve) megjelenő weboldalakat készíteni.<br>
+**Apache:** Az Apache HTTP Server (röviden Apache) nyílt forráskódú webkiszolgáló alkalmazás<br>
+**PHPMyAdmin:** Adminisztrációs eszköz MySQL adatbázishoz, a weboldalunk adatait tudjuk tárolni, beleértve a fiókok adatait, cikkeket stb.<br>
+**MySQL:** Adatbázis-struktúra, a MySQL szabványait használja.<br>
+
+
 ## 12. Karbantartási terv
 **Jogkörökkel, adminisztrációval, fejlesztéssel kapcsolatos feladatok:**
 - A weboldalt és a megrendelők oldalait jelenleg 4 ember fejleszti, ők felelnek az oldal karbantartásáért is. Az egyes aloldalak felhasználóit, illetve termékeit, ha van, a megrendelő vagy az általa megbízott adminok kezelik.
