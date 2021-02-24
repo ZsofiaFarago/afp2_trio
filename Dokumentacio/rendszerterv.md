@@ -124,6 +124,10 @@ Az ingatlanos oldalhoz tartozó adatbázis EER diagrammja:
 Web: A webes felület HTML, PHP, CSS valamis Javascript nyelven készül. Ebből nagyrészben a PHP veszi ki a részét, de a váz miatt elhanyagolhatatlan az HTML és a CSS stílusnyelv is.
 Minél átláthatóbban, elkülönítettebben fogunk dolgozni, a projekt átláthatósága érdekében. Adatbázishoz SQL rendszert használunk az adatbázisterv pont szerint.
 
+## 11. Telepítési terv
+A MySQL adatbázis létrehozásához egy külső adatbázis szolgáltató, a Heroku szolgáltatását vesszük igénybe. Ez limitált számú kapcsolatot és csak 10 MB tárhelyet biztosít, de az alszolgáltatások méretének kezdetben megfelelnek. Később, ha bővülnek, szükséges lesz befektetni nagyobb tárhelyért és korlátlan kapcsolatért egy másik csomagba.
+A projekt elkészültekor a kijelölt felelősök a megrendelő igényeinek megfelelően a szolgáltatás telepítését vállalják, és megegyezés alapján kijelölt határidőig garanciálisan módosítják.
+
 ## 12. Karbantartási terv
 **Jogkörökkel, adminisztrációval, fejlesztéssel kapcsolatos feladatok:**
 - A weboldalt és a megrendelők oldalait jelenleg 4 ember fejleszti, ők felelnek az oldal karbantartásáért is. Az egyes aloldalak felhasználóit, illetve termékeit, ha van, a megrendelő vagy az általa megbízott adminok kezelik.
