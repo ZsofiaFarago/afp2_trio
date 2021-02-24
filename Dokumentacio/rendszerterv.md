@@ -106,6 +106,9 @@ Ez egy webalkalmazás ami egy olyan szoftver, amit az internetes böngészőkben
 **PHPMyAdmin:** Adminisztrációs eszköz MySQL adatbázishoz, a weboldalunk adatait tudjuk tárolni, beleértve a fiókok adatait, cikkeket stb.<br>
 **MySQL:** Adatbázis-struktúra, a MySQL szabványait használja.<br>
 
+## 07. Architekturális terv
+A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySQL rendszert használunk. A kliens oldali programokat egy PHP alapú REST Api szolgálja ki, ez csatlakozik az előbb emléített adatbázis szerverhez. A kliensekkel JSON objektumok segítségével kommunikál.
+
 ## 08. Adatbázisterv
 A honlapon közzétett minden oldalhoz külön adatbázis tartozik majd, melyben a működésükhöz szükséges adatokat tárolják. Mindegyik fog regisztrált felhasználókat, címeket, valamilyentermékeket tartalmazni, kiegészítve a szolgáltatásaikhoz szükséges egyéb adatokkal. Az ingatlanos oldalhoz tartozó adatbázis tervét mutatom be részletesen, a többi oldalé hasonlóan fog kinézni, csak más tábla- és mezőnevekkel.  
 **Táblák:**  
