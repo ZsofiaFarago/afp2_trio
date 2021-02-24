@@ -120,6 +120,10 @@ A honlapon közzétett minden oldalhoz külön adatbázis tartozik majd, melyben
 Az ingatlanos oldalhoz tartozó adatbázis EER diagrammja:  
 ![Az ingaltanos adatbázis EER-diagramja](Kepek/adatbazisterv.png)
 
+## 09. Implementációs terv
+Web: A webes felület HTML, PHP, CSS valamis Javascript nyelven készül. Ebből nagyrészben a PHP veszi ki a részét, de a váz miatt elhanyagolhatatlan az HTML és a CSS stílusnyelv is.
+Minél átláthatóbban, elkülönítettebben fogunk dolgozni, a projekt átláthatósága érdekében. Adatbázishoz SQL rendszert használunk az adatbázisterv pont szerint.
+
 ## 12. Karbantartási terv
 **Jogkörökkel, adminisztrációval, fejlesztéssel kapcsolatos feladatok:**
 - A weboldalt és a megrendelők oldalait jelenleg 4 ember fejleszti, ők felelnek az oldal karbantartásáért is. Az egyes aloldalak felhasználóit, illetve termékeit, ha van, a megrendelő vagy az általa megbízott adminok kezelik.
