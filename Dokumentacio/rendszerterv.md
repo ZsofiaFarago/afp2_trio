@@ -106,6 +106,16 @@ Ez egy webalkalmazás ami egy olyan szoftver, amit az internetes böngészőkben
 **PHPMyAdmin:** Adminisztrációs eszköz MySQL adatbázishoz, a weboldalunk adatait tudjuk tárolni, beleértve a fiókok adatait, cikkeket stb.<br>
 **MySQL:** Adatbázis-struktúra, a MySQL szabványait használja.<br>
 
+## 08. Adatbázisterv
+A honlapon közzétett minden oldalhoz külön adatbázis tartozik majd, melyben a működésükhöz szükséges adatokat tárolják. Mindegyik fog regisztrált felhasználókat, címeket, valamilyentermékeket tartalmazni, kiegészítve a szolgáltatásaikhoz szükséges egyéb adatokkal. Az ingatlanos oldalhoz tartozó adatbázis tervét mutatom be részletesen, a többi oldalé hasonlóan fog kinézni, csak más tábla- és mezőnevekkel.  
+**Táblák:**  
+**Client:** az oldalon regisztrált felhasználók (ügyfelek) által megadott adatokat tárolja: a nevét, címét, email címét, telefonszámát.  
+**Estate:** az oldalra feltöltött ingatlanhirdetésekhez tartozó adatokat tartalmazza: az ingatlanokhoz tartozó cím, eladási ár, vételár, terület négyzetméterben, szobák száma, képfájl neve (nem URL, csak név és kiterjesztés).  
+**EstateAgent:** azoknak az ingatlanügynököknek az adatait tartalmazza, akik az oldal szakmai tartalmáért és a szolgáltatások teljesítéséért felelősök, különböző szakterületeken tanácsot adnak az ügyfeleknek, ők végzik az ingatlan-értékbecslést és az energiatanúsítvány kiadását. Adataik: név, lakcím, email cím, telefonszám, szakterület, képfájl neve (nem URL, csak név és kiterjesztés).  
+**Address:** ez a tábla tartalmazza az összes címet: az ingatlanokét, az ügyfelekét és az ingatlanügynökökét. Azok a táblák idegen kulccsal hivatkoznak az Address táblában lévő megfelelő azonosítóra, egy a többhöz kapcsolat van köztük. Adatok: város (idegen kulcs), utcanév, házszám.  
+**City:** ez a tábla tartalmazza az összes olyan települést, amelyekhez az Address táblában cím köthető. A két tábla között egy a többhöz kapcsolat van, az Address táblában egy idegen kulcs hivatkozik a City tábla egyik azonosítójára. Adatok: a település neve, irányítószám.  
+Az ingatlanos oldalhoz tartozó adatbázis EER diagrammja:  
+![Az ingaltanos adatbázis EER-diagramja](Kepek/adatbazisterv.png)
 
 ## 12. Karbantartási terv
 **Jogkörökkel, adminisztrációval, fejlesztéssel kapcsolatos feladatok:**
