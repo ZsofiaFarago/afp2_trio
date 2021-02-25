@@ -30,6 +30,18 @@ Célünk egy olyan weboldal létrehozása mellyel támogatni tudjuk reklámozás
 - Faragó Zsófia: Ingatlanos cég weboldalának fejlesztése ingatlan hirdetésekkel, kalkulátorokkal
 - Faragó Zsófia: A gyűjtőoldal létrehozása, menü, navigáció kialakítása
 
+## 03. Üzleti folyamatok modellje
+A celunk egy olyan portal letrehozasa melynek segitsegevel az emberek valtoztatni tudnak az unalmas mindennapjaikon.
+
+Uzleti szereplok:
+
+-Szolgaltatast nyujto cegek, akik megjelennek az oldalon -Latogatok -Adminok
+
+Uzleti folyamatok:
+
+A latogatok elerhetik az osszes aloldalt, minden megjelenitett informaciot, regisztralas nelkul bongeszhetnek es olvashatnak
+Az adminok publikaljak es szerkesztik az aloldalakat. Barmilyen dolog miatt hozza fernek akar informacio hozzaadasa vagy torlese
+
 ## 04. Követelménylista
 
 ### Felhasználók kezelése:
