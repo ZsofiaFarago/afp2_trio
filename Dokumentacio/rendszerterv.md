@@ -88,6 +88,13 @@ A mostanában használt böngészők legfrisebb verziói közül bármelyik hasz
 - Opera
 - Brave
 
+## 05. Funkcionális terv
+Rendszerszereplok: Adminok, Latogatok Mivel az oldal egy gyujtoi portal, igy nincs szukseg tobb felhasznalora, csak az aminok akik publikalni tudnak es egyszeru olvasok akiknek nem kell regisztralni.
+
+Rendszerhasznalati eset Admin: Teljes hozzaferesz az egesz rendszerhez, ezaltal barmilyen aloldalt, informaciot megjelenithetnek vagy epp elrejthetnek. Latogato: A portal osszes megjelentitett aloldalat elerik, ezaltal szabadon bongeszhetnek
+
+Menuhierarchia: Bejelentkezes: Csak az adminok reszere Fooldal: Az osszes aloldal kulon kulon megjelenitve. Az aloldalak felosztasa mind egyedi csak az adott oldalhoz kapcsolodik. (Informacio, Elerhetosegek stb.)
+
 ## 06. Fizikai környezet
 Ez egy webalkalmazás ami egy olyan szoftver, amit az internetes böngészőkben használhatnak a felhasználók.<br>
 #### Az általunk használt szoftverek ás külső rendszerek: <br>
