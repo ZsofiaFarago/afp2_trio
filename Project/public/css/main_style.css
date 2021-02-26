@@ -1,0 +1,54 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Fejléc */
+#header {
+	background-color: #ffe1b5;
+	padding: 15px;
+	vertical-align: center;
+	background-image: url("../images/header.png");
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+}
+
+#title {
+	color: #ac7444;
+	font-family: sans-serif;
+	font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+}
+
+#logo {
+	height: 175px;
+	margin-right: 10px;
+}
+
+/* Menü */
+#nav {
+	background-color: #502c0c;
+	padding: 15px 0px 15px 0px;
+	border-bottom: 10px;
+	border-bottom-color: #ffe1b5;
+	border-bottom-style: groove;
+}
+
+.menupont {
+	text-align: center;
+	padding: 15px;
+	color: #ac7444;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.menupont:hover {
+	background-color: #8b582c;
+	color: #ffe1b5;
+}
+
+.main {
+	margin-bottom: 300px;
+}
