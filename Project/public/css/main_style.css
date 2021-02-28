@@ -4,6 +4,7 @@
 }
 
 /* Fejléc */
+
 #header {
 	background-color: #ffe1b5;
 	padding: 15px;
@@ -28,6 +29,7 @@
 }
 
 /* Menü */
+
 #nav {
 	background-color: #502c0c;
 	padding: 15px 0px 15px 0px;
@@ -51,6 +53,26 @@
 
 .main {
 	margin-bottom: 300px;
+}
+
+/* Tartalom */
+
+.main {
+	margin: 0 22%;
+	margin-bottom: 300px;
+	padding: 15px;
+	height: 100%;
+	background-color: white;
+}
+
+.info {
+	overflow: auto;
+	padding-bottom: 15px;
+}
+
+.index {
+	float: left;
+	padding-right: 15px;
 }
 
 /* Lábléc */
