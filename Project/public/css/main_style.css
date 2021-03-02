@@ -55,13 +55,115 @@
 	margin-bottom: 300px;
 }
 
+/* Főoldal */
+
+.main h2 {
+	margin-bottom: 24px;
+	font-family: fantasy;
+}
+
+.main p {
+	margin-bottom: 24px;
+}
+
+#contact-us {
+	max-width: 500px;
+ 	padding: 0px 20px 50px 20px;
+ 	margin: 0px auto;
+ 	border-top: 10px solid #502c0c;
+ 	border-bottom: 10px solid #502c0c;
+ 	font-size: 12pt;
+  	color: #502c0c;
+}
+
+#contact-us h2 {
+	margin: 24px 0px 5px 0px;
+	font-family: fantasy;
+}
+
+#contact-us label, #contact-us input, #contact-us textarea {
+	display: block;
+	width: 100%;
+	font-size: 12pt;
+	line-height: 24pt;
+}
+
+#contact-us input {
+	margin-bottom: 24pt;
+}
+
+#contact-us h3 {
+	font-weight: normal;
+	font-size: 10pt;
+	line-height: 24pt;
+	font-style: italic;
+	margin: 0 0 0.5em 0;
+}
+
+#contact-us span {
+	font-size: 8pt;
+}
+
+#contact-us em {
+	color: #502c0c;
+	font-weight: bold;
+}
+
+#contact-us input, #contact-us textarea {
+	border: none;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	padding-left: 5px;
+	outline: none;
+	background-color: #eeeeee;
+}
+
+#contact-us input:focus, #contact-us textarea:focus {
+	border: 1px solid #502c0c;
+}
+
+#contact-us textarea {
+	resize: none;
+}
+
+#contact-us button {
+	display: block;
+	float: right;
+	line-height: 24pt;
+	padding: 0 20px;
+	border: none;
+	background: #502c0c;
+	color: white;
+	letter-spacing: 2px;
+	transition: 0.2s all ease-in-out;
+	border-bottom: 2px solid transparent;
+	outline: none;
+}
+
+#contact-us button:hover {
+	background: inherit;
+	color: #502c0c;
+	border-bottom: 2px solid #502c0c;
+}
+
+#contact-us input:-webkit-autofill,
+#contact-us input:-webkit-autofill:hover,
+#contact-us input:-webkit-autofill:focus,
+#contact-us textarea:-webkit-autofill,
+#contact-us textarea:-webkit-autofill:hover,
+#contact-us textarea:-webkit-autofill:focus {
+	border: 1px solid #502c0c;
+	-webkit-text-fill-color: #502c0c;
+	-webkit-box-shadow: 0 0 0px 1000px #502c0c inset;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
 /* Tartalom */
 
 .main {
 	margin: 0 22%;
 	margin-bottom: 300px;
 	padding: 15px;
-	height: 100%;
 	background-color: white;
 }
 
