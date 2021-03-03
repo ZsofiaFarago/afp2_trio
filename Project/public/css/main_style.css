@@ -316,3 +316,42 @@ footer{
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+
+
+/* Reszponzivitás */
+
+@media (max-width: 880px) {
+	.footer-distributed{
+		font: bold 14px;
+	
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}*/
+
+@media screen and (max-width: 850px) {
+	#header {
+		background-image: linear-gradient(#ffe1b5, #8b582c, #502c0c);
+	}
+
+	#title {
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.menupont {
+		left: 10px;
+	}
+}
