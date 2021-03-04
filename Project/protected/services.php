@@ -7,10 +7,10 @@
 				<a class="link" href="index.php?S=cinema">Tovább</a>
 			</div>
 			<div class="info">
-				<img class="index" src="<?=PUBLIC_DIR.'images/main/adopt.jpg'?>" />
-				<h2>Állatok örökbefogadása</h2>
-				<p>Ha az örökbefogadás mellett döntöttél, és szeretnél egy gondozásunkban lévő állatot befogadni, akkor először olvasd el a kiválasztott állat jellemzését! Próbáljuk a legjobban megismerni a nálunk élő állatokat, ezáltal minél pontosabb jellemzést próbálunk leírni róluk! Érdeklődni e-mailben vagy Facebook oldalunkon üzenetben tudsz. Legjobb a Facebook üzenet (próbáljuk nézni egy nap többször is), mert telefont felvenni sokszor hétvégén sem tudunk munka miatt. Minden esetben örökbefogadási szerződést kötünk az örökbefogadóval. A szerződést csak nagykorú személy kötheti meg.</p>
-				<a class="link" href="index.php?S=adoptation">Tovább</a>
+				<img class="index" src="<?=PUBLIC_DIR.'images/main/job.jpg'?>" />
+				<h2>Álláskeresés</h2>
+				<p>Az oldal célja, hogy a több ezer aktuális állásajánlat meghirdetése mellett megkönnyítse az álláskeresők helyzetét, segítse az elhelyezkedést. Segítségével az álláskínálók költséghatékonyan és rövid idő alatt minőségi jelöltekkel kerülhetnek kapcsolatba. Az a víziónk, hogy preferált hosszú távú partner legyünk a vállalkozások, a pályázók és a munkaadók számára munkaügyi szolgáltatásaik, tehetség-menedzsmentjük, állásaik és karrierhez kapcsolódó szükségleteik terén. Effektív és kényelmes munkaerőközvetítési lehetőség az interneten, amelyben a az álláskereső és munkaadó is megtalálja maga számára a legmegfelelőbb megoldásokat.</p>
+				<a class="link" href="index.php?S=job">Tovább</a>
 			</div>
 		</div>
 <?php include_once PROTECTED_DIR.'footer.php'; ?>

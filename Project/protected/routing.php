@@ -11,7 +11,7 @@
 		case 'training': require_once PROTECTED_DIR.'subpages/training/start.php'; break;
 		case 'cinema': require_once PROTECTED_DIR.'subpages/cinema/start.php'; break;
 		case 'estate_agency': require_once PROTECTED_DIR.'subpages/estate_agency/start.php'; break;
-		case 'adoptation': require_once PROTECTED_DIR.'subpages/adoptation/start.php'; break;
+		case 'job': require_once PROTECTED_DIR.'subpages/job/start.php'; break;
 
 		default: require_once PROTECTED_DIR.'error/404.php'; break;
 	}
