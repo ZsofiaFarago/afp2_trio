@@ -2,17 +2,29 @@
 <html>
 	<head>
 		<meta content="charset=UTF-8">
-		<title>Ingatlanos oldal</title>
+		<title>Estate Agency</title>
 	</head>
 	<body>
-		<header>
-			<div>Fejléc</div>
-			<hr />
-			<nav>
-				<a href="index?S=estate_agency&A=menu1">Menü 1</a> | <a href="index?S=estate_agency&A=menu2">Menü 2</a> | stb.
-				<hr />
-			</nav>
-		</header>
+		<div id="header">
+			<img id="logo" src="<?=PUBLIC_DIR.'/images/estate_agency/logo.png'?>" />
+			<div id="nav">
+				<a class="menu" id="home" href="index?S=estate_agency&A=home">Nyitóoldal</a>
+				<br hidden />
+				<a class="menu" id="services" href="index?S=estate_agency&A=services">Szolgáltatások</a>
+				<br hidden />
+				<a class="menu" id="agents" href="index?S=estate_agency&A=agents">Ügynökeink</a>
+				<br id="br2" hidden />
+				<a class="menu" id="calculators" href="index?S=estate_agency&A=calculators">Kalkulátorok</a>
+				<br hidden />
+				<a class="menu" id="catalogue" href="index?S=estate_agency&A=catalogue">Katalógus</a>
+				<br hidden />
+				<a class="menu" id="contacts" href="index?S=estate_agency&A=contacts">Kapcsolatok</a>
+				<br id="br1" hidden />
+				<a class="menu" id="login" href="">Bejelentkezés</a>
+				<br hidden />
+				<a class="menu" id="signup" href="">Regisztráció</a>
+			</div>
+		</div>
 		<div>
 			<?php require_once PROTECTED_DIR.'subpages/estate_agency/routing.php'; ?>
 		</div>
