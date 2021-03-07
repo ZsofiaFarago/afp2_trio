@@ -1,12 +1,12 @@
-		<footer class="footer-distributed">
+		<footer class="footer-distributed sticky-footer">
 			<div class="footer-left">
 				<h3>Eagle Flies</h3>
 				<p class="footer-links">
-					<a href="#">Home</a> | 
-					<a href="#">Blog</a> | 
-					<a href="#">Pricing</a> | 
-					<a href="#">About</a> | 
-					<a href="#">Faq</a> | 
+					<a href="#">Home</a> |
+					<a href="#">Blog</a> |
+					<a href="#">Pricing</a> |
+					<a href="#">About</a> |
+					<a href="#">Faq</a> |
 					<a href="#">Contact</a>
 				</p>
 				<p class="footer-company-name">Trio &copy; 2021</p>
@@ -38,5 +38,6 @@
 				</div>
 			</div>
 		</footer>
-	</body>
-</html>
+		</body>
+
+		</html>
