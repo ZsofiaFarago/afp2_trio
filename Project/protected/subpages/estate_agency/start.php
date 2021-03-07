@@ -25,12 +25,20 @@
 				<a class="menu" id="signup" href="">Regisztráció</a>
 			</div>
 		</div>
-		<div>
+		<div id="content">
 			<?php require_once PROTECTED_DIR.'subpages/estate_agency/routing.php'; ?>
+			<div id="footer_height"></div>
 		</div>
-		<footer>
-			<hr />
-			<p>Copyright &copy; 2020 AFP1 Trio. All Rights Reserved</p>
+		<footer id="footer">
+			<div>
+				<p>Copyright &copy; 2021 AFP2 Trio. All Rights Reserved</p>
+				<div id="contact_icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+					<a href="#"><i class="fab fa-github"></i></a>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
