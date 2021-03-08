@@ -3,6 +3,12 @@
 	<head>
 		<meta content="charset=UTF-8">
 		<title>Estate Agency</title>
+		<link rel="stylesheet" href="<?=PUBLIC_DIR.'css/estate_agency_style.css'?>">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div id="header">

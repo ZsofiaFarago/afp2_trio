@@ -87,3 +87,77 @@ body {
 	border-bottom: 1px solid #00a000;
 	transition: all 1s linear 0s;
 }
+
+/* Főoldal */
+#main #offer, #main #calculate, #main #contact_us, #experts {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 20px;
+}
+
+#main #offer, #main #experts {
+	background-color: #F0F0F0;
+}
+
+#contact_us {
+	background-color: #2d2d2e;
+	color: white;
+}
+
+.div_content {
+	max-width: 1000px;
+	text-align: center;
+}
+
+#main h2 {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#main p {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.go_on {
+	padding: 10px;
+	margin-top: 25px;
+	background-color: #00a000;
+	text-align: center;
+	width: 100px;
+	display: inline-block;
+}
+
+#main a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#flex-container {
+    max-height: 500px;
+    max-width: 1000px;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0px;
+}
+
+#flex-child {
+	max-width: 150px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 10px 0px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#flex-child:first-child {
+	margin-left: 10px;
+}
+
+#flex-child img {
+	width: 100%;
+}
