@@ -276,3 +276,56 @@ body {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+/* Reszponzív */
+
+@media screen and (max-width: 1525px) {
+	#br1 {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 1195px) {
+	#br2 {
+		display: inline;
+	}
+
+	#br1 {
+		display: none;
+	}
+
+	#nav {
+		padding: 0px;
+	}
+
+	#logo {
+		float: right;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	#br1 {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	br {
+		display: inline;
+	}
+
+	#nav {
+		clear: both;
+	}
+
+	#logo {
+		clear: both;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 810px) {
+	#contact_details {
+		display:block;
+	}
+}
