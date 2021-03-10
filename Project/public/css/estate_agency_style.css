@@ -145,7 +145,7 @@ body {
 }
 
 #flex-child {
-	max-width: 150px;
+    max-width: 150px;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -160,4 +160,119 @@ body {
 
 #flex-child img {
 	width: 100%;
+}
+
+/* Kapcsolatok részletek */
+
+#contact_details {
+	background-color: black;
+	color: white;
+	display: flex;
+}
+
+#links a {
+	font-weight: bolder;
+}
+
+#contact_details h3 {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#details_center i {
+	background-color: #00a000;
+  	color: white;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.column {
+ 	box-sizing: border-box;
+ 	flex: 1;
+}
+
+#details_center p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#details_center p span {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 2;
+}
+
+#details_center {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+#details_left, #details_center, #details_right {
+	padding: 20px;
+}
+
+/* Slideshow */
+#catalogue {
+	box-sizing: border-box
+}
+
+#catalogue img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+.mySlides {display: none}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+#dots {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
