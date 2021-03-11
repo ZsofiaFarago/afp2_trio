@@ -31,3 +31,17 @@ CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`id`, `name`) VALUES
+(1, 'Business'),
+(2, 'Technology'),
+(3, 'Retail'),
+(4, 'Construction');
+
+--
+-- Indexes for dumped tables
+--
