@@ -1,4 +1,7 @@
 <?php 
+
+define('BASE_DIR', './');
+define('PUBLIC_DIR', BASE_DIR.'public/');
 define('CN_PROTECTED_DIR', BASE_DIR.'protected/subpages/cinema/');
 
 define('DATABASE_CONTROLLER', CR_PROTECTED_DIR.'database.php');
