@@ -39,3 +39,13 @@ CREATE TABLE `jobs` (
   `contact_email` varchar(255) NOT NULL,
   `post_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `jobs`
+--
+
+INSERT INTO `jobs` (`id`, `category_id`, `company`, `job_title`, `description`, `salary`, `location`, `contact_user`, `contact_email`, `post_date`) VALUES
+(1, 1, 'fasz', 'boss', 'Bossing around', '12000k', 'Eger', 'asd@asd.com', 'asd@asd.com', '2020-05-03 01:27:02'),
+(2, 2, 'Pcbazis', 'Elado', 'Eladni', '1000kkk', 'Hatvan', 'Hugh jess', 'asd2@asd.com', '2020-05-02 23:51:32'),
+(3, 0, 'Bosch', 'Boss', 'Bossolni', '10000000', 'Hatvan', 'asd@asd.com', 'asd@asd.com', '2020-05-03 01:26:10'),
+(5, 2, 'deqwdqw', 'Php master', 'phping', '10000000000', 'Hatvan', 'Én', 'en@en.com', '2020-05-03 13:49:27');
