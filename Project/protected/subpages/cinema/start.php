@@ -1,8 +1,14 @@
 <!DOCTYPE HTML>
+
+<?php session_start(); ?>
+<?php require_once 'protected/subpages/cinema/db_config.php'; ?>
+<?php require_once USER_MANAGER; ?>
+
 <html>
 	<head>
 		<meta content="charset=UTF-8">
 		<title>AFP Mozi</title>
+		<link rel="stylesheet" type="text/css" href="<?=PUBLIC_DIR.'style.css?'.date('YmdHis', filemtime(PUBLIC_DIR.'style.css'))?>">
 	</head>
 	<body>
 		<header>
