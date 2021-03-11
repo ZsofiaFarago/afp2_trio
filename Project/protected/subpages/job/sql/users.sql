@@ -49,3 +49,24 @@ INSERT INTO `users` (`id`, `email`, `password`, `lname`, `fname`, `permission`) 
 (12, 'ravasz.balint@gmail.com', '123456', 'Ravasz', 'Bálint', 0),
 (13, 'asd@asd.com', '123456', 'asd', 'asd', 0),
 (14, 'asd2@asd.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Bálint', 'asd', 0);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
