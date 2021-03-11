@@ -49,3 +49,28 @@ INSERT INTO `jobs` (`id`, `category_id`, `company`, `job_title`, `description`, 
 (2, 2, 'Pcbazis', 'Elado', 'Eladni', '1000kkk', 'Hatvan', 'Hugh jess', 'asd2@asd.com', '2020-05-02 23:51:32'),
 (3, 0, 'Bosch', 'Boss', 'Bossolni', '10000000', 'Hatvan', 'asd@asd.com', 'asd@asd.com', '2020-05-03 01:26:10'),
 (5, 2, 'deqwdqw', 'Php master', 'phping', '10000000000', 'Hatvan', 'Én', 'en@en.com', '2020-05-03 13:49:27');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `jobs`
+--
+ALTER TABLE `jobs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `jobs`
+--
+ALTER TABLE `jobs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
