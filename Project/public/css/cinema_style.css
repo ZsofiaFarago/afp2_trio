@@ -1,0 +1,22 @@
+html,body {
+	background-color: black;
+}
+
+* {
+	color: white;
+}
+
+nav {
+	background: #f5821e;
+}
+a {
+	color: black;
+}
+
+hr{
+	margin: 0px;
+}
+
+div {
+	margin: 8px;
+}
