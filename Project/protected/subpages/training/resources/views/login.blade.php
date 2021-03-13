@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<div class="container">
+<div class="container" style="height: 500px; padding-top: 100px" >
     <div class="row">
         <div class="col-md-4">
             <form>
