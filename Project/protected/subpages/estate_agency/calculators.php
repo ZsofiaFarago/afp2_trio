@@ -1,3 +1,8 @@
+<?php
+	include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
+	include_once PROTECTED_DIR.'subpages/estate_agency/controller/calculatorController.php';
+	$controller = new calculatorController();
+?>
 <div id="calculators_page">
 	<div class="calculatorForm" id="incomeTaxCalculator">
 		<h2>Személyi jövedelemadó kalkulátor</h2>
@@ -15,6 +20,9 @@
 			<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
 			<button name="incomeTax" type="submit">Számítás</button>
 		</form>
+		<?php
+			$controller->getPersonalIncomeTax();
+		?>
 	</div>
 
 	<div class="calculatorForm" id="acquisitionTaxCalculator">
