@@ -55,5 +55,8 @@
 			<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
 			<button name="acquisitionTax" type="submit">Számítás</button>
 		</form>
+		<?php
+			$controller->getAcquisitionTax();
+		?>
 	</div>
 </div>
