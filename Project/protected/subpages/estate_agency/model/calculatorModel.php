@@ -24,4 +24,32 @@ class calculatorModel {
 
 		return $difference * $taxMultiplier * $multiplier;
 	}
+
+	public function calculateAcquisitionTax($acquisitionPrice, $sellWithinOneYear, $sellingPrice, $forRelatives, $newEstate, $firstProperty, $selfGoverning, $plot) {
+
+		if ($forRelatives || $selfGoverning || $plot) {
+			return 0;
+		}
+
+		$taxMultiplier = 0.04;
+
+		if ($sellWithinOneYear && $sellingPrice - $acquisitionPrice <= 0) {
+			return 0;
+		}
+
+		$difference = $acquisitionPrice - 15000000;
+		if ($newEstate) {
+			if($difference <= 0) {
+				return 0;
+			} else {
+				return $difference * $taxMultiplier;
+			}
+		}
+		
+		if ($firstProperty && $difference <= 0) {
+			return $acquisitionPrice * $taxMultiplier * 0.5;
+		}
+
+		return $acquisitionPrice * $taxMultiplier;
+	}
 }
