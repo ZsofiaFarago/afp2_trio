@@ -11,7 +11,11 @@
             <h3>Ar: {{ $product['price'] }}</h3>
             <h4>Leiras: {{ $product['description'] }}</h4>
             <br><br>
-            <button class="btn btn-primary">Kosarba</button>
+            <form action="/add_to_cart" method="POST">
+                @csrf
+                <input type="hide" name="product_id" value="{{ $product['id'] }}">
+                <button class="btn btn-primary">Kosarba</button>
+            </form>
             <br><br>
             <button class="btn btn-success">Vasarlas Azonnal</button>
             <br><br>
