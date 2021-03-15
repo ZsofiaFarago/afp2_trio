@@ -15,6 +15,10 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Kosar(0)</a>
           </li>
+          <form action="/search" class="d-flex">
+            <input class="form-control search-box" type="text" placeholder="Search" aria-label="Search" name="query">
+            <button class="btn btn-outline-success" type="submit">Kereses</button>
+          </form>
         </ul>
       </div>
     </div>
