@@ -21,5 +21,13 @@ class ProductSeeder extends Seeder
             'category' => 'feherje',
             'gallery' => 'https://shopbuilder.hu/images/product_images/5147_54ddce4fd3b0.png'
         ]);
+
+        DB::table('products')->insert([
+            'name' => 'Whey Protein2',
+            'price' => '289902',
+            'description' => "menosegi feherje2",
+            'category' => 'feherje2',
+            'gallery' => 'https://shopbuilder.hu/images/product_images/5147_54ddce4fd3b0.png'
+        ]);
     }
 }

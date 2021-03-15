@@ -20,4 +20,15 @@
     @yield('content')
     {{ view('layouts.footer') }}
 </body>
+<style>
+    img.slider-img {
+        height: 400px !important;
+    }
+    .custom-product{
+        height: 600px;
+    }
+    .slider-text{
+        background: #35443585 !imporant;
+    }
+</style>
 </html>
