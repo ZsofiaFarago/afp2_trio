@@ -277,6 +277,118 @@ body {
   to {opacity: 1}
 }
 
+/* Űrlapok */
+.calculatorForm {
+  max-width: 500px;
+  padding: 0px 20px 20px 20px;
+  margin: 0px auto;
+  border-top: 10px solid #00a000;
+  border-bottom: 10px solid #00a000;
+  font-size: 12pt;
+  margin-bottom: 20px;
+}
+
+.calculatorForm>p {
+	padding-bottom: 15px;
+}
+
+.calculatorForm h2 {
+  margin: 20px 0px 15px 0px;
+  font-family: fantasy;
+  color: #00a000;
+}
+
+.calculatorform label,
+.calculatorForm input {
+	font-size: 12pt;
+	line-height: 24pt;
+}
+
+.calculatorForm input[type=text] {
+	display: block;
+	width: 50%;
+}
+
+#acquisitionTaxCalculator div input {
+	display: inline;
+}
+
+.calculatorForm input {
+	margin-bottom: 15px;
+}
+
+.calculatorForm h3 {
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 24pt;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #00a000;
+}
+
+.calculatorForm span {
+  font-size: 8pt;
+}
+
+.calculatorForm em {
+  color: #00a000;
+  font-weight: bold;
+}
+
+.calculatorForm input {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding-left: 5px;
+  outline: none;
+  background-color: #eeeeee;
+}
+
+.calculatorForm input:focus,
+.calculatorForm textarea:focus {
+  border: 1px solid #00a000;
+}
+.calculatorForm button {
+  display: block;
+  line-height: 24pt;
+  padding: 0 20px;
+  border: none;
+  background: #00a000;
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+}
+
+.calculatorForm button:hover {
+  background: inherit;
+  color: #00a000;
+  border-bottom: 2px solid #00a000;
+}
+
+.calculatorForm input:-webkit-autofill,
+.calculatorForm input:-webkit-autofill:hover,
+.calculatorForm input:-webkit-autofill:focus {
+  border: 1px solid #00a000;
+  -webkit-text-fill-color: #00a000;
+  -webkit-box-shadow: 0 0 0px 1000px #00a000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.formResult {
+	color: darkgreen;
+	background-color: lightgreen;
+	padding-bottom: 0px;
+	padding: 7px;
+	margin-top: 10px;
+}
+
+.formErrorMessage {
+	color: red;
+	background-color: pink;
+}
+
 /* Reszponzív */
 
 @media screen and (max-width: 1525px) {
