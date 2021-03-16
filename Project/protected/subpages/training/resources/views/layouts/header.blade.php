@@ -28,7 +28,7 @@ if(Session::has('user'))
         </ul>
         <ul class="nav navbar-nav navbarright">
           <li class="nav-item">
-            <a class="nav-link" href="#">Kosar({{ $total }})</a>
+            <a class="nav-link" href="/cart">Kosar({{ $total }})</a>
           </li>
           @if(Session::has('user'))
         <li class="nav-item dropdown">
