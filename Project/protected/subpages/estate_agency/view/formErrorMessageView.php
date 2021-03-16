@@ -1,3 +1,3 @@
 <?php
-	if(isset($errorMessage)) { echo '<p class = "formErrorMessage">'.$errorMessage.'</p>'; }
+	if(isset($errorMessage)) { echo '<p class = "formResult formErrorMessage">'.$errorMessage.'</p>'; }
 ?>

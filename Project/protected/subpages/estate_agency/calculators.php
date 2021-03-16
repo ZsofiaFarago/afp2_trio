@@ -32,25 +32,38 @@
 			<label for="acquisitionPrice">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
 			<input id="acquisitionPrice" name="acquisitionPrice" required="" type="text" />
 
-			<label for="sellWithinOneYear">Adott el ingatlant egy éven belül? </label>
- 			<input type="checkbox" id="sellWithinOneYear" name="sellWithinOneYear" value="sellWithinOneYear">
+			<div>
+				<label for="sellWithinOneYear">Adott el ingatlant egy éven belül? </label>
+				<input type="checkbox" id="sellWithinOneYear" name="sellWithinOneYear" value="sellWithinOneYear">
+ 			</div>
+
  			<label for="sellingPrice">Ebben az esetben adja meg az eladott ingatlan értékét!</label>
 			<input id="sellingPrice" name="sellingPrice" type="text" />
 
-			<label for="forRelatives">Átruházás házastársak, egyenesági rokonok között? </label>
-			<input type="checkbox" id="forRelatives" name="forRelatives" value="forRelatives">
+ 			 <div>
+ 				<label for="forRelatives">Átruházás házastársak, egyenesági rokonok között? </label>
+ 				<input type="checkbox" id="forRelatives" name="forRelatives" value="forRelatives">
+ 			</div>
+			
+			<div>
+				<label for="newEstate">Új építésű ingatlant vásárol? </label>
+				<input type="checkbox" id="newEstate" name="newEstate" value="newEstate">
+			</div>
 
-			<label for="newEstate">Új építésű ingatlant vásárol? </label>
-			<input type="checkbox" id="newEstate" name="newEstate" value="newEstate">
+			<div>
+				<label for="firstProperty">Első lakástulajdon és Ön 35 év alatti? </label>
+				<input type="checkbox" id="firstProperty" name="firstProperty" value="firstProperty">
+			</div>
 
-			<label for="firstProperty">Első lakástulajdon és Ön 35 év alatti? </label>
-			<input type="checkbox" id="firstProperty" name="firstProperty" value="firstProperty">
+			<div>
+				<label for="selfGoverning">Önkormányzati lakás? </label>
+				<input type="checkbox" id="selfGoverning" name="selfGoverning" value="selfGoverning">
+			</div>
 
-			<label for="selfGoverning">Önkormányzati lakás? </label>
-			<input type="checkbox" id="selfGoverning" name="selfGoverning" value="selfGoverning">
-
-			<label for="plot">Telket vásárol és 4 éven belül lakóházat épít rajta? </label>
-			<input type="checkbox" id="plot" name="plot" value="plot">
+			<div>
+				<label for="plot">Telket vásárol és 4 éven belül lakóházat épít rajta? </label>
+				<input type="checkbox" id="plot" name="plot" value="plot">
+			</div>
 
 			<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
 			<button name="acquisitionTax" type="submit">Számítás</button>
