@@ -34,14 +34,14 @@
         <h3>Felkapott termekek</h3>
         
         @foreach ($products as $product)
-        <a href="detail/{{ $product['id'] }}">
-            <div class="trending-item">
-               <img class="trending-image" src="{{ $product['gallery'] }}">
-               <div class="">
-                 <h3>{{ $product['name'] }}</h3>
-               </div>
+        <div class="trending-item">
+          <a href="detail/{{ $product['id'] }}">
+            <img class="trending-image" src="{{ $product['gallery'] }}">
+            <div class="">
+              <h3>{{ $product['name'] }}</h3>
             </div>
-        </a>
+          </a>
+        </div>
             @endforeach
 
       </div>
