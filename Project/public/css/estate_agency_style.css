@@ -277,6 +277,24 @@ body {
   to {opacity: 1}
 }
 
+/* Kalkulátorok menüpont tartalma */
+.calculator-content {
+	padding: 0px 40px;
+	margin-bottom: 20px;
+}
+
+#calculator-intro {
+	margin-top: 20px;
+}
+
+.calculator-content ul {
+	padding-left: 35px;
+}
+
+.calculator-content li {
+	padding-left: 5px;
+}
+
 /* Űrlapok */
 .calculatorForm {
   max-width: 500px;
