@@ -4,6 +4,24 @@
 	$controller = new calculatorController();
 ?>
 <div id="calculators_page">
+
+	<div class="calculator-content" id="calculator-intro">
+		<h1>Adó és illeték fizetése ingatlan adásvétel esetén</h1>
+		<p>Mielőtt lakás eladásba vagy vásárlásba vágsz, érdemes tudnod, hogy az eladásnak és a vásárlásnak is költségei vannak. Ha van egy kereted, amiből vennél, vagy egy elképzelt összeg, mit az eladásból vársz, kellemetlen meglepetések érhetnek, ha nem számolsz Állambácsi pénzével.</p>
+	</div>
+
+	<div class="calculator-content" id="icomeTax-text">
+		<h2>Adó fizetése ingatlan eladás esetén</h2>
+		<p>Ingatlan eladás után személyi jövedelem adót kell fizetni. Az adó mértéke 15%. Ha a tulajdonos drágábban adja el a lakást mint amennyiért megvette, tehát NYERESÉGE van, adófizetési kötelezettsége keletkezik. Az adóalap mértéke az eltelt idő függvényében csökken. A tulajdonos a szerzést követő 5. évben már nem köteles adót fizetni.</p> 
+		<p>Az adóalapból levonható:</p>
+		<ul>
+		    <li>a megszerzésre fordított összeg,</li>
+		    <li>a megszerzésével kapcsolatban felmerült kiadás (például megfizetett vagyonszerzési illeték),</li>
+		    <li>az eladásra kerülő ingatlanon elvégzett értéknövelő beruházás költsége (az ingatlan, értékét, állagát megóvó ráfordításokon felül az ingatlan forgalmi értékét növelő ráfordítás, például a fűtés korszerűsítése, kerítés építése), és</li>
+		    <li>az ingatlan  eladásával kapcsolatban felmerült kiadás (például a hirdetések díja, illetve a közvetítői jutalék).</li>
+		</ul>
+	</div>
+
 	<div class="calculatorForm" id="incomeTaxCalculator">
 		<h2>Személyi jövedelemadó kalkulátor</h2>
 		<p>Adja meg az alábbi adatokat, és mi megmondjuk, pontosan mekkora összegű személyi jövedelemadóra számíthat ingatlaneladás esetén!</p>
@@ -23,6 +41,22 @@
 		<?php
 			$controller->getPersonalIncomeTax();
 		?>
+	</div>
+
+	<div class="calculator-content" id="acquisitionTax-text">
+		<h2>Vagyonszerzési illeték ingatlanvásárlás esetén</h2>
+		<p>Lakásvásárlás esetén a vételár 4%-ára tart igényt Állambácsi. Tehát ha 20 000 000 Ft-ért vettél egy lakást, akkor 800 000 Ft-ot kell majd befizetned. Sokat nem kell várnod a csekkre, mert mikor adásvételi szerződés aláírása után a földhivatalba feljegyzik az adásvétel tényét, a NAV már írja is neked a levelet, hogy fizess. Ha az segítség neked, érdemes részletfizetést kérni.</p>
+		<p>Illeték kedvezmények:</p>
+		<ul>
+			<li><b>Cserét pótló kedvezmény</b> – Ha egy éven belül eladtál és vásárolsz is, akkor csak az eladott lakás és a megvásárolt lakás ára közötti különbözet után kell fizetned, amennyiben az új lakás drágább. Ha olcsóbb lakást vettél, akkor nem kell fizetned. Ha előbb vásárolsz, és utána fogsz csak eladni, akkor jelezd a hatóság felé, hogy a régi lakásodat el kívánod adni, és felfüggesztik a fizetési kötelezettségedet.</li>
+			<li><b>Házastársak között</b> illetékmentes az ingatlanvagyon átruházása</li>
+			<li><b>Egyenes ági rokonok között</b> szintén nem kell illetéket fizetni</li>
+			<li><b>Telek vásárlás</b> esetén nem kell fizetni, amennyiben 4 éven belül megkezdődik a lakóház építése</li>
+			<li><b>Új lakás vásárlása</b> esetén 15 MFt-ig illetékmentes a vásárlás, 15MFt fölött pedig 4%-ot kell fizetni, de csak a 15MFt-ot meghaladó részre. Tehát ha 20MFt-ért veszel egy újépítésű lakást, akkor 5MFt után fogsz fizetni.</li>
+			<li><b>Első lakástulajdon</b> megszerzése esetén 15MFt-ig 35 év alatt 50%-os kedvezmény jár.</li>
+			<li><b>Önkormányzati lakás</b> megvásárlásakor szintén nem kell illetéket fizetni.</li>
+		</ul>
+		<p>A fenti tájékoztatás nem teljeskörű, de a lényeg benne van. Minden esetben egyeztess ügyvéddel és könyvelővel, mielőtt belevágsz!</p>
 	</div>
 
 	<div class="calculatorForm" id="acquisitionTaxCalculator">
