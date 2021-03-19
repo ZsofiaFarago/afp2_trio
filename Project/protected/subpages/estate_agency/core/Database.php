@@ -23,4 +23,31 @@ class Database {
         $connection->exec("SET NAMES 'utf8'");
         return $connection;
     }
+
+    public function getList($query, $params = []) {
+        $connection = $this->getConnection();
+        $connection->exec("SET NAMES 'utf8'");
+        $statement = $connection->prepare($query);
+        $success = $statement->execute($params);
+        $result = [];
+        if($success){
+            $result = $statement->fetchAll();
+        }
+        $statement->closeCursor();
+        $connection = null;
+        return $result;
+    }
+    
+    public function getRecord($query, $params = []) {
+        $connection = getConnection();
+        $statement = $connection->prepare($query);
+        $success = $statement->execute($params);
+        $result;
+        if($success){
+            $result = $statement->fetch()[0];
+        }
+        $statement->closeCursor();
+        $connection = null;
+        return $result;
+    }
 }
