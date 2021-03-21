@@ -1,8 +1,9 @@
 <?php
-class MyDbModel {
-    protected $db;
-    protected function __construct() {
-        require_once './protected/core/Database.php';
-        $this->db = Database::GetInstance();
-    }
-}
+	class MyDbModel {
+	    protected $db;
+	    protected function __construct() {
+	        include_once PROTECTED_DIR.'subpages/estate_agency/core/Database.php';
+	        $this->db = Database::getInstance();
+	    }
+	}
+?>
