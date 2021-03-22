@@ -10,7 +10,7 @@
 		<p>Mielőtt lakás eladásba vagy vásárlásba vágsz, érdemes tudnod, hogy az eladásnak és a vásárlásnak is költségei vannak. Ha van egy kereted, amiből vennél, vagy egy elképzelt összeg, mit az eladásból vársz, kellemetlen meglepetések érhetnek, ha nem számolsz Állambácsi pénzével.</p>
 	</div>
 
-	<div class="calculator-content" id="icomeTax-text">
+	<div class="calculator-content" id="incomeTax-text">
 		<h2>Adó fizetése ingatlan eladás esetén</h2>
 		<p>Ingatlan eladás után személyi jövedelem adót kell fizetni. Az adó mértéke 15%. Ha a tulajdonos drágábban adja el a lakást mint amennyiért megvette, tehát NYERESÉGE van, adófizetési kötelezettsége keletkezik. Az adóalap mértéke az eltelt idő függvényében csökken. A tulajdonos a szerzést követő 5. évben már nem köteles adót fizetni.</p> 
 		<p>Az adóalapból levonható:</p>
@@ -26,7 +26,7 @@
 		<h2>Személyi jövedelemadó kalkulátor</h2>
 		<p>Adja meg az alábbi adatokat, és mi megmondjuk, pontosan mekkora összegű személyi jövedelemadóra számíthat ingatlaneladás esetén!</p>
 		<form method="POST">
-	    		<label for="acquisitionYear">Az ingatlan megszerzésének éve: <em>&#x2a;</em></label>
+	    	<label for="acquisitionYear">Az ingatlan megszerzésének éve: <em>&#x2a;</em></label>
 			<input id="acquisitionYear" name="acquisitionYear" required="" type="text" />
 
 			<label for="acquisitionPrice">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
@@ -62,7 +62,7 @@
 	<div class="calculatorForm" id="acquisitionTaxCalculator">
 		<h2>Vagyonszerzési illeték kalkulátor</h2>
 		<p>Adja meg az alábbi adatokat, és mi megmondjuk, pontosan mekkora összegű vagyonszerzési illetékre számíthat ingatlanvásárlás esetén!</p>
-		<form action="#">
+		<form method="POST">
 			<label for="acquisitionPrice">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
 			<input id="acquisitionPrice" name="acquisitionPrice" required="" type="text" />
 
@@ -101,9 +101,9 @@
 
 			<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
 			<button name="acquisitionTax" type="submit">Számítás</button>
+			<?php
+				$controller->getAcquisitionTax();
+			?>
 		</form>
-		<?php
-			$controller->getAcquisitionTax();
-		?>
 	</div>
 </div>

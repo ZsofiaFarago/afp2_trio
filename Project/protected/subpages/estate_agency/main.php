@@ -22,9 +22,9 @@
 			<span class="dot"></span>
 		</div>
 	</div>
-	
+
 	<script>
-		var slideIndex = 1;
+		var slideIndex = 0;
 		showSlides();
 
 		function showSlides() {
@@ -60,7 +60,6 @@
 			<p>Ingatlant szeretne eladni vagy vásárolni, és érdeklik a felmerülő költségek! Kalkulátoraink segítségével számtsa ki az Önt érintő személyi jövedelemadó vagy vagyonszerzési illeték értékét!</p>
 			<a href=""><div class="go_on">Érdekel</div></a>
 		</div>
-
 	</div>
 
 	<div id="experts">
@@ -97,6 +96,7 @@
 			<a href=""><div class="go_on">Érdekel</div></a>
 		</div>
 	</div>
+
 	<div id="contact_details">
 		<div class="column" id="details_left">
 			<div>
@@ -133,7 +133,7 @@
 		<div class="column" id="details_right">
 			<div>
 				<h3>A vállalkozásról</h3>
-				<p>Startup vállalkozások számára nyújtunk lehetőséget saját honlappal megjelenni. Vállaljuk ennek elkészítését és oldalunkon való megjelenítését.</p>
+				<p>Küldetésünk, hogy az emberek tisztában legyenek az ingatlanuk értékével, ne veszítsenek az ingatlan vagyonukból hanem a legjobb áron, könnyedén értékesíteni tudják azt bármikor. Ehhez az Estate biztosít átlátható platformot, melyet bárki igénybe vehet, és így az ingatlanvagyon biztonságos formában, könnyen kezelhetővé válik.</p>
 			</div>
 		</div>
 	</div>

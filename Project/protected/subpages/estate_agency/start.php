@@ -2,13 +2,15 @@
 <html>
 	<head>
 		<meta content="charset=UTF-8">
-		<title>Estate Agency</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Estate Agancy</title>
 		<link rel="stylesheet" href="<?=PUBLIC_DIR.'css/estate_agency_style.css'?>">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
 		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 	</head>
 	<body>
 		<div id="header">
@@ -18,7 +20,7 @@
 				<br hidden />
 				<a class="menu" id="services" href="index?S=estate_agency&A=services">Szolgáltatások</a>
 				<br hidden />
-				<a class="menu" id="agents" href="index?S=estate_agency&A=agents">Ügynökeink</a>
+				<a class="menu" id="agents" href="index?S=estate_agency&A=agents">Szakértőink</a>
 				<br id="br2" hidden />
 				<a class="menu" id="calculators" href="index?S=estate_agency&A=calculators">Kalkulátorok</a>
 				<br hidden />

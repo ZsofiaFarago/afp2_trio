@@ -7,6 +7,7 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #content {
@@ -89,7 +90,7 @@ body {
 }
 
 /* Főoldal */
-#main #offer, #main #calculate, #main #contact_us, #experts {
+#main #offer, #main #calculate, #main #contact_us, #main #experts {
 	display: flex;
   	align-items: center;
   	justify-content: center;
@@ -111,13 +112,11 @@ body {
 }
 
 #main h2 {
-	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	padding-bottom: 10px;
 }
 
 #main p {
-	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
 
@@ -133,7 +132,6 @@ body {
 #main a {
 	text-decoration: none;
 	color: white;
-	font-family: 'Open Sans', sans-serif;
 }
 
 #flex-container {
@@ -145,7 +143,7 @@ body {
 }
 
 #flex-child {
-    max-width: 150px;
+	max-width: 150px;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -278,13 +276,44 @@ body {
 }
 
 /* Kalkulátorok menüpont tartalma */
+
+.calculator-content h1, .calculator-content h2 {
+	color: #00a000;
+	margin-bottom: 20px;
+}
+
+.calculator-content b {
+	color: #00a000;
+}
+
+#calculators_page {
+	background-color: #F0F0F0;
+	padding: 20px;
+	margin: 0% 10%;
+	min-width: 300px;
+}
+
+@media screen and (max-width: 940px) {
+	#calculators_page {
+		margin: 20px 0px;
+	}
+}
+
 .calculator-content {
-	padding: 0px 40px;
+	padding: 20px 40px;
+	max-width: 1000px;
+	min-width: 300px;
+	background-color: #2d2d2e;
+	color: white;
+	margin: 0 auto;
 	margin-bottom: 20px;
 }
 
 #calculator-intro {
-	margin-top: 20px;
+	text-align: center;
+	background-color: transparent;
+	max-width: 1000px;
+	color: black;
 }
 
 .calculator-content ul {
@@ -304,6 +333,8 @@ body {
   border-bottom: 10px solid #00a000;
   font-size: 12pt;
   margin-bottom: 20px;
+  background-color: #2d2d2e;
+  color: white;
 }
 
 .calculatorForm>p {
