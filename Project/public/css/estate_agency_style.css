@@ -438,6 +438,64 @@ body {
 	background-color: pink;
 }
 
+/* Ingatlanügynökök adatai */
+#experts-main-div {
+	text-align: center;
+	margin-bottom: 20px;
+	flex: 0 0 100%;
+}
+
+#experts-main-div p {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#agents-div {
+	width: auto;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+	padding: 20px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+.agent-div {
+	width: 20%;
+	margin-bottom: 20px;
+	background-color: #2d2d2e;
+	padding: 20px;
+	line-height: 2em;
+	color: white;
+}
+
+.agent-div b {
+	color: #00a000;
+}
+
+.agent-image-div, .agent-image-div img, .agent-data-div {
+	width: 100%;
+}
+
+.agent-image-div {
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+  .agent-div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .agent-div {
+    width: 80%;
+  }
+}
+
 /* Reszponzív */
 
 @media screen and (max-width: 1525px) {
