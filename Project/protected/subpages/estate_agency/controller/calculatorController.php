@@ -37,6 +37,14 @@ class calculatorController extends MyController {
         return false;
     }
 
+    public function getPersonalIncomeTaxForm() {
+        $this->renderPage('personalIncomeTaxView');
+    }
+
+    public function getAcquisitionTaxForm() {
+        $this->renderPage('acquisitionTaxView');
+    }
+
     public function getPersonalIncomeTax() {
         if(array_key_exists('incomeTax', $_POST)) {
             $required = array('acquisitionYear', 'acquisitionPrice', 'plannedSellingPrice');
@@ -46,7 +54,8 @@ class calculatorController extends MyController {
             $isYearCorrect = $this->checkYear($_POST['acquisitionYear']);
             $isAcquisitionPriceCorrect = $this->checkPrice($_POST['acquisitionPrice']);
             $isSellingPriceCorrect = $this->checkPrice($_POST['plannedSellingPrice']);
-
+            
+            unset($_POST['incomeTax']);
             $errorMessage = "";
             if(!$isEverythingGiven) {
                 $errorMessage = "Nem adott meg minden szükséges értéket!";
@@ -64,7 +73,6 @@ class calculatorController extends MyController {
                 $plannedSellingPrice = $_POST['plannedSellingPrice'];
                 $personalIncomeTax = $this->model->calculatePersonalIncomeTax($acquisitionYear, $acquisitionPrice, $plannedSellingPrice);
                 $this->addViewParams('personalIncomeTax', $personalIncomeTax);
-                unset($_POST['incomeTax']);
                 $this->renderPage('personalIncomeTaxView');
                 return;
             }
@@ -85,10 +93,10 @@ class calculatorController extends MyController {
                 }
             }
 
-            $required = array('acquisitionPrice');
+            $required = array('acquisitionPrice2');
             $isAcquisitionPriceSet = $this->checkIfAllRequiredDataIsGiven($required);
             $isAcquisitionPriceNumeric = $this->checkIfAllRequiredDataIsNumeric($required);
-            $acquisitionPrice = $_POST['acquisitionPrice'];
+            $acquisitionPrice = $_POST['acquisitionPrice2'];
             $isAcquisitionPriceCorrect = $this->checkPrice($acquisitionPrice);
 
             $errorMessage = "";
@@ -131,3 +139,4 @@ class calculatorController extends MyController {
         }
     }
 }
+?>

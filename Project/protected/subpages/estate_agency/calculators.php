@@ -22,18 +22,24 @@
 		</ul>
 	</div>
 
-	<div class="calculatorForm" id="incomeTaxCalculator">
+	<div class="form" id="incomeTaxCalculator">
 		<h2>Személyi jövedelemadó kalkulátor</h2>
 		<p>Adja meg az alábbi adatokat, és mi megmondjuk, pontosan mekkora összegű személyi jövedelemadóra számíthat ingatlaneladás esetén!</p>
 		<form method="POST">
 	    	<label for="acquisitionYear">Az ingatlan megszerzésének éve: <em>&#x2a;</em></label>
-			<input id="acquisitionYear" name="acquisitionYear" required="" type="text" />
+			<input id="acquisitionYear" name="acquisitionYear" required="" type="text" 
+				value="<?php echo (isset($_POST['acquisitionYear']))?$_POST['acquisitionYear']:'';?>"
+			/> 
 
 			<label for="acquisitionPrice">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
-			<input id="acquisitionPrice" name="acquisitionPrice" required="" type="text" />
+			<input id="acquisitionPrice" name="acquisitionPrice" required="" type="text" 
+				value="<?php echo (isset($_POST['acquisitionPrice']))?$_POST['acquisitionPrice']:'';?>"
+			/>
 
 			<label for="plannedSellingPrice">Tervezett eladási ár: <em>&#x2a;</em></label>
-			<input id="plannedSellingPrice" name="plannedSellingPrice" required="" type="text" />
+			<input id="plannedSellingPrice" name="plannedSellingPrice" required="" type="text" 
+				value="<?php echo (isset($_POST['plannedSellingPrice']))?$_POST['plannedSellingPrice']:'';?>"
+			/>
 
 			<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
 			<button name="incomeTax" type="submit">Számítás</button>
@@ -59,44 +65,60 @@
 		<p>A fenti tájékoztatás nem teljeskörű, de a lényeg benne van. Minden esetben egyeztess ügyvéddel és könyvelővel, mielőtt belevágsz!</p>
 	</div>
 
-	<div class="calculatorForm" id="acquisitionTaxCalculator">
+	<div class="form" id="acquisitionTaxCalculator">
 		<h2>Vagyonszerzési illeték kalkulátor</h2>
 		<p>Adja meg az alábbi adatokat, és mi megmondjuk, pontosan mekkora összegű vagyonszerzési illetékre számíthat ingatlanvásárlás esetén!</p>
 		<form method="POST">
-			<label for="acquisitionPrice">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
-			<input id="acquisitionPrice" name="acquisitionPrice" required="" type="text" />
+			<label for="acquisitionPrice2">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
+			<input id="acquisitionPrice2" name="acquisitionPrice2" required="" type="text"
+				value="<?php echo (isset($_POST['acquisitionPrice2']))?$_POST['acquisitionPrice2']:'';?>"
+			/>
 
 			<div>
 				<label for="sellWithinOneYear">Adott el ingatlant egy éven belül? </label>
-				<input type="checkbox" id="sellWithinOneYear" name="sellWithinOneYear" value="sellWithinOneYear">
+				<input type="checkbox" id="sellWithinOneYear" name="sellWithinOneYear" value="sellWithinOneYear" 
+					<?php echo (isset($_POST['sellWithinOneYear']))?'checked':'unchecked';?>
+				/>
  			</div>
 
  			<label for="sellingPrice">Ebben az esetben adja meg az eladott ingatlan értékét!</label>
-			<input id="sellingPrice" name="sellingPrice" type="text" />
+			<input id="sellingPrice" name="sellingPrice" type="text" 
+				value="<?php echo (isset($_POST['sellingPrice']))?$_POST['sellingPrice']:'';?>"
+			/>
 
  			 <div>
  				<label for="forRelatives">Átruházás házastársak, egyenesági rokonok között? </label>
- 				<input type="checkbox" id="forRelatives" name="forRelatives" value="forRelatives">
+ 				<input type="checkbox" id="forRelatives" name="forRelatives" value="forRelatives" 
+ 					<?php echo (isset($_POST['forRelatives']))?'checked':'unchecked';?>
+ 				/>
  			</div>
 			
 			<div>
 				<label for="newEstate">Új építésű ingatlant vásárol? </label>
-				<input type="checkbox" id="newEstate" name="newEstate" value="newEstate">
+				<input type="checkbox" id="newEstate" name="newEstate" value="newEstate" 
+					<?php echo (isset($_POST['newEstate']))?'checked':'unchecked';?>
+				/>
 			</div>
 
 			<div>
 				<label for="firstProperty">Első lakástulajdon és Ön 35 év alatti? </label>
-				<input type="checkbox" id="firstProperty" name="firstProperty" value="firstProperty">
+				<input type="checkbox" id="firstProperty" name="firstProperty" value="firstProperty" 
+					<?php echo (isset($_POST['firstProperty']))?'checked':'unchecked';?>
+				/>
 			</div>
 
 			<div>
 				<label for="selfGoverning">Önkormányzati lakás? </label>
-				<input type="checkbox" id="selfGoverning" name="selfGoverning" value="selfGoverning">
+				<input type="checkbox" id="selfGoverning" name="selfGoverning" value="selfGoverning" 
+					<?php echo (isset($_POST['selfGoverning']))?'checked':'unchecked';?>
+				/>
 			</div>
 
 			<div>
 				<label for="plot">Telket vásárol és 4 éven belül lakóházat épít rajta? </label>
-				<input type="checkbox" id="plot" name="plot" value="plot">
+				<input type="checkbox" id="plot" name="plot" value="plot" 
+					<?php echo (isset($_POST['plot']))?'checked':'unchecked';?>
+				/>
 			</div>
 
 			<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
