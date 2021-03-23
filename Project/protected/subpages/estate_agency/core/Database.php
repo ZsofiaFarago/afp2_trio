@@ -1,10 +1,10 @@
 <?php
 class Database {
     const DB_TYPE = 'mysql';
-    const DB_HOST = 'localhost';
-    const DB_NAME = 'estatedb';
-    const DB_USER = 'root';
-    const DB_PASS = '';
+    const DB_HOST = 'bbvj1zk7r0zt6gpnrf3e-mysql.services.clever-cloud.com';
+    const DB_NAME = 'bbvj1zk7r0zt6gpnrf3e';
+    const DB_USER = 'uxpvvewdn6q0ez8f';
+    const DB_PASS = 'YGokHdOV0uOPhHw0PyTY';
     const DB_CHARSET = 'utf8';
  
     private static $instance = null;
