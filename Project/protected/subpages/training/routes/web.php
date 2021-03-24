@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use Illuminate\Contracts\View\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,7 @@ Route::get('/logout', function () {
 });
 
 Route::post("/login", [UserController::class, 'login']);
+Route::post("/register", [UserController::class, 'register']);
 Route::get("/", [ProductController::class, 'index']);
 Route::get("/detail/{id}", [ProductController::class, 'detail']);
 Route::get("/search", [ProductController::class, 'search']);
@@ -36,3 +38,5 @@ Route::get("/removecart/{id}", [ProductController::class, 'removeCart']);
 Route::get("/ordernow", [ProductController::class, 'orderNow']);
 Route::post("/orderplace", [ProductController::class, 'orderPlace']);
 Route::get("/myorders", [ProductController::class, 'myOrders']);
+
+Route::view('/register', 'register');

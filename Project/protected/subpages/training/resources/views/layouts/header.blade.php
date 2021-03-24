@@ -42,6 +42,7 @@ if(Session::has('user'))
         @else
         <li class="nav-item">
           <a class="nav-link" href="/login">Bejelentkezes({{ $total }})</a>
+          <a class="nav-link" href="/register">Regisztralas({{ $total }})</a>
         </li>
         @endif
         </ul>
