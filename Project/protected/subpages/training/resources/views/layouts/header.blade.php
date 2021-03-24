@@ -18,7 +18,7 @@ if(Session::has('user'))
             <a class="nav-link active" aria-current="page" href="#">Fooldal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Rendeles</a>
+            <a class="nav-link" aria-current="page" href="/myorders">Rendeles</a>
           </li>
          
           <form action="/search" class="d-flex">
