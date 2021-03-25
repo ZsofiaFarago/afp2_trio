@@ -9,7 +9,7 @@
 			<div>Fejléc</div>
 			<hr />
 			<nav>
-				<a href="index?S=job&A=menu1">Menü 1</a> | <a href="index?S=job&A=menu2">Menü 2</a> | stb.
+				<a href="index?S=job&A=register.php">Regisztáció</a> | <a href="index?S=job&A=menu2">Menü 2</a> | stb.
 				<hr />
 			</nav>
 		</header>
