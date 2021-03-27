@@ -50,7 +50,7 @@
 		<div class="div_content">
 			<h2>Kedvező ajánlat</h2>
 			<p>Vegye igénybe egyszerre két szolgáltatásunkat és kérjen ingatlan-értékbecslést energetikai tanúsítvánnyal! Ekkor 20% kedvezményt adunk a teljes árból.</p>
-			<a href=""><div class="go_on">Érdekel</div></a>
+			<a href="index?S=estate_agency&A=services"><div class="go_on">Érdekel</div></a>
 		</div>
 	</div>
 
@@ -58,7 +58,7 @@
 		<div class="div_content">
 			<h2>Számítsa ki kiadásait!</h2>
 			<p>Ingatlant szeretne eladni vagy vásárolni, és érdeklik a felmerülő költségek! Kalkulátoraink segítségével számtsa ki az Önt érintő személyi jövedelemadó vagy vagyonszerzési illeték értékét!</p>
-			<a href=""><div class="go_on">Érdekel</div></a>
+			<a href="index?S=estate_agency&A=calculators"><div class="go_on">Érdekel</div></a>
 		</div>
 	</div>
 
@@ -66,7 +66,7 @@
 		<div class="div_content">
 			<h2>Kérje szakértőink segítségét!</h2>
 			<p>Ingatlan-ügynökeink elérhetőségei nyilvánosak, kérje bátran segítségüket!</p>
-			<a href=""><div class="go_on">Érdekel</div></a>
+			<a href="index?S=estate_agency&A=agents"><div class="go_on">Érdekel</div></a>
 			<div id="flex-container">
 				<div id="flex-child">
 		    		<img src="<?=PUBLIC_DIR.'/images/estate_agency/agent_001.jpg'?>" />
@@ -93,7 +93,7 @@
 		<div class="div_content">
 			<h2>Lépjen velünk kapcsolatba!</h2>
 			<p>Kapcsolati űrlapunk segítségével neve, email címe megadásával üzenetet küldhet nekünk, melyben felteheti kérdéseit ingatlanos ügyeivel kapcsolatban, és szakértőink igyekeznek azt rövid időn belül megválaszolni az Ön által megadott email címre küldött üzenetben.</p>
-			<a href=""><div class="go_on">Érdekel</div></a>
+			<a href="index?S=estate_agency&A=contacts"><div class="go_on">Érdekel</div></a>
 		</div>
 	</div>
 

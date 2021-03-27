@@ -8,6 +8,7 @@
 		case 'calculators': require_once PROTECTED_DIR.'subpages/estate_agency/calculators.php'; break;
 		case 'catalogue': require_once PROTECTED_DIR.'subpages/estate_agency/catalogue.php'; break;
 		case 'contacts': require_once PROTECTED_DIR.'subpages/estate_agency/contacts.php'; break;
+		case 'registration': require_once PROTECTED_DIR.'subpages/estate_agency/registration.php'; break;
 
 		default: require_once PROTECTED_DIR.'error/404.php'; break;
 	}
