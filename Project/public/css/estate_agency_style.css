@@ -325,7 +325,12 @@ body {
 }
 
 /* Űrlapok */
-.calculatorForm {
+
+#registration_page {
+	margin-top: 20px;
+}
+
+.form {
   max-width: 500px;
   padding: 0px 20px 20px 20px;
   margin: 0px auto;
@@ -337,36 +342,36 @@ body {
   color: white;
 }
 
-.calculatorForm>p {
+.form>p {
 	padding-bottom: 15px;
 }
 
-.calculatorForm h2 {
+.form h2 {
   margin: 20px 0px 15px 0px;
   font-family: fantasy;
   color: #00a000;
 }
 
-.calculatorform label,
-.calculatorForm input {
+.form label,
+.form input {
 	font-size: 12pt;
 	line-height: 24pt;
 }
 
-.calculatorForm input[type=text] {
+.form input[type=text], input[type=password] {
 	display: block;
-	width: 50%;
+	width: 100%;
 }
 
 #acquisitionTaxCalculator div input {
 	display: inline;
 }
 
-.calculatorForm input {
+.form input {
 	margin-bottom: 15px;
 }
 
-.calculatorForm h3 {
+.form h3 {
   font-weight: normal;
   font-size: 10pt;
   line-height: 24pt;
@@ -375,16 +380,16 @@ body {
   color: #00a000;
 }
 
-.calculatorForm span {
+.form span {
   font-size: 8pt;
 }
 
-.calculatorForm em {
+.form em {
   color: #00a000;
   font-weight: bold;
 }
 
-.calculatorForm input {
+.form input {
   border: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
@@ -393,11 +398,11 @@ body {
   background-color: #eeeeee;
 }
 
-.calculatorForm input:focus,
-.calculatorForm textarea:focus {
+.form input:focus,
+.form textarea:focus {
   border: 1px solid #00a000;
 }
-.calculatorForm button {
+.form button {
   display: block;
   line-height: 24pt;
   padding: 0 20px;
@@ -410,15 +415,15 @@ body {
   outline: none;
 }
 
-.calculatorForm button:hover {
+.form button:hover {
   background: inherit;
   color: #00a000;
   border-bottom: 2px solid #00a000;
 }
 
-.calculatorForm input:-webkit-autofill,
-.calculatorForm input:-webkit-autofill:hover,
-.calculatorForm input:-webkit-autofill:focus {
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:hover,
+.form input:-webkit-autofill:focus {
   border: 1px solid #00a000;
   -webkit-text-fill-color: #00a000;
   -webkit-box-shadow: 0 0 0px 1000px #00a000 inset;
