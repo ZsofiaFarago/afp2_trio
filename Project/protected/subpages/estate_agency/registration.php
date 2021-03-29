@@ -5,10 +5,15 @@
 ?>
 
 <div id="registration_page">
+<?php
+	include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
+	include_once PROTECTED_DIR.'subpages/estate_agency/controller/registrationController.php';
+	$controller = new registrationController();
+?>
 	<div class="form" id="registrationForm">
 		<h2>Regisztráció</h2>
 		<?php
-			// $controller->getPersonalIncomeTax();
+			$controller->registerNewClient();
 		?>
 		<form method="POST">
 	    	<label for="lastName">Vezetéknév <em>&#x2a;</em></label>
@@ -32,8 +37,8 @@
 			<label for="city">Város <em>&#x2a;</em></label>
 			<input id="city" name="city" required="" type="text" />
 
-			<label for="zipCode">Irányítószám <em>&#x2a;</em></label>
-			<input id="zipCode" name="zipCode" required="" type="text" />
+			<label for="zipcode">Irányítószám <em>&#x2a;</em></label>
+			<input id="zipcode" name="zipcode" required="" type="text" />
 
 			<label for="streetName">Közterület neve <em>&#x2a;</em></label>
 			<input id="streetName" name="streetName" required="" type="text" />
