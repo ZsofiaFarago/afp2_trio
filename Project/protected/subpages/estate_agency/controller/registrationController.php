@@ -56,7 +56,7 @@
                 $errorMessage = "Hibásan adta meg a vezetéknevét! A neve minden tagjában az első karakter nagy, a többi kicsi legyen! Nem tartalmazhat számjegyeket, speciális karakterket vagy felesleges szóközöket. Ha több tagból áll a neve, a tagokat egy szóköz vagy kötőjel választhatja el.";
             }
 
-            if(!$this->checkEmail($this->email)) {
+            if(!$this->checkEmail($this->firstName)) {
                 $errorMessage = "Hibásan adta meg a keresztnevét! A neve minden tagjában az első karakter nagy, a többi kicsi legyen! Nem tartalmazhat számjegyeket, speciális karakterket vagy felesleges szóközöket. Ha több tagból áll a neve, a tagokat egy szóköz választhatja el.";
             }
 
@@ -98,6 +98,8 @@
             if($this->model->getClientByEmail($this->email) != null) {
                 $errorMessage = "A megadott email címmel már regisztráltak az oldalra!";
             }
+
+            return $errorMessage;
         }
 
         public function registerNewClient() {
@@ -113,7 +115,8 @@
     			$this->password = $_POST['password'];
     			$this->passwordAgain = $_POST['passwordAgain'];
 
-    			if($this->getErrorMessage() == "") {
+    			$errorMessage = $this->getErrorMessage();
+                if($errorMessage == "") {
     				$cityId = $this->saveCityData($this->city, $this->zipcode);
     				$addressId = $this->saveAddressData($this->streetName, $this->streetNumber, $cityId);
     				$this->model->registerClient($this->firstName, $this->lastName, $this->email, $this->phone, $this->password, $addressId);
@@ -122,6 +125,7 @@
     				$this->addViewParams('errorMessage', $errorMessage);
                 	$this->renderPage('formErrorMessageView');
     			}
+                unset($_POST);
     		}
     	}
 	}
