@@ -13,7 +13,7 @@ class RegistrationRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,20 @@ class RegistrationRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|max:16|min:3',
+            'email' => 'required',
+            'password' => 'required',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+
+            'name.min' => 'A nevnek legalabb 3 karakterbol kell allnia!',
+            'name.max' => 'A nev nem lehet hosszabb 16 karakternel.',
+            'email.required' => 'Email megadasa kotelezo',
+            'password.required' => 'A jelszo mezo nem lehet ures.',
         ];
     }
 }
