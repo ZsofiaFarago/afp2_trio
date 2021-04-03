@@ -12,6 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     {{ view('layouts.header') }}
@@ -20,37 +22,4 @@
     @yield('content')
     {{ view('layouts.footer') }}
 </body>
-<style>
-    img.slider-img {
-        height: 400px !important;
-    }
-    .custom-product{
-        height: 600px;
-    }
-    .slider-text{
-        background: #35443585 !imporant;
-    }
-    .trending-image{
-        height: 100px;
-    }
-    .trending-itme{
-        float:left;
-        width: 20%;
-    }
-    .trending-wrapper{
-        margin: 20px;
-    }
-    .detail-img{
-        height: 200px;
-    }
-    .search-box
-    {
-        width: 500px !important;
-    }
-    .cart-list-devider{
-        border-bottom: 1px solid grey;
-        margin-bottom: 20px;
-        padding-bottom: 20px
-    }
-</style>
 </html>
