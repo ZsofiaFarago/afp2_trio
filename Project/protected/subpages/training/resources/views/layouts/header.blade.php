@@ -6,46 +6,36 @@ if(Session::has('user'))
   $total = ProductController::cartItem();
 }
 ?>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">Added Muscle</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Fooldal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/myorders">Rendeles</a>
-          </li>
-         
-          <form action="/search" class="d-flex">
-            <input class="form-control search-box" type="text" placeholder="Search" aria-label="Search" name="query">
-            <button class="btn btn-outline-success" type="submit">Kereses</button>
-          </form>
-        </ul>
-        <ul class="nav navbar-nav navbarright">
-          <li class="nav-item">
-            <a class="nav-link" href="/cart">Kosar({{ $total }})</a>
-          </li>
-          @if(Session::has('user'))
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            {{ Session::get('user')['name'] }}
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/logout">Kijelentkezes</a></li>
-          </ul>
-        </li>
-        @else
-        <li class="nav-item">
-          <a class="nav-link" href="/login">Bejelentkezes({{ $total }})</a>
-          <a class="nav-link" href="/register">Regisztralas({{ $total }})</a>
-        </li>
-        @endif
-        </ul>
-      </div>
-    </div>
-  </nav>
+
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+	<a href="/" class="navbar-brand">Added<b>Muscle</b></a>  		
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">		
+		<form action="/search" class="navbar-form form-inline">
+			<div class="input-group search-box">								
+				<input type="text" id="search" class="form-control" placeholder="Search here..." name="query">
+        <button class="btn btn-outline-success" type="submit">Keresés</button>
+			</div>
+		</form>
+		<div class="navbar-nav ml-auto">
+			<a href="/" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Főoldal</span></a>
+			<a href="/myorders" class="nav-item nav-link"><i class="fa fa-calendar-check-o"></i><span>Rendelés</span></a>
+			<a href="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart"></i><span>Kosár ({{ $total }})</span></a>
+      @if(Session::has('user'))
+      <div class="nav-item dropdown ">
+				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><i class="fa fa-user" aria-hidden="true"></i> {{ Session::get('user')['name'] }}<b class="caret"></b></a>
+				<div class="dropdown-menu">
+          <a href="/logout" class="nav-item nav-link"><span><i class="fa fa-sign-out"></i>Kijelentkezés</span></a>
+				</div>
+			</div>
+      @else
+			<a href="/login" class="nav-item nav-link"><i class="fa fa-sign-in"></i><span>Bejelentkezes</span></a>		
+			<a href="/register" class="nav-item nav-link"><i class="fa fa-user-plus"></i><span>Regisztrálás</span></a>
+      @endif
+		</div>
+	</div>
+</nav>
+
+
