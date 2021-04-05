@@ -5,12 +5,12 @@
 ?>
 <div id="calculators_page">
 
-	<div class="calculator-content" id="calculator-intro">
+	<div class="text-content intro">
 		<h1>Adó és illeték fizetése ingatlan adásvétel esetén</h1>
 		<p>Mielőtt lakás eladásba vagy vásárlásba vágsz, érdemes tudnod, hogy az eladásnak és a vásárlásnak is költségei vannak. Ha van egy kereted, amiből vennél, vagy egy elképzelt összeg, mit az eladásból vársz, kellemetlen meglepetések érhetnek, ha nem számolsz Állambácsi pénzével.</p>
 	</div>
 
-	<div class="calculator-content" id="incomeTax-text">
+	<div class="text-content" id="incomeTax-text">
 		<h2>Adó fizetése ingatlan eladás esetén</h2>
 		<p>Ingatlan eladás után személyi jövedelem adót kell fizetni. Az adó mértéke 15%. Ha a tulajdonos drágábban adja el a lakást mint amennyiért megvette, tehát NYERESÉGE van, adófizetési kötelezettsége keletkezik. Az adóalap mértéke az eltelt idő függvényében csökken. A tulajdonos a szerzést követő 5. évben már nem köteles adót fizetni.</p> 
 		<p>Az adóalapból levonható:</p>
@@ -49,7 +49,7 @@
 		?>
 	</div>
 
-	<div class="calculator-content" id="acquisitionTax-text">
+	<div class="text-content" id="acquisitionTax-text">
 		<h2>Vagyonszerzési illeték ingatlanvásárlás esetén</h2>
 		<p>Lakásvásárlás esetén a vételár 4%-ára tart igényt Állambácsi. Tehát ha 20 000 000 Ft-ért vettél egy lakást, akkor 800 000 Ft-ot kell majd befizetned. Sokat nem kell várnod a csekkre, mert mikor adásvételi szerződés aláírása után a földhivatalba feljegyzik az adásvétel tényét, a NAV már írja is neked a levelet, hogy fizess. Ha az segítség neked, érdemes részletfizetést kérni.</p>
 		<p>Illeték kedvezmények:</p>
