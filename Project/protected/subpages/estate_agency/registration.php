@@ -1,9 +1,3 @@
-<?php
-	// include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
-	// include_once PROTECTED_DIR.'subpages/estate_agency/controller/calculatorController.php';
-	// $controller = new calculatorController();
-?>
-
 <div id="registration_page">
 <?php
 	include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
