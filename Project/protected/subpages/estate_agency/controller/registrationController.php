@@ -1,9 +1,13 @@
 <?php
+    include_once PROTECTED_DIR.'subpages/estate_agency/core/validation.php';
 	class registrationController extends MyController {
 	    public function __construct() {
 	        parent::__construct();
 	        $this->setModel('registrationModel');
+            $this->validation = new Validation();
     	}
+
+        private $validation;
 
         private $firstName;
         private $lastName;
@@ -15,20 +19,6 @@
         private $streetNumber;
         private $password;
         private $passwordAgain;
-
-	    private function checkEmail($email) {
-	    	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  				return false;
-			}
-			return true;
-	    }
-
-	    private function checkStringByRegex($name, $regex) {
-	    	if (!preg_match($regex, $name)) {
-				return false;
-			}
-			return true;
-	    }
 
 	    private function saveCityData($city, $zipcode) {
 	    	$cityRecord = $this->model->getCityByZipcode($zipcode);
@@ -52,16 +42,20 @@
             $errorMessage = "";
 
             $regex = "/^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéííóöőúü]{1,19}(?:[ -][A-ZÁÉÍÓÖŐÚÜŰ][a-záéííóöőúü]{1,19}){0,2}$/";
-            if (!$this->checkStringByRegex($this->lastName, $regex)) {
+            if (!$this->validation->checkStringByRegex($this->lastName, $regex)) {
                 $errorMessage = "Hibásan adta meg a vezetéknevét! A neve minden tagjában az első karakter nagy, a többi kicsi legyen! Nem tartalmazhat számjegyeket, speciális karakterket vagy felesleges szóközöket. Ha több tagból áll a neve, a tagokat egy szóköz vagy kötőjel választhatja el.";
             }
 
-            if(!$this->checkEmail($this->firstName)) {
+            if(!$this->validation->checkStringByRegex($this->firstName)) {
                 $errorMessage = "Hibásan adta meg a keresztnevét! A neve minden tagjában az első karakter nagy, a többi kicsi legyen! Nem tartalmazhat számjegyeket, speciális karakterket vagy felesleges szóközöket. Ha több tagból áll a neve, a tagokat egy szóköz választhatja el.";
             }
 
+            if(!$this->validation->checkEmail($this->firstName)) {
+                $errorMessage = "Hibás email cím! Minta: username@domain.com";
+            }
+
             $regex = "/^(06)[ -]{0,1}(20|30|70|90)[ -]{0,1}[0-9]{3}[ -]{0,1}[0-9]{4}$/";
-            if(!$this->checkStringByRegex($this->phone, $regex)) {
+            if(!$this->validation->checkStringByRegex($this->phone, $regex)) {
                 $errorMessage = "A telefonszámot helytelenül adta meg! Mobilszámot kell megadnia, 06-tal kell kezdődenie, a következő 2 számjegy a hívószám (20, 30, 70 vagy 90), utána a telefonszám 7 karaktere következik. Minták: 
                         <ul>
                             <li>06201234567</li>
@@ -72,22 +66,22 @@
             }
 
             $regex = "/^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéííóöőúü]{1,19}(?:[ -][A-ZÁÉÍÓÖŐÚÜŰa-záéííóöőúü][a-záéííóöőúü]{1,19}){0,2}$/";
-            if(!$this->checkStringByRegex($this->city, $regex)) {
+            if(!$this->validation->checkStringByRegex($this->city, $regex)) {
                 $errorMessage = "A település nevét helytelenül adta meg!";
             }
 
             $regex = "/^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéííóöőúü]{1,19}((?:[ -][A-ZÁÉÍÓÖŐÚÜŰ][a-záéííóöőúü]{1,19}){0,2}( )(utca|u.|út|tér|köz|fasor|körút|sétány))$/";
-            if(!$this->checkStringByRegex($this->streetName, $regex)) {
+            if(!$this->validation->checkStringByRegex($this->streetName, $regex)) {
                 $errorMessage = "Az utcanév helytelen. Az utcanév nagy kezdőbetűvel kezdődik, nem tartalmaz számokat, spec. karaktereket, tagjait szóközzel vagy kötőjellel lehet elválasztani, a végén pedig szóközzel elválasztva ki kell tenni a közterület típusát, ami lehet: út, utca, u., tér, körút, köz, fasor, sétány.";
             }
 
             $regex = "/^[1-9][0-9]{0,2}([\/][A-Z]{1}){0,1}$/";
-            if(!$this->checkStringByRegex($this->streetNumber, $regex)) {
+            if(!$this->validation->checkStringByRegex($this->streetNumber, $regex)) {
                 $errorMessage = "A házszámot helytelenül adta meg, helyes formátumok: 8, 12, 11/A, 23/B stb.";
             }
 
             $regex = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/";
-            if(!$this->checkStringByRegex($this->password, $regex)) {
+            if(!$this->validation->checkStringByRegex($this->password, $regex)) {
                 $errorMessage = "Nem megfelelő jelszót választott! A jelszónak legalább 8 karakteresnek kell lennie, tartalmaznia kell legalább egy kisbetűt, legalább egy nagybetűt és legalább egy számjegyet!";
             }
 
