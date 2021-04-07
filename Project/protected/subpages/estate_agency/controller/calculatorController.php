@@ -1,41 +1,13 @@
 <?php
+include_once PROTECTED_DIR.'subpages/estate_agency/core/validation.php';
 class calculatorController extends MyController {
     public function __construct() {
         parent::__construct();
         $this->setModel('calculatorModel');
-    }
-    
-    private function checkIfAllRequiredDataIsGiven($required) {
-        foreach($required as $field) {
-            if (!isset($_POST[$field]) || empty($_POST[$field])) {
-                return false;
-            }
-        }
-        return true;
+        $this->validation = new Validation();
     }
 
-    private function checkIfAllRequiredDataIsNumeric($required) {
-        foreach($required as $field) {
-            if (!is_numeric($_POST[$field])) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private function checkYear($year) {
-        if(0 <= $year && $year <= (int)date("Y")) {
-            return true;
-        }
-        return false;
-    }
-
-    private function checkPrice($price) {
-        if(0 <= $price) {
-            return true;
-        }
-        return false;
-    }
+    private $validation;
 
     public function getPersonalIncomeTaxForm() {
         $this->renderPage('personalIncomeTaxView');
@@ -49,11 +21,11 @@ class calculatorController extends MyController {
         if(array_key_exists('incomeTax', $_POST)) {
             $required = array('acquisitionYear', 'acquisitionPrice', 'plannedSellingPrice');
             
-            $isEverythingGiven = $this->checkIfAllRequiredDataIsGiven($required);
-            $isEveryThingInteger = $this->checkIfAllRequiredDataIsNumeric($required);
-            $isYearCorrect = $this->checkYear($_POST['acquisitionYear']);
-            $isAcquisitionPriceCorrect = $this->checkPrice($_POST['acquisitionPrice']);
-            $isSellingPriceCorrect = $this->checkPrice($_POST['plannedSellingPrice']);
+            $isEverythingGiven = $this->validation->checkIfAllRequiredDataIsGiven($required);
+            $isEveryThingInteger = $this->validation->checkIfAllRequiredDataIsNumeric($required);
+            $isYearCorrect = $this->validation->checkYear($_POST['acquisitionYear']);
+            $isAcquisitionPriceCorrect = $this->validation->checkPrice($_POST['acquisitionPrice']);
+            $isSellingPriceCorrect = $this->validation->checkPrice($_POST['plannedSellingPrice']);
             
             unset($_POST['incomeTax']);
             $errorMessage = "";
@@ -94,10 +66,10 @@ class calculatorController extends MyController {
             }
 
             $required = array('acquisitionPrice2');
-            $isAcquisitionPriceSet = $this->checkIfAllRequiredDataIsGiven($required);
-            $isAcquisitionPriceNumeric = $this->checkIfAllRequiredDataIsNumeric($required);
+            $isAcquisitionPriceSet = $this->validation->checkIfAllRequiredDataIsGiven($required);
+            $isAcquisitionPriceNumeric = $this->validation->checkIfAllRequiredDataIsNumeric($required);
             $acquisitionPrice = $_POST['acquisitionPrice2'];
-            $isAcquisitionPriceCorrect = $this->checkPrice($acquisitionPrice);
+            $isAcquisitionPriceCorrect = $this->validation->checkPrice($acquisitionPrice);
 
             $errorMessage = "";
 
@@ -112,9 +84,9 @@ class calculatorController extends MyController {
             $required = array('sellingPrice');
             $sellingPrice = $_POST['sellingPrice'];
             if($sellWithinOneYear) {
-                $isSellingPriceGiven = $this->checkIfAllRequiredDataIsGiven($required);
-                $isSellingPriceNumeric = $this->checkIfAllRequiredDataIsNumeric($required);
-                $isSellingPriceCorrect = $this->checkPrice($sellingPrice);
+                $isSellingPriceGiven = $this->validation->checkIfAllRequiredDataIsGiven($required);
+                $isSellingPriceNumeric = $this->validation->checkIfAllRequiredDataIsNumeric($required);
+                $isSellingPriceCorrect = $this->validation->checkPrice($sellingPrice);
                 if(!$isSellingPriceGiven) {
                     $errorMessage = "Ha bejelölte, hogy egy éven belül adott el ingatlant, adja meg annak az árát is!";
                 } else if(!$isSellingPriceNumeric) {
