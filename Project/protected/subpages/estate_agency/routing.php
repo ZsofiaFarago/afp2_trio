@@ -3,6 +3,7 @@
 		$_GET['A'] = 'home';
 	switch ($_GET['A']) {
 		case 'home': require_once PROTECTED_DIR.'subpages/estate_agency/main.php'; break;
+		case 'login': require_once PROTECTED_DIR.'subpages/estate_agency/login.php'; break;
 		case 'services': require_once PROTECTED_DIR.'subpages/estate_agency/services.php'; break;
 		case 'agents': require_once PROTECTED_DIR.'subpages/estate_agency/agents.php'; break;
 		case 'calculators': require_once PROTECTED_DIR.'subpages/estate_agency/calculators.php'; break;

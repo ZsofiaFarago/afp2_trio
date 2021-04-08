@@ -28,9 +28,9 @@
 				<br hidden />
 				<a class="menu" id="contacts" href="index?S=estate_agency&A=contacts">Kapcsolatok</a>
 				<br id="br1" hidden />
-				<a class="menu" id="login" href="">Bejelentkezés</a>
+				<a class="menu" id="login" href="index?S=estate_agency&A=login">Bejelentkezés</a>
 				<br hidden />
-				<a class="menu" id="signup" href="">Regisztráció</a>
+				<a class="menu" id="signup" href="index?S=estate_agency&A=registration">Regisztráció</a>
 			</div>
 		</div>
 		<div id="content">
