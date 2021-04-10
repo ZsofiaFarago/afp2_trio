@@ -22,7 +22,7 @@ if(Session::has('user'))
 		<div class="navbar-nav ml-auto">
 			<a href="/" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Főoldal</span></a>
       @if(Session::has('user'))
-			<a href="/myorders" class="nav-item nav-link"><i class="fa fa-calendar-check-o"></i><span>Rendelés</span></a>
+			<a href="/myorders" class="nav-item nav-link"><i class="fa fa-calendar-check-o"></i><span>Rendeléseid</span></a>
 			<a href="/cart" class="nav-item nav-link"><i class="fa fa-shopping-cart"></i><span>Kosár ({{ $total }})</span></a>
       <div class="nav-item dropdown ">
 				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><i class="fa fa-user" aria-hidden="true"></i> {{ Session::get('user')['name'] }}<b class="caret"></b></a>

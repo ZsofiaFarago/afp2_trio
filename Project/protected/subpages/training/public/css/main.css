@@ -366,3 +366,23 @@ input:focus ~ .highlight {
     background-size: cover;
     opacity: 0.65;
 }
+
+/* ORDERED */
+
+.ordered-title {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.custom-product {
+    height: 100%;
+}
+
+.ordered-item-img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ordered-list-details {
+    padding-left: 5%;
+}
