@@ -1,13 +1,13 @@
 <?php
 	class UserManager {
 		
-		private function ___construct() {
+		private function __construct() {
 		}
 
 		private static $instance;
 		private $db;
 
-		public static UserManager getInstance() {
+		public static function getInstance() {
 			if(self::$instance == null) {
 				self::$instance = new UserManager();
 			}
@@ -18,12 +18,12 @@
 			return $_SESSION != null && array_key_exists('uid', $_SESSION) &&is_numeric($_SESSION['uid']);
 		}
 
-		function userLogout() {
+		public function userLogout() {
 			session_destroy();
 			header('Location:'.'http://localhost/project/index.php?S=estate_agency');
 		}
 
-		function userLogin($email, $password) {
+		public function userLogin($email, $password) {
 			$queryString = "SELECT * FROM client WHERE email = :email AND password = :password;";
 			$queryParams = [
 				':email' => $email,

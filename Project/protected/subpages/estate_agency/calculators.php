@@ -31,9 +31,9 @@
 				value="<?php echo (isset($_POST['acquisitionYear']))?$_POST['acquisitionYear']:'';?>"
 			/> 
 
-			<label for="acquisitionPrice">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
-			<input id="acquisitionPrice" name="acquisitionPrice" required="" type="text" 
-				value="<?php echo (isset($_POST['acquisitionPrice']))?$_POST['acquisitionPrice']:'';?>"
+			<label for="acquisitionPrice_incomeTax">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
+			<input id="acquisitionPrice_incomeTax" name="acquisitionPrice_incomeTax" required="" type="text" 
+				value="<?php echo (isset($_POST['acquisitionPrice_incomeTax']))?$_POST['acquisitionPrice_incomeTax']:'';?>"
 			/>
 
 			<label for="plannedSellingPrice">Tervezett eladási ár: <em>&#x2a;</em></label>
@@ -69,9 +69,9 @@
 		<h2>Vagyonszerzési illeték kalkulátor</h2>
 		<p>Adja meg az alábbi adatokat, és mi megmondjuk, pontosan mekkora összegű vagyonszerzési illetékre számíthat ingatlanvásárlás esetén!</p>
 		<form method="POST">
-			<label for="acquisitionPrice2">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
-			<input id="acquisitionPrice2" name="acquisitionPrice2" required="" type="text"
-				value="<?php echo (isset($_POST['acquisitionPrice2']))?$_POST['acquisitionPrice2']:'';?>"
+			<label for="acquisitionPrice_acqTax">Az ingatlan megszerzésének értéke: <em>&#x2a;</em></label>
+			<input id="acquisitionPrice_acqTax" name="acquisitionPrice_acqTax" required="" type="text"
+				value="<?php echo (isset($_POST['acquisitionPrice_acqTax']))?$_POST['acquisitionPrice_acqTax']:'';?>"
 			/>
 
 			<div>
