@@ -11,8 +11,9 @@
 		private $validation;
 		private $errorMessages;
 
-		public function geterrorMessages() {
+		public function getErrorMessages() {
 			return $this->errorMessages;
+			$this->errorMessages = [];
 		}
 
 		public function setFirstNameErrorMessage($firstName) {
@@ -93,6 +94,34 @@
                 $errorMessage = "A két jelszó nem egyezik meg!";
                 array_push($this->errorMessages, $errorMessage);
             }
+		}
+
+		public function setRequiredErrorMessage($required) {
+			if(!$this->validation->checkIfAllRequiredDataIsGiven($required)) {
+				$errorMessage = "Minden kötelező mezőt ki kell tölteni!";
+				array_push($this->errorMessages, $errorMessage);
+			}
+		}
+
+		public function setNotNumericErrorMessage($required) {
+			if(!$this->validation->checkIfAllRequiredDataIsNumeric($required)) {
+				$errorMessage = "Hiba: nem számot adott meg! Használjon egész számokat a mezőkben!";
+				array_push($this->errorMessages, $errorMessage);
+			}
+		}
+
+		public function setAcquisitionPriceErrorMessage($acquisitionPrice) {
+			if(!$this->validation->checkPrice($acquisitionPrice)) {
+				$errorMessage = "Hiba: a szerzési ár nem megfelelő! Pozitv egész számokat adjon meg!";
+				array_push($this->errorMessages, $errorMessage);
+			}
+		}
+
+		public function setSellingPriceErrorMessage($sellingPrice) {
+			if(!$this->validation->checkPrice($sellingPrice)) {
+				$errorMessage = "Hiba: az eladási ár nem megfelelő! Pozitv egész számokat adjon meg!";
+				array_push($this->errorMessages, $errorMessage);
+			}
 		}
 	}
 ?>
