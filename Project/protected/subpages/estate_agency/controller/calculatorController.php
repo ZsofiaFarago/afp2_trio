@@ -1,111 +1,102 @@
 <?php
-include_once PROTECTED_DIR.'subpages/estate_agency/core/validation.php';
+include_once PROTECTED_DIR.'subpages/estate_agency/core/errorMessageMaker.php';
 class calculatorController extends MyController {
     public function __construct() {
         parent::__construct();
         $this->setModel('calculatorModel');
-        $this->validation = new Validation();
+        $this->errorMessageMaker = new ErrorMessageMaker();
     }
 
-    private $validation;
+    private $acquisitionYear;
+    private $acquisitionPrice_incomeTax;
+    private $plannedSellingPrice;
+    private $personalIncomeTax;
 
-    public function getPersonalIncomeTaxForm() {
-        $this->renderPage('personalIncomeTaxView');
+    private $sellWithinOneYear;
+    private $forRelatives;
+    private $newEstate;
+    private $firtsProperty;
+    private $selfGoverning;
+    private $plot;
+    private $acquisitionPrice_acqTax;
+    private $sellingPrice;
+
+    private $errorMessageMaker;
+
+    private function getIncomeTaxPostData() {
+        $acquisitionYear = $_POST['acquisitionYear'];
+        $acquisitionPrice_incomeTax = $_POST['acquisitionPrice_incomeTax'];
+        $plannedSellingPrice = $_POST['plannedSellingPrice'];
     }
 
-    public function getAcquisitionTaxForm() {
-        $this->renderPage('acquisitionTaxView');
+    private function getAcquisitionTaxPostData() {
+        $boolValues = array('sellWithinOneYear', 'forRelatives', 'newEstate', 'firstProperty', 'selfGoverning', 'plot');
+        foreach ($boolValues as $value) {
+            if(isset($_POST[$value])) {
+                $$value = true;
+            } else {
+                $$value = false;
+            }
+        }
+        $this->acquisitionPrice_acqTax = $_POST['acquisitionPrice_acqTax'];
+        $this->sellingPrice = $_POST['sellingPrice'];
+    }
+
+    private function getIncomeTaxErrorMessages() {
+        $required = array('acquisitionYear', 'acquisitionPrice_incomeTax', 'plannedSellingPrice');
+        $this->errorMessageMaker->setRequiredErrorMessage($required);
+        $this->errorMessageMaker->setNotNumericErrorMessage($required);
+        $this->errorMessageMaker->setYearErrorMessage($this->acquisitionYear);
+        $this->errorMessageMaker->setAcquisitionPriceErrorMessage($this->acquisitionPrice_incomeTax);
+        $this->errorMessageMaker->setSellingPriceErrorMessage($this->plannedSellingPrice);
+        $errorMessages = $this->errorMessageMaker->getErrorMessages();
+        return $errorMessages;
+    }
+
+    private function getAcquisitionTaxErrorMessages() {
+            $required = array('acquisitionPrice_acqTax');
+            $this->errorMessageMaker->setRequiredErrorMessage($required);
+            $this->errorMessageMaker->setNotNumericErrorMessage($required);
+            $errorMessages = $this->errorMessageMaker->getErrorMessages();
+            if($this->sellWithinOneYear) {
+                $required = array('sellingPrice');
+                $this->errorMessageMaker->setRequiredErrorMessage($required);
+                $this->errorMessageMaker->setNotNumericErrorMessage($required);
+                $this->errorMessageMaker->setSellingPriceErrorMessage($this->sellingPrice);
+            }
+            $this->errorMessageMaker->setAcquisitionPriceErrorMessage($this->acquisitionPrice_incomeTax);
+            return $errorMessages;
     }
 
     public function getPersonalIncomeTax() {
         if(array_key_exists('incomeTax', $_POST)) {
-            $required = array('acquisitionYear', 'acquisitionPrice', 'plannedSellingPrice');
-            
-            $isEverythingGiven = $this->validation->checkIfAllRequiredDataIsGiven($required);
-            $isEveryThingInteger = $this->validation->checkIfAllRequiredDataIsNumeric($required);
-            $isYearCorrect = $this->validation->checkYear($_POST['acquisitionYear']);
-            $isAcquisitionPriceCorrect = $this->validation->checkPrice($_POST['acquisitionPrice']);
-            $isSellingPriceCorrect = $this->validation->checkPrice($_POST['plannedSellingPrice']);
-            
-            unset($_POST['incomeTax']);
-            $errorMessage = "";
-            if(!$isEverythingGiven) {
-                $errorMessage = "Nem adott meg minden szükséges értéket!";
-            } else if(!$isEveryThingInteger) {
-                $errorMessage = "Ügyeljen rá, hogy ahol számadatot kell megadni, csak számjegyeket használjon (ingatlnaszerzés éve, értéke, eladási ár)!";
-            } else if(!$isYearCorrect) {
-                $errorMessage = "Az eladás évét hibásan adta meg!";
-            } else if (!$isAcquisitionPriceCorrect) {
-                $errorMessage = "Az ingatlanszerzés értékét hibásan adta meg!";
-            } else if (!$isSellingPriceCorrect) {
-                $errorMessage = "Az eladási árat hibásan adta meg!";
-            } else {
-                $acquisitionYear = $_POST['acquisitionYear'];
-                $acquisitionPrice = $_POST['acquisitionPrice'];
-                $plannedSellingPrice = $_POST['plannedSellingPrice'];
-                $personalIncomeTax = $this->model->calculatePersonalIncomeTax($acquisitionYear, $acquisitionPrice, $plannedSellingPrice);
+            $this->getIncomeTaxPostData();
+            $errorMessages = $this->getIncomeTaxErrorMessages();
+            if(count($errorMessages) == 0) {
+                $personalIncomeTax = $this->model->calculatePersonalIncomeTax($this->acquisitionYear, $this->acquisitionPrice_incomeTax, $this->plannedSellingPrice);
                 $this->addViewParams('personalIncomeTax', $personalIncomeTax);
                 $this->renderPage('personalIncomeTaxView');
-                return;
+            } else {
+                $this->addViewParams('errorMessages', $errorMessages);
+                $this->renderPage('formErrorMessageView');
             }
-            $this->addViewParams('errorMessage', $errorMessage);
-            $this->renderPage('formErrorMessageView');
         }
     }
 
     public function getAcquisitionTax() {
         if(array_key_exists('acquisitionTax', $_POST)) {
-            $boolValues = array('sellWithinOneYear', 'forRelatives', 'newEstate', 'firstProperty', 'selfGoverning', 'plot');
-            $sellWithinOneYear; $forRelatives; $newEstate; $firtsProperty; $selfGoverning; $plot;
-            foreach ($boolValues as $value) {
-                if(isset($_POST[$value])) {
-                    $$value = true;
-                } else {
-                    $$value = false;
-                }
+            $this->getAcquisitionTaxPostData();
+            $errorMessages = $this->getAcquisitionTaxErrorMessages();
+            if(!$this->sellWithinOneYear) {
+                $this->sellingPrice = 0;
             }
-
-            $required = array('acquisitionPrice2');
-            $isAcquisitionPriceSet = $this->validation->checkIfAllRequiredDataIsGiven($required);
-            $isAcquisitionPriceNumeric = $this->validation->checkIfAllRequiredDataIsNumeric($required);
-            $acquisitionPrice = $_POST['acquisitionPrice2'];
-            $isAcquisitionPriceCorrect = $this->validation->checkPrice($acquisitionPrice);
-
-            $errorMessage = "";
-
-            if(!$isAcquisitionPriceSet) {
-                $errorMessage = "Nem adta meg a vásárolt ingatlan árát!";
-            } else if(!$isAcquisitionPriceNumeric) {
-                $errorMessage = "A vásárolt ingatlan árának megadásakor csak számjegyeket használjon!";
-            } else if(!$isAcquisitionPriceCorrect) {
-                $errorMessage = "A vásárolt ingatlan árát hibásan adta meg!";
-            }
-
-            $required = array('sellingPrice');
-            $sellingPrice = $_POST['sellingPrice'];
-            if($sellWithinOneYear) {
-                $isSellingPriceGiven = $this->validation->checkIfAllRequiredDataIsGiven($required);
-                $isSellingPriceNumeric = $this->validation->checkIfAllRequiredDataIsNumeric($required);
-                $isSellingPriceCorrect = $this->validation->checkPrice($sellingPrice);
-                if(!$isSellingPriceGiven) {
-                    $errorMessage = "Ha bejelölte, hogy egy éven belül adott el ingatlant, adja meg annak az árát is!";
-                } else if(!$isSellingPriceNumeric) {
-                    $errorMessage = "Az az eladási ár megadásakor csak számjegyeket használjon!";
-                } else if(!$isSellingPriceCorrect) {
-                    $errorMessage = "Helytelenül adta meg az eladási árat!";
-                }
-            } else {
-                $sellingPrice = 0;
-            }
-
-            unset($_POST['acquisitionTax']);
-            if($errorMessage == "") {
-                $acquisitionTax = $this->model->calculateAcquisitionTax($acquisitionPrice, $sellWithinOneYear, $sellingPrice, $forRelatives, $newEstate, $firstProperty, $selfGoverning, $plot);
+            if(count($errorMessages) == 0) {
+                $acquisitionTax = $this->model->calculateAcquisitionTax($this->acquisitionPrice_acqTax, $this->sellWithinOneYear, $this->sellingPrice, $this->forRelatives, $this->newEstate, $this->firstProperty, $this->selfGoverning, $this->plot);
                 $this->addViewParams('acquisitionTax', $acquisitionTax);
                 $this->renderPage('acquisitionTaxView');
             }
             else {
-                $this->addViewParams('errorMessage', $errorMessage);
+                $this->addViewParams('errorMessages', $errorMessages);
                 $this->renderPage('formErrorMessageView');
             }
         }
