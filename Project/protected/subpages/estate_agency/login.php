@@ -1,10 +1,13 @@
 <div id="login_page">
 	<?php
-		// include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
-		// include_once PROTECTED_DIR.'subpages/estate_agency/controller/registrationController.php';
-		// $controller = new registrationController();
+		include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
+		include_once PROTECTED_DIR.'subpages/estate_agency/controller/loginController.php';
+		$controller = new loginController();
 	?>
 	<div class="form" id="loginForm">
+		<?php
+			$controller->login();
+		?>
 		<h2>Bejelentkezés</h2>
 		<form method="POST">
 			<label for="email">Email <em>&#x2a;</em></label>
