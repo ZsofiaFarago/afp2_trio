@@ -1,3 +1,9 @@
+<?php
+	session_start();
+	include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
+	include_once PROTECTED_DIR.'subpages/estate_agency/controller/loginController.php';
+	$controller = new loginController();
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -27,10 +33,21 @@
 				<a class="menu" id="catalogue" href="index?S=estate_agency&A=catalogue">Katalógus</a>
 				<br hidden />
 				<a class="menu" id="contacts" href="index?S=estate_agency&A=contacts">Kapcsolatok</a>
-				<br id="br1" hidden />
-				<a class="menu" id="login" href="index?S=estate_agency&A=login">Bejelentkezés</a>
-				<br hidden />
-				<a class="menu" id="signup" href="index?S=estate_agency&A=registration">Regisztráció</a>
+
+				<?php if(!$controller->isUserLoggedIn()): ?>
+					<br id="br1" hidden />
+					<a class="menu" id="login" href="index?S=estate_agency&A=login">Bejelentkezés</a>
+					<br hidden />
+					<a class="menu" id="signup" href="index?S=estate_agency&A=registration">Regisztráció</a>
+					<?php else: ?>
+						<form method="POST">
+							<input type="submit" value="Kijelentkezés" class="menu" id="logout" name="logout" />
+						</form>
+				<?php endif; ?>
+				<?php
+					$controller->logout();
+				?>
+
 			</div>
 		</div>
 		<div id="content">
