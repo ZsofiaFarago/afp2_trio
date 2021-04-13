@@ -1,3 +1,8 @@
+<?php
+	include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
+	include_once PROTECTED_DIR.'subpages/estate_agency/controller/serviceController.php';
+	$controller = new serviceController();
+?>
 <div id="services-page">
 	<div class="text-content intro">
 		<h1>Ingatlan értékbecslés vagy energetikai tanúsítvány igénylése</h1>
@@ -103,82 +108,88 @@
 		<p>Tudta, hogy hiteles energetikai tanúsítvány nélkül ma már egy ingatlan sem adható el Magyarországon? Erre a dokumentumra tehát mindenképp szüksége lesz, ha eladáson gondolkozik – miért is ne intézné el ezt az értékbecsléssel együtt? Energetikai tanúsítás és értékbecslés egyidejű megrendelése esetén az értékbecslés fentebbi árainak 50%-át elengedjük ügyfeleinknek, hogy ezzel is megkönnyítsük az ingatlan adás-vételt számukra.</p>
 	</div>
 
-
-	<div class="form" id="orderService">
-		<h2>Szolgáltatások megrendelése</h2>
-		<p>Az alábbi űrlap segítségével igényelhet ingatlan-értékbecslést vagy energetikai tanúsítványt, esetleg mindkettőt.</p>
-		<form method="POST">
-			<label for="city">Város: <em>&#x2a;</em></label>
-			<input id="city" name="city" required="" type="text"
-				value="<?php echo (isset($_POST['city']))?$_POST['city']:'';?>"
-			/>
-
-			<div>
-				<label for="zipcode">Irányítószám: </label>
-				<input id="zipcode" name="zipcode" required="" type="text"
-					value="<?php echo (isset($_POST['zipcode']))?$_POST['zipcode']:'';?>"
+	<?php if($controller->showOrderForm()): ?>
+		<div class="form" id="orderService">
+			<h2>Szolgáltatások megrendelése</h2>
+			<p>Az alábbi űrlap segítségével igényelhet ingatlan-értékbecslést vagy energetikai tanúsítványt, esetleg mindkettőt.</p>
+			<form method="POST">
+				<label for="city">Város: <em>&#x2a;</em></label>
+				<input id="city" name="city" required="" type="text"
+					value="<?php echo (isset($_POST['city']))?$_POST['city']:'';?>"
 				/>
- 			</div>
 
- 			<label for="streetName">Közterület neve: <em>&#x2a;</em></label>
-			<input id="streetName" name="streetName" type="text" 
-				value="<?php echo (isset($_POST['streetName']))?$_POST['streetName']:'';?>"
-			/>
+				<div>
+					<label for="zipcode">Irányítószám: </label>
+					<input id="zipcode" name="zipcode" required="" type="text"
+						value="<?php echo (isset($_POST['zipcode']))?$_POST['zipcode']:'';?>"
+					/>
+	 			</div>
 
- 			 <div>
- 				<label for="streetNumber">Házszám: <em>&#x2a;</em></label>
-				<input id="streetNumber" name="streetNumber" type="text" 
-					value="<?php echo (isset($_POST['streetNumber']))?$_POST['streetNumber']:'';?>"
+	 			<label for="streetName">Közterület neve: <em>&#x2a;</em></label>
+				<input id="streetName" name="streetName" type="text" 
+					value="<?php echo (isset($_POST['streetName']))?$_POST['streetName']:'';?>"
 				/>
- 			</div>
 
- 			<div>
- 				<label for="size">Telek mérete négyzetméterben: <em>&#x2a;</em></label>
-				<input id="size" name="size" type="text" 
-					value="<?php echo (isset($_POST['size']))?$_POST['size']:'';?>"
-				/>
- 			</div>
+	 			 <div>
+	 				<label for="streetNumber">Házszám: <em>&#x2a;</em></label>
+					<input id="streetNumber" name="streetNumber" type="text" 
+						value="<?php echo (isset($_POST['streetNumber']))?$_POST['streetNumber']:'';?>"
+					/>
+	 			</div>
 
- 			<div>
-	 			<label for="type">Ingatlan típusa: <em>&#x2a;</em></label>
-				<select id="type" name="type">
-					<option value="Családi ház">Családi ház</option>
-					<option value="Lakás">Lakás</option>
-					<option value="Üres telek">Üres telek</option>
-					<option value="Egyéb">Egyéb</option>
-				</select>
-			</div>
-			
-			<div>
-				<label for="evaluation">Igényel ingatlan-értékbecslést? </label>
-				<input type="checkbox" id="evaluation" name="evaluation" value="evaluation" 
-					<?php echo (isset($_POST['evaluation']))?'checked':'unchecked';?>
-				/>
-			</div>
+	 			<div>
+	 				<label for="size">Telek mérete négyzetméterben: <em>&#x2a;</em></label>
+					<input id="size" name="size" type="text" 
+						value="<?php echo (isset($_POST['size']))?$_POST['size']:'';?>"
+					/>
+	 			</div>
 
-			<div>
-				<label for="energetic">Igényel energetikai tanúsítványt? </label>
-				<input type="checkbox" id="energetic" name="energetic" value="energetic" 
-					<?php echo (isset($_POST['energetic']))?'checked':'unchecked';?>
-				/>
-			</div>
+	 			<div>
+		 			<label for="type">Ingatlan típusa: <em>&#x2a;</em></label>
+					<select id="type" name="type">
+						<option value="Családi ház">Családi ház</option>
+						<option value="Lakás">Lakás</option>
+						<option value="Üres telek">Üres telek</option>
+						<option value="Egyéb">Egyéb</option>
+					</select>
+				</div>
+				
+				<div>
+					<label for="evaluation">Igényel ingatlan-értékbecslést? </label>
+					<input type="checkbox" id="evaluation" name="evaluation" value="evaluation" 
+						<?php echo (isset($_POST['evaluation']))?'checked':'unchecked';?>
+					/>
+				</div>
 
-			<div>
-				<label for="propertyPaper">Szüksége van tulajdoni lapra? </label>
-				<input type="checkbox" id="propertyPaper" name="propertyPaper" value="propertyPaper" 
-					<?php echo (isset($_POST['propertyPaper']))?'checked':'unchecked';?>
-				/>
-			</div>
+				<div>
+					<label for="energetic">Igényel energetikai tanúsítványt? </label>
+					<input type="checkbox" id="energetic" name="energetic" value="energetic" 
+						<?php echo (isset($_POST['energetic']))?'checked':'unchecked';?>
+					/>
+				</div>
 
-			<div>
-				<label for="plan">Szeretne alaprajzot igényelni? </label>
-				<input type="checkbox" id="plan" name="plan" value="plan" 
-					<?php echo (isset($_POST['plan']))?'checked':'unchecked';?>
-				/>
-			</div>
+				<div>
+					<label for="propertyPaper">Szüksége van tulajdoni lapra? </label>
+					<input type="checkbox" id="propertyPaper" name="propertyPaper" value="propertyPaper" 
+						<?php echo (isset($_POST['propertyPaper']))?'checked':'unchecked';?>
+					/>
+				</div>
 
-			<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
-			<button name="require" type="submit">Igénylés leadása</button>
-		</form>
-	</div>
+				<div>
+					<label for="plan">Szeretne alaprajzot igényelni? </label>
+					<input type="checkbox" id="plan" name="plan" value="plan" 
+						<?php echo (isset($_POST['plan']))?'checked':'unchecked';?>
+					/>
+				</div>
+
+				<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
+				<button name="require" type="submit">Igénylés leadása</button>
+			</form>
+		</div>
+	<?php else: ?>
+		<div class="form">
+			<div class = "formResult formErrorMessage">A szolgáltatások igénybevételéhez regisztráció szükséges! Ha még nem regisztrált, tegye meg, ha már megtette, lépjen be! A menüben megtalálja a belépés, illetve regisztráció menüpontokat!</div>
+		</div>
+	<?php endif; ?>
+
 </div>
