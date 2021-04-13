@@ -1,1 +1,1 @@
-<p class="formResult">Sikeres regisztráció.</p>
+<div class="formResult">Sikeres regisztráció.</div>
