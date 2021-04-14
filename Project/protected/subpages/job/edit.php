@@ -16,3 +16,16 @@ if(isset($_POST['submit'])){
 	$data['contact_user'] = $_POST['contact_user'];
 	$data['contact_email'] = $_POST['contact_email'];
 
+	if($job->update($job_id, $data)){
+		redirect('index.php', 'Your job has been updated', 'success');
+	} else {
+		redirect('index.php', 'Something went wrong', 'error');
+	}
+}
+
+$template = new Template('templates/job-edit.php');
+
+$template->job = $job->getJob($job_id);
+$template->categories = $job->getCategories();
+
+echo $template;
