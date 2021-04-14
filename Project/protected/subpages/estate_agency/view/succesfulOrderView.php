@@ -1,0 +1,1 @@
+<div class="formResult">A szolgáltatást sikeresen megrendelte, kollégáink hamarosan felveszik Önnel a kapcsolatot időpontegyeztetéshez.</div>
