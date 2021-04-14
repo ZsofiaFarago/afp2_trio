@@ -28,7 +28,10 @@
 						</tr>
 						<hr>
 						<tr>
-							
+							<td><?php if(array_key_exists('permission', $_SESSION)) : ?>
+								<button style="color: black"><a href="index.php?S=cinema&reserve=<?=$i['id']; ?>">Foglalás</a></button>
+							<?php endif; ?>
+							</td>
 						</tr>
 					</table>
 				</div>
