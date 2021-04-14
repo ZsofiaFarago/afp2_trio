@@ -36,7 +36,7 @@ function UserLogin($email, $password) {
 }
 
 function UserRegister($email, $password, $fname, $lname) {
-	$query = "SELECT id FROM users email = :email";
+	$query = "SELECT id FROM users WHERE email = :email";
 	$params = [ ':email' => $email ];
 
 	require_once DATABASE_CONTROLLER;
