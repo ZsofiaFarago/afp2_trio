@@ -105,7 +105,7 @@
 
 		public function setNotNumericErrorMessage($required) {
 			if(!$this->validation->checkIfAllRequiredDataIsNumeric($required)) {
-				$errorMessage = "Hiba: nem számot adott meg! Használjon egész számokat a mezőkben!";
+				$errorMessage = "Hiba: nem számot adott meg! Számokat használjon az olyan mezőkben, ahol számadatot kell megadni!";
 				array_push($this->errorMessages, $errorMessage);
 			}
 		}

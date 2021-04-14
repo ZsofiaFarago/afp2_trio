@@ -183,7 +183,10 @@
 				</div>
 
 				<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
-				<button name="require" type="submit">Igénylés leadása</button>
+				<button name="order" type="submit">Igénylés leadása</button>
+				<?php
+					$controller->orderService();
+				?>
 			</form>
 		</div>
 	<?php else: ?>
