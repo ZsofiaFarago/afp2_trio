@@ -405,9 +405,9 @@ input:focus ~ .highlight {
     height: 60px;
     float: left;
 }
-.text-header {
+/* .text-header {
     padding-left: 70px;
-}
+} */
 .button-wrapper {
     margin-top: 50px;
 }
