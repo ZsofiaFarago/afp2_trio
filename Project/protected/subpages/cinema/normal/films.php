@@ -4,7 +4,7 @@
 
 <?php 
 	$query = "SELECT id, name, time, price FROM films";
-	require_once DATABASE_CONTROLLER;
+	require_once CN_DATABASE_CONTROLLER;
 	$items = getList($query);
 
  ?>

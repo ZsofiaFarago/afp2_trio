@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 
 <?php session_start(); ?>
-<?php require_once 'protected/config.php'; ?>
 <?php require_once 'protected/subpages/cinema/db_config.php'; ?>
-<?php require_once USER_MANAGER; ?>
+<?php require_once CN_USER_MANAGER; ?>
 
 <html>
 	<head>
 		<meta content="charset=UTF-8">
 		<title>AFP Mozi</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href=" <?=PUBLIC_DIR.'/css/cinema_style.css'?> ">
 	</head>
 	<body>

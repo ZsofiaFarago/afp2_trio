@@ -1,9 +1,9 @@
 <?php 
 
-define('CN_PROTECTED_DIR', PROTECTED_DIR.'/subpages/cinema/');
+define('CN_PROTECTED_DIR', PROTECTED_DIR.'subpages/cinema/');
 
-define('DATABASE_CONTROLLER', CN_PROTECTED_DIR.'database.php');
-define('USER_MANAGER', CN_PROTECTED_DIR.'user_config.php');
+define('CN_DATABASE_CONTROLLER', PROTECTED_DIR.'subpages/cinema/database.php');
+define('CN_USER_MANAGER', PROTECTED_DIR.'subpages/cinema/user_config.php');
 
 define('DB_TYPE', 'mysql');
 define('DB_HOST', 'localhost');

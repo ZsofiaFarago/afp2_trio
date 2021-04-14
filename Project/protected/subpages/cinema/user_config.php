@@ -22,7 +22,7 @@ function UserLogin($email, $password) {
 		':password' => $password
 	]; 
 
-	require_once DATABASE_CONTROLLER;
+	require_once CN_DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(!empty($record)) {
 		$_SESSION['uid'] = $record['id'];
@@ -39,8 +39,9 @@ function UserRegister($email, $password, $fname, $lname) {
 	$query = "SELECT id FROM users WHERE email = :email";
 	$params = [ ':email' => $email ];
 
-	require_once DATABASE_CONTROLLER;
+	require_once CN_DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
+
 	if(empty($record)) {
 		$query = "INSERT INTO users (fname, lname, email, password, permission) VALUES (:first_name, :last_name, :email, :password, :permission)";
 		$params = [
