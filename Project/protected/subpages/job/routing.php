@@ -9,7 +9,7 @@
 		case 'register': require_once PROTECTED_DIR.'subpages/job/register.php'; break;
 		case 'create': require_once PROTECTED_DIR.'subpages/job/create.php'; break;
 		case 'find' : require_once PROTECTED_DIR.'subpages/job/find.php'; break;
-		case 'job' : require_once PROTECTED_DIR.'subpages/job/job.php' break;
+		case 'job' : require_once PROTECTED_DIR.'subpages/job/job.php'; break;
 		default: include_once 'main.php'; break;
 	}
 }
