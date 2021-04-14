@@ -37,3 +37,43 @@
 
 			return $results;
 		}
+
+        public function getCategory($category_id){
+			$this->db->query("SELECT * FROM categories WHERE id = :category_id");
+
+			$this->db->bind(':category_id', $category_id);
+
+			$row = $this->db->single();
+
+			return $row;
+		}
+
+		public function getJob($id){
+			$this->db->query("SELECT * FROM jobs WHERE id = :id");
+
+			$this->db->bind(':id', $id);
+
+			$row = $this->db->single();
+
+			return $row;
+		}
+
+		public function create($data){
+			$this->db->query("INSERT INTO jobs (category_id, job_title, company, description, location, salary, contact_user, contact_email)
+			VALUES (:category_id,:job_title, :company, :description, :location, :salary, :contact_user, :contact_email)");
+
+			$this->db->bind(':category_id', $data['category_id']);
+			$this->db->bind(':job_title', $data['job_title']);
+			$this->db->bind(':company', $data['company']);
+			$this->db->bind(':description', $data['description']);
+			$this->db->bind(':location', $data['location']);
+			$this->db->bind(':salary', $data['salary']);
+			$this->db->bind(':contact_user', $data['contact_user']);
+			$this->db->bind(':contact_email', $data['contact_email']);
+
+			if($this->db->execute()){
+				return true;
+			} else {
+				return false;
+			}
+		}
