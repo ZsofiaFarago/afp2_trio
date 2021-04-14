@@ -3,7 +3,10 @@
 	<hr>
 	<h4>Jogosultsági szint: <?=$_SESSION['permission']; ?></h4>
 <?php endif; ?>
-<?php if(!isset($_GET['reserve'])) : ?>
+<?php if(isset($_GET['reserveSeat'])) : ?>
+	<center><h2>Sikeres helyfoglalás a <?=$_GET['reserveSeat']; ?> számú ülőhelyre.</h2></center>
+	<center><p>Jó szórakozást!</p></center>
+<?php elseif(!isset($_GET['reserve'])) : ?>
 	Üdvözöljük az AFP Mozi oldalán.
 	Böngészéshez kattintson a Műsorlista menüpontra.
 <?php else: ?>

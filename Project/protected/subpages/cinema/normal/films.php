@@ -13,7 +13,7 @@
 <div class="item">
 	<?php foreach ($items as $i) : ?>
 				<div class="item">
-						<table style="table-layout: fixed; width: 60%; border: 3px solid gray; margin-left: auto; margin-right: auto;   background-color: #bababa;">
+						<table style="table-layout: fixed; width: 60%; border: 3px solid gray; margin-left: auto; margin-right: auto;   background-color: #f5821e">
 						<tr>
 							<td></td>			
 						</tr>
@@ -28,8 +28,8 @@
 						</tr>
 						<hr>
 						<tr>
-							<td><?php if(array_key_exists('permission', $_SESSION)) : ?>
-								<button style="color: black"><a href="index.php?S=cinema&reserve=<?=$i['id']; ?>">Foglalás</a></button>
+							<td colspan="2"><?php if(array_key_exists('permission', $_SESSION)) : ?>
+								<center><button style="color: black"><a href="index.php?S=cinema&reserve=<?=$i['id']; ?>">Foglalás</a></button></center>
 							<?php endif; ?>
 							</td>
 						</tr>
