@@ -70,7 +70,21 @@ class ProductController extends Controller
             ->where('cart.user_id', $userId)
             ->sum('products.price');
 
-        return view('ordernow', ['total' => $total]);
+        /* FOR LISTING PRODUCTS IN CART */
+        $userId = Session::get('user')['id'];
+        $products = DB::table('cart')
+            ->join('products', 'cart.product_id', '=', 'products.id')
+            ->where('cart.user_id', $userId)
+            ->select('products.*', 'cart.id as cart_id')
+            ->get();
+
+        return view(
+            'ordernow',
+            [
+                'total' => $total,
+                'products' => $products,
+            ]
+        );
     }
 
     function orderPlace(Request $request)
