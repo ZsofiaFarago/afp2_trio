@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS estatedb.client (
   email VARCHAR(50) NOT NULL,
   phone VARCHAR(20) NOT NULL,
   address_id INT NOT NULL,
+  password VARCHAR(50) NOT NULL,
   PRIMARY KEY (id),
   CONSTRAINT fk_client_address
     FOREIGN KEY (address_id)
@@ -72,6 +73,23 @@ CREATE TABLE IF NOT EXISTS estatedb.estate_agent (
   image_name VARCHAR(50) NOT NULL,
   PRIMARY KEY (id),
   CONSTRAINT fk_estate_agent_address
+    FOREIGN KEY (address_id)
+    REFERENCES estatedb.address (id));
+
+-- -----------------------------------------------------
+-- Table estatedb.service
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS estatedb.service (
+  id INT NOT NULL AUTO_INCREMENT,
+  evaluation TINYINT NOT NULL,
+  energetic TINYINT NOT NULL,
+  property_paper TINYINT NOT NULL,
+  plan TINYINT NOT NULL,
+  size FLOAT NOT NULL,
+  type VARCHAR(50) NOT NULL,
+  address_id INT NOT NULL,
+  PRIMARY KEY (id),
+  CONSTRAINT fk_service_address
     FOREIGN KEY (address_id)
     REFERENCES estatedb.address (id));
 
