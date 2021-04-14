@@ -15,7 +15,12 @@
 		<header>
 			<div><p><h1><center>AFP MOZI</center></h1><h2><center>Mindig a legfrissebb filmek!</center></h2></p></div>
 			<nav style="padding: 8px">
-				<center><a href="index.php?S=cinema&A=films">Műsorlista</a> | <a href="index.php?S=cinema&A=information">Információk</a> | <a href="index.php?S=cinema&A=register">Regisztráció</a> | <a href="index.php?S=cinema&A=login">Bejelentkezés</a>
+				<center><a href="index.php?S=cinema&A=films">Műsorlista</a> | <a href="index.php?S=cinema&A=information">Információk</a> |
+					<?php if(!isUserLoggedIn()) : ?>
+						<a href="index.php?S=cinema&A=register">Regisztráció</a> | <a href="index.php?S=cinema&A=login">Bejelentkezés</a>
+					<?php else : ?>
+						<a href="index.php?S=cinema&A=logout">Kijelentkezés</a>
+					<?php endif; ?>			
 			</center>
 		</nav>
 		</header>

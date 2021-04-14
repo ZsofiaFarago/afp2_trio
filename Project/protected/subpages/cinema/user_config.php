@@ -30,7 +30,7 @@ function UserLogin($email, $password) {
 		$_SESSION['lname'] = $record['lname'];
 		$_SESSION['email'] = $record['email'];
 		$_SESSION['permission'] = $record['permission'];
-		header('Location: index.php?S=cinema');
+		header('Location: index.php?S=cinema&loggedIn=1');
 	}
 	return false;
 }
