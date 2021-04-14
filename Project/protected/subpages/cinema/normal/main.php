@@ -37,8 +37,8 @@
 	  <tr>
 	  	<?php for ($i = 0; $i < 9; $i++) : ?>
 		  	<tr>
-				<?php for ($k = 0; $k < 16; $k++) : ?>
-					<td class="tg-0bg9"><a href="#"><div style="height:100%;width:100%">&nbsp;</div></a></td>
+				<?php for ($k = 1; $k < 17; $k++) : ?>
+					<td class="tg-0bg9"><a href="index.php?S=cinema&reserveSeat=<?=$i*16+$k; ?>"><div style="height:100%;width:100%">&nbsp;</div></a></td>
 				<?php endfor; ?>
 		  	</tr>
 	    <?php endfor; ?>
