@@ -1,13 +1,13 @@
 @extends('layouts.master')
 @section('content')
-<div class="container">
+<div class="login-container">
 
-  <div class="title">
+  <div class="title" style="padding-left: 42%;">
     <h1>Bejelentkezés</h1>
   </div>
 
   <div class="form-groups">
-    <form  action="/login" method="POST">
+    <form  action="{{ route('login') }}" method="POST">
       @csrf
       <div class="group">      
         <input type="email" name="email" required>
