@@ -1,13 +1,13 @@
 @extends('layouts.master')
 @section('content')
-<div class="container" >
+<div class="register-container" >
 
-  <div class="title">
+  <div class="title" style="padding-left: 42%;">
     <h1>Regisztrálás</h1>
   </div>
 
   <div class="form-groups">
-    <form  action="/register" method="POST">
+    <form  action="{{ route('register') }}" method="POST">
       @csrf
       <div class="group">      
         <input type="text" name="name" id='name' required>
