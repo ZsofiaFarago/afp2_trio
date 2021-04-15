@@ -40,8 +40,8 @@
 					<br hidden />
 					<a class="menu" id="signup" href="index?S=estate_agency&A=registration">Regisztráció</a>
 					<?php else: ?>
-						<form method="POST">
-							<input type="submit" value="Kijelentkezés" class="menu" id="logout" name="logout" />
+						<form method="POST" class="menu" style="display: inline-block; border: 0px;">
+							<input style="background-color: black;" type="submit" value="Kijelentkezés" class="menu" id="logout" name="logout" />
 						</form>
 				<?php endif; ?>
 				<?php

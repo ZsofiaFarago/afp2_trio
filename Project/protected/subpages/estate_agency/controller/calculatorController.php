@@ -15,7 +15,7 @@ class calculatorController extends MyController {
     private $sellWithinOneYear;
     private $forRelatives;
     private $newEstate;
-    private $firtsProperty;
+    private $firstProperty;
     private $selfGoverning;
     private $plot;
     private $acquisitionPrice_acqTax;
@@ -33,9 +33,9 @@ class calculatorController extends MyController {
         $boolValues = array('sellWithinOneYear', 'forRelatives', 'newEstate', 'firstProperty', 'selfGoverning', 'plot');
         foreach ($boolValues as $value) {
             if(isset($_POST[$value])) {
-                $$value = true;
+                $this->$value = true;
             } else {
-                $$value = false;
+                $this->$value = false;
             }
         }
         $this->acquisitionPrice_acqTax = $_POST['acquisitionPrice_acqTax'];

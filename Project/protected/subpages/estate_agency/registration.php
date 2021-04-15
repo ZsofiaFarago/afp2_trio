@@ -1,9 +1,9 @@
 <div id="registration_page">
-<?php
-	include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
-	include_once PROTECTED_DIR.'subpages/estate_agency/controller/registrationController.php';
-	$controller = new registrationController();
-?>
+	<?php
+		include_once PROTECTED_DIR.'subpages/estate_agency/core/MyController.php';
+		include_once PROTECTED_DIR.'subpages/estate_agency/controller/registrationController.php';
+		$controller = new registrationController();
+	?>
 	<div class="form" id="registrationForm">
 		<h2>Regisztráció</h2>
 		<?php

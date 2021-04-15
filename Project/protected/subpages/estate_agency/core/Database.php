@@ -24,7 +24,7 @@ class Database {
         return $connection;
     }
     
-    public function getList($query, $params = []) {
+    public function getList($query, $params) {
         $connection = $this->getConnection();
         $connection->exec("SET NAMES 'utf8'");
         $statement = $connection->prepare($query);
@@ -38,21 +38,23 @@ class Database {
         return $result;
     }
     
-    public function getRecord($query, $params = []) {
-        $connection = getConnection();
+    public function getRecord($query, $params) {
+        $connection = $this->getConnection();
+        $connection->exec("SET NAMES 'utf8'");
         $statement = $connection->prepare($query);
         $success = $statement->execute($params);
         $result;
         if($success){
-            $result = $statement->fetch()[0];
+            $result = $statement->fetch();
         }
         $statement->closeCursor();
         $connection = null;
         return $result;
     }
     
-    public function executeDML($query, $params = []) {
-        $connection = getConnection();
+    public function executeDML($query, $params) {
+        $connection = $this->getConnection();
+        $connection->exec("SET NAMES 'utf8'");
         $statement = $connection->prepare($query);
         $success = $statement->execute($params);
         $statement->closeCursor();
