@@ -1,9 +1,9 @@
 img.slider-img {
     height: 400px !important;
 }
-.custom-product {
+/* .custom-product {
     height: 600px;
-}
+} */
 .slider-text {
     background: #35443585 im !important;
 }
@@ -365,6 +365,9 @@ input:focus ~ .highlight {
     background-position: center;
     background-size: cover;
     opacity: 0.65;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 /* ORDERED */
@@ -414,4 +417,112 @@ input:focus ~ .highlight {
 .wrapper {
     max-width: 960px;
     margin: 30px auto;
+}
+
+/* PRODUCTS GALLERY PAGE */
+
+.t-products {
+    background-image: linear-gradient(
+        to right top,
+        #1885c4c9,
+        #1885c4c9,
+        #1885c4c9,
+        #1885c4c9,
+        #1885c4c9
+    );
+    color: #fff;
+    border-radius: 3px;
+}
+
+.check-search {
+    background-color: #fff;
+    margin-top: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* .brand {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.type {
+    background-color: #fff;
+} */
+
+.product {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.about span {
+    color: rgba(0, 0, 0, 0.842);
+    font-size: 16px;
+}
+
+.cart-button button {
+    font-size: 12px;
+    color: #fff;
+    background-color: #126d12d7;
+    height: 38px;
+}
+
+.cart-button button:focus,
+button:active {
+    font-size: 12px;
+    color: #fff;
+    background-color: #1885c4c9;
+    box-shadow: none;
+}
+
+.product_fav i {
+    line-height: 40px;
+    color: #1885c4c9;
+    font-size: 15px;
+}
+
+.product_fav {
+    display: inline-block;
+    width: 36px;
+    height: 39px;
+    background: #ffffff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 11%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.product_fav:hover {
+    background: #1885c4c9;
+}
+
+.product_fav:hover i {
+    color: #fff;
+}
+
+.about {
+    margin-top: 12px;
+}
+
+.off {
+    position: absolute;
+    left: 65%;
+    top: 6%;
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    line-height: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
