@@ -20,6 +20,7 @@
                     <div class="d-flex justify-content-between mt-2">
                         <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /> <label class="form-check-label" for="flexCheckDefault"> TEXT </label></div>
                         <span>3</span>
+                    </div>
                      --}}
                 </div>
             </div>
@@ -50,5 +51,5 @@
             </div>
         </div>
     </div>
-    @endsection
 </div>
+@endsection
