@@ -25,8 +25,15 @@ class ProductController extends Controller
     }
     function search(Request $request)
     {
+        $searched_data = $request->input('query');
         $data = Product::where('name', 'like', '%' . $request->input('query') . '%')->get();
-        return view('search', ['products' => $data]);
+        return view(
+            'search',
+            [
+                'products' => $data,
+                'searched_data' => $searched_data
+            ]
+        );
     }
     function addToCart(Request $request)
     {
