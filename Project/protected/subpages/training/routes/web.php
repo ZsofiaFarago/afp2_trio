@@ -18,27 +18,30 @@ use Illuminate\Contracts\View\View;
 
 
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('added_muscle/login', function () {
+    return view('/login');
 });
 
-Route::get('/logout', function () {
-    Session::forget('user');
-    return redirect('login');
+
+Route::prefix('added_muscle')->group(function () {
+
+    Route::post("/login", [UserController::class, 'login'])->name('login');
+    Route::post("/register", [UserController::class, 'register'])->name('register');
+    Route::get("/", [ProductController::class, 'index'])->name('home');
+    Route::get("/detail/{id}", [ProductController::class, 'detail'])->name('detail');
+    Route::get("/search", [ProductController::class, 'search'])->name('search');
+    Route::post("/add_to_cart", [ProductController::class, 'addToCart'])->name('add_to_cart');
+    Route::get("/cart", [ProductController::class, 'cartList'])->name('cart');
+    Route::get("/removecart/{id}", [ProductController::class, 'removeCart'])->name('removecart');
+    Route::get("/ordernow", [ProductController::class, 'orderNow'])->name('ordernow');
+    Route::post("/orderplace", [ProductController::class, 'orderPlace'])->name('orderplace');
+    Route::get("/myorders", [ProductController::class, 'myOrders'])->name('myorders');
+    Route::get("/products", [ProductController::class, 'allProduct'])->name('products');
+    Route::get('/logout', function () {
+        Session::forget('user');
+        return redirect()->route('home');
+    })->name('logout');
 });
 
-Route::post("/login", [UserController::class, 'login']);
-Route::post("/register", [UserController::class, 'register']);
-Route::get("/", [ProductController::class, 'index']);
-Route::get("/detail/{id}", [ProductController::class, 'detail']);
-Route::get("/search", [ProductController::class, 'search']);
-Route::post("/add_to_cart", [ProductController::class, 'addToCart']);
-Route::get("/cart", [ProductController::class, 'cartList']);
-Route::get("/removecart/{id}", [ProductController::class, 'removeCart']);
-Route::get("/ordernow", [ProductController::class, 'orderNow']);
-Route::post("/orderplace", [ProductController::class, 'orderPlace']);
-Route::get("/myorders", [ProductController::class, 'myOrders']);
-Route::get("/products", [ProductController::class, 'allProduct']);
 
-
-Route::view('/register', 'register');
+Route::view('added_muscle/register', 'register');
