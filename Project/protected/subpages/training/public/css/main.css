@@ -526,3 +526,9 @@ button:active {
     justify-content: center;
     color: #fff;
 }
+
+/* detail-page */
+.detail-page {
+    height: 82vh;
+    padding-top: 2%;
+}
