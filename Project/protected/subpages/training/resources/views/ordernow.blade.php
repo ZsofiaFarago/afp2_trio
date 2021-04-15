@@ -35,7 +35,7 @@
   <div class="pt-3">
     <h1>Szállítás és fizetés</h1>
   </div>
-  <form action="/orderplace" method="POST">
+  <form action="{{ route('orderplace') }}" method="POST">
     @csrf
     <div class="mb-3">
       <div>
@@ -53,7 +53,9 @@
 
     <div class="button-wrapper pb-4">
       <button type="submit" class="btn btn-success btn-checkout">Fizetés</button>
-      <button type="button" class="btn btn-light btn-continous">Vásárlás folytatása</button>
+      <a href="{{ route('products') }}">
+        <button type="button" class="btn btn-light btn-continous">Vásárlás folytatása</button>
+      </a>
     </div>
   </form>
 </div>
