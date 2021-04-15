@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RegistrationRequest;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
@@ -15,17 +17,17 @@ class UserController extends Controller
             return "Felhasznalo vagy jelszo nem egyezik.";
         } else {
             $request->session()->put('user', $user);
-            return redirect('/');
+            return redirect()->route('home');
         }
     }
 
-    function register(Request $request)
+    function register(RegistrationRequest $request)
     {
         $user = new User;
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
         $user->save();
-        return redirect('/login');
+        return redirect()->route('login');
     }
 }
