@@ -115,4 +115,24 @@ class ProductController extends Controller
             ->get();
         return view('myorders', ['orders' => $orders]);
     }
+
+    function allProduct()
+    {
+        $preworkout_count = Product::where('category', '=', 'preworkout')->count();
+        $kreatin_count = Product::where('category', '=', 'kreatin')->count();
+        $feherje_count = Product::where('category', '=', 'feherje')->count();
+        $multivitamin_count = Product::where('category', '=', 'multivitamin')->count();
+
+        return view(
+            'product_gallery',
+            [
+                'products' => Product::all(),
+                'preworkout_count' => $preworkout_count,
+                'preworkout_count' => $preworkout_count,
+                'kreatin_count' => $kreatin_count,
+                'feherje_count' => $feherje_count,
+                'multivitamin_count' => $multivitamin_count,
+            ]
+        );
+    }
 }
