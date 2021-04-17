@@ -42,9 +42,9 @@ class ProductController extends Controller
             $cart->user_id = $request->session()->get('user')['id'];
             $cart->product_id = $request->product_id;
             $cart->save();
-            return redirect('/');
+            return redirect()->route('products');
         } else {
-            return redirect('/login');
+            return redirect()->route('login');
         }
     }
     static function cartItem()
@@ -67,7 +67,7 @@ class ProductController extends Controller
     function removeCart($id)
     {
         Cart::destroy($id);
-        return redirect('cart');
+        return redirect()->route('cart');
     }
     function orderNow()
     {
@@ -110,7 +110,7 @@ class ProductController extends Controller
             Cart::where('user_id', $userId)->delete();
         }
         $request->input();
-        return redirect('/');
+        return redirect()->route('home');
     }
 
     function myOrders()
