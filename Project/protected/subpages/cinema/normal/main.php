@@ -17,28 +17,33 @@
 	<h4>Jogosultsági szint: <?=$_SESSION['permission']; ?></h4>
 <?php endif; ?>
 <?php if(isset($_GET['reserveSeat'])) : ?>
-	<?php 
-		$query = "SELECT * FROM spots WHERE film_id = :film_id AND number = :number AND available = 1";
-		$params = [
-			':film_id' => $_GET['film_id'],
-			':number' => $_GET['reserveSeat']
-		];
-		require_once CN_DATABASE_CONTROLLER;
-		$result = getList($query, $params);
-	?>
-		<?php if(empty($result)) : ?>
-			<h1><center>Sikertelen helyfoglalás!</center></h1>
-			<h2><center>Ez a hely már foglalt!</center></h2>
-		<?php else : ?>
-			<?php 
-				$query = "UPDATE spots SET available = 0 WHERE film_id = :film_id AND number = :number";
-				$params = [ ':film_id' => $_GET['film_id'], 
-						    ':number' => $_GET['reserveSeat']];
-				executeDML($query, $params);
-		 	?>
-			<center><h2>Sikeres helyfoglalás a <?=$_GET['reserveSeat']; ?> számú ülőhelyre.</h2></center>
-			<center><p>Jó szórakozást!</p></center>
-		<?php endif; ?>
+	<?php if(!isset($_SESSION['permission'])) : ?>
+		<h1><center>Nem vagy bejelentkezve!</center></h1>
+		<h2><center>Jelentkezz be a helyfoglaláshoz!</center></h2>
+	<?php else: ?>
+		<?php 
+			$query = "SELECT * FROM spots WHERE film_id = :film_id AND number = :number AND available = 1";
+			$params = [
+				':film_id' => $_GET['film_id'],
+				':number' => $_GET['reserveSeat']
+			];
+			require_once CN_DATABASE_CONTROLLER;
+			$result = getList($query, $params);
+		?>
+			<?php if(empty($result)) : ?>
+				<h1><center>Sikertelen helyfoglalás!</center></h1>
+				<h2><center>Ez a hely már foglalt!</center></h2>
+			<?php else : ?>
+				<?php 
+					$query = "UPDATE spots SET available = 0 WHERE film_id = :film_id AND number = :number";
+					$params = [ ':film_id' => $_GET['film_id'], 
+							    ':number' => $_GET['reserveSeat']];
+					executeDML($query, $params);
+			 	?>
+				<center><h2>Sikeres helyfoglalás a <?=$_GET['reserveSeat']; ?> számú ülőhelyre.</h2></center>
+				<center><p>Jó szórakozást!</p></center>
+			<?php endif; ?>
+	<?php endif; ?>
 <?php elseif(!isset($_GET['reserve'])) : ?>
 	Üdvözöljük az AFP Mozi oldalán.
 	Böngészéshez kattintson a Műsorlista menüpontra.
