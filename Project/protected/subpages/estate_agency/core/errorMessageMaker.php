@@ -105,7 +105,7 @@
 
 		public function setNotNumericErrorMessage($required) {
 			if(!$this->validation->checkIfAllRequiredDataIsNumeric($required)) {
-				$errorMessage = "Hiba: nem számot adott meg! Számokat használjon az olyan mezőkben, ahol számadatot kell megadni!";
+				$errorMessage = "Hiba: nem számjegyeket használt! Számokat használjon az olyan mezőkben, ahol számadatot kell megadni!";
 				array_push($this->errorMessages, $errorMessage);
 			}
 		}
@@ -120,6 +120,13 @@
 		public function setSellingPriceErrorMessage($sellingPrice) {
 			if(!$this->validation->checkPrice($sellingPrice)) {
 				$errorMessage = "Hiba: az eladási ár nem megfelelő! Pozitv egész számokat adjon meg!";
+				array_push($this->errorMessages, $errorMessage);
+			}
+		}
+
+		public function setDescriptionErrorMessage($description){
+			if(strlen($description >255)) {
+				$errorMessage = "A leírás legfeljebb 255 karakteres lehet!";
 				array_push($this->errorMessages, $errorMessage);
 			}
 		}
