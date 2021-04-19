@@ -532,3 +532,46 @@ button:active {
     height: 82vh;
     padding-top: 2%;
 }
+
+/* CHATBOT */
+.chat_icon {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 80px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chat_box {
+    position: fixed;
+    right: 20px;
+    bottom: 130px;
+    width: 400px;
+    height: 80vh;
+    background: #dedede;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+}
+
+.chat_box.active {
+    transform: scaleY(1);
+}
+
+.hidden {
+    display: none !important;
+}
+
+#messages {
+    padding: 20px;
+}
+
+.main-page {
+    height: 87vh;
+}
+
+#chat-icon {
+    color: rgba(0, 0, 0, 0.795);
+}
