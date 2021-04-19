@@ -46,5 +46,22 @@
 			];
 			$this->db->executeDML($query, $queryParams);
 		}
+
+		public function registerEstate($addressId, $roomNumber, $area, $description, $sellingPrice, $purchasePrice, $imageName) {
+			$query = "INSERT INTO estate(area, room_number, description, image_name, client_id, address_id, selling_price, purchase_price) values(
+				:area, :room_number, :description, :image_name, :client_id, :address_id, :selling_price, :purchase_price);";
+			$params = [
+				':area' => $area,
+				':room_number' => $roomNumber,
+				':description' => $description,
+				':image_name' => $imageName,
+				':client_id' => $_SESSION['uid'],
+				':address_id' => $addressId,
+				'selling_price' => $sellingPrice,
+				'purchase_price' => $purchasePrice
+			];
+			$result = $this->db->executeDML($query, $params);
+			return $result;
+		}
 	}
 ?>

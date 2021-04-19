@@ -1,0 +1,1 @@
+<div class="formResult">Az ingatlan feltöltésre került a katalógusba.</div>
