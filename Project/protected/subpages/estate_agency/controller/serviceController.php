@@ -61,6 +61,8 @@
 				$errorMessages = $this->getErrorMessages();
 				if(count($errorMessages) == 0) {
 					$this->model->orderService($this->city, $this->zipcode, $this->streetName, $this->size, $this->type, $this->streetNumber, $this->evaluation, $this->energetic, $this->propertyPaper, $this->plan);
+					$price = $this->model->countServicePrice($this->size, $this->type, $this->evaluation, $this->energetic, $this->propertyPaper, $this->plan);
+					$this->addViewParams('price', $price);
 					$this->renderPage('succesfulOrderView');
 				} else {
 					$this->addViewParams('errorMessages', $errorMessages);

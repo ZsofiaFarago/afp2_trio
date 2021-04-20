@@ -44,9 +44,10 @@
 	    }
 
 	    private function insertServiceOrder($addressId, $size, $type, $evaluation, $energetic, $propertyPaper, $plan) {
-	    	$query = "INSERT INTO service(address_id, size, type, evaluation, energetic, property_paper, plan) values(:addressId, :size, :type, :evaluation, :energetic, :propertyPaper, :plan);";
+	    	$query = "INSERT INTO service(address_id, client_id, size, type, evaluation, energetic, property_paper, plan) values(:addressId, :client_id, :size, :type, :evaluation, :energetic, :propertyPaper, :plan);";
 	    	$queryParams = [
 	    		':addressId' => $addressId,
+	    		'client_id' => $_SESSION['uid'],
 	    		':size' => $size,
 	    		':type' => $type,
 	    		':evaluation' => $evaluation,
@@ -55,6 +56,35 @@
 	    		':plan' => $plan
 	    	];
 	    	return $this->db->executeDML($query, $queryParams);
+	    }
+
+	    public function countServicePrice($size, $type, $evaluation, $energetic, $propertyPaper, $plan) {
+	    	$price = 0;
+	    	switch ($type) {
+	    		case 'Lakás':
+	    			$price = 12990;
+	    			break;
+	    		case 'Családi ház':
+	    			$price = 17990;
+	    			break;
+	    		case 'Üres telek':
+	    			$price = 13850;
+	    			break;
+	    		default:
+	    			$price = 0;
+	    			break;
+	    	}
+	    	$price = intval($price + $size/40 * 2000);
+	    	if ($energetic && $propertyPaper) {
+	    		$price = $price * 2 * 0.5;
+	    	}
+	    	if ($plan) {
+	    		$price = $price + 5000;
+	    	}
+	    	if ($evaluation) {
+	    		$price = $price + 3500;
+	    	}
+	    	return $price;
 	    }
 
 	    public function orderService($city, $zipcode, $streetName, $size, $type, $streetNumber, $evaluation, $energetic, $propertyPaper, $plan) {
