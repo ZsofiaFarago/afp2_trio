@@ -9,3 +9,4 @@
 |18|Dohanyos Patrik (OVR1Q7)|Training oldal - bejelentkezes|Bejelentkezeskor email es nev mezo kotelezo.|Hibauzenetet kapunk, ha barmelyik mezot kihagyjuk, vagy az email mezoben nem emailt irunk.|
 |19|Dohanyos Patrik (OVR1Q7)|Training oldal - bejelentkezes utan kosarhoz adas|Termek(ek) hozzadasa a kosarhoz bejelentkezes utan.|A termek(ek)et sikeresen hozzaadja a kosarhoz.|
 |20|Dohanyos Patrik (OVR1Q7)|Training oldal - kosar tartalmanak megjelenitese|A kosar tartalmanak megjelentese az aktualis termekekkel.|A hozzaadott termekek hianytalanul megjelennek.|
+|21|Dohanyos Patrik (OVR1Q7)|Training oldal - termek eltavolitasa a kosarbol|Kosarhoz adott termek eltavalitasa.|A termeket sikeresen eltavolitja a kosarbol.|
