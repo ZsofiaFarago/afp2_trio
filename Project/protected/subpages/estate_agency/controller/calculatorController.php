@@ -24,9 +24,9 @@ class calculatorController extends MyController {
     private $errorMessageMaker;
 
     private function getIncomeTaxPostData() {
-        $acquisitionYear = $_POST['acquisitionYear'];
-        $acquisitionPrice_incomeTax = $_POST['acquisitionPrice_incomeTax'];
-        $plannedSellingPrice = $_POST['plannedSellingPrice'];
+        $this->acquisitionYear = $_POST['acquisitionYear'];
+        $this->acquisitionPrice_incomeTax = $_POST['acquisitionPrice_incomeTax'];
+        $this->plannedSellingPrice = $_POST['plannedSellingPrice'];
     }
 
     private function getAcquisitionTaxPostData() {
@@ -44,7 +44,6 @@ class calculatorController extends MyController {
 
     private function getIncomeTaxErrorMessages() {
         $required = array('acquisitionYear', 'acquisitionPrice_incomeTax', 'plannedSellingPrice');
-        $this->errorMessageMaker->setRequiredErrorMessage($required);
         $this->errorMessageMaker->setNotNumericErrorMessage($required);
         $this->errorMessageMaker->setYearErrorMessage($this->acquisitionYear);
         $this->errorMessageMaker->setAcquisitionPriceErrorMessage($this->acquisitionPrice_incomeTax);
@@ -69,22 +68,24 @@ class calculatorController extends MyController {
     }
 
     public function getPersonalIncomeTax() {
-        if(array_key_exists('incomeTax', $_POST)) {
+        if(isset($_POST) && array_key_exists('incomeTax', $_POST)) {
             $this->getIncomeTaxPostData();
             $errorMessages = $this->getIncomeTaxErrorMessages();
             if(count($errorMessages) == 0) {
                 $personalIncomeTax = $this->model->calculatePersonalIncomeTax($this->acquisitionYear, $this->acquisitionPrice_incomeTax, $this->plannedSellingPrice);
                 $this->addViewParams('personalIncomeTax', $personalIncomeTax);
+                unset($_POST);
                 $this->renderPage('personalIncomeTaxView');
             } else {
                 $this->addViewParams('errorMessages', $errorMessages);
+                unset($_POST);
                 $this->renderPage('formErrorMessageView');
             }
         }
     }
 
     public function getAcquisitionTax() {
-        if(array_key_exists('acquisitionTax', $_POST)) {
+        if(isset($_POST) && array_key_exists('acquisitionTax', $_POST)) {
             $this->getAcquisitionTaxPostData();
             $errorMessages = $this->getAcquisitionTaxErrorMessages();
             if(!$this->sellWithinOneYear) {
@@ -93,10 +94,12 @@ class calculatorController extends MyController {
             if(count($errorMessages) == 0) {
                 $acquisitionTax = $this->model->calculateAcquisitionTax($this->acquisitionPrice_acqTax, $this->sellWithinOneYear, $this->sellingPrice, $this->forRelatives, $this->newEstate, $this->firstProperty, $this->selfGoverning, $this->plot);
                 $this->addViewParams('acquisitionTax', $acquisitionTax);
+                unset($_POST);
                 $this->renderPage('acquisitionTaxView');
             }
             else {
                 $this->addViewParams('errorMessages', $errorMessages);
+                unset($_POST);
                 $this->renderPage('formErrorMessageView');
             }
         }

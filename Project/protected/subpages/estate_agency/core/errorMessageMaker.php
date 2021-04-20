@@ -130,5 +130,12 @@
 				array_push($this->errorMessages, $errorMessage);
 			}
 		}
+
+		public function setYearErrorMessage($year) {
+			if(!$this->validation->checkYear($year)) {
+				$errorMessage = "Az év nem megfelelő!";
+				array_push($this->errorMessages, $errorMessage);
+			}
+		}
 	}
 ?>
