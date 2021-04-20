@@ -7,7 +7,7 @@ class calculatorModel {
 		}
 
 		$taxMultiplier = 1.5;
-		$multiplier;
+		$multiplier = 1;
 		$thisYear = (int)date("Y");
 
 		if($acquisitionYear <= $thisYear - 5) {
