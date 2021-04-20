@@ -1,4 +1,4 @@
-<div id="agents-div">
+<div class="records-div">
 	<div id="experts-main-div">
 		<h1>Kérje szakértőink segítségét!</h1>
 		<p>Csapattagjaink mind profi ingatlanügynökök, akik a szakma különböző területeinek a szakértői. Bátran keressék őket emailben, telefonon vagy akár személyesen is minden hétköznap 9 és 15 óra között! Ők azok, akik további tudnivalókkal rendelkeznek szolgáltatásainkról, és az oldalunkon közölt legfontosabb tudnivalókon kívül bővebb információval állnak rendelkezésre.</p>

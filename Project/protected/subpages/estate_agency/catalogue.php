@@ -5,7 +5,7 @@
 		$controller = new catalogueController();
 		$estates = $controller->getAllEstates();
 	?>
-	<div>
+	<div class="text-content intro">
 		<h1>Ingatlankatalógus</h1>
 		<p>Itt találhatóak a legújabb, legfrissebb, éppen aktuális ingatlanhirdetések, melyeket regisztrált felhasználóink töltöttek fel. Ha érdekli valamelyik ajánlat, akkor a feltöltőtől érdeklődhet az adott ingatlan iránt, elérhetőségeit megtalálja a hirdetésben. Ha szeretne egy ingatlant lefoglalni vagy Ön is szeretne hirdetést feladni, ezt akkor teheti meg, ha regisztrált és bejelentkezett az oldalunkra. Foglalását vissza is mondhatja, ha meggondolta magát. Ha feltölt egy új ingatlant vagy lefoglal egyet, munkatársaink hamarosan felveszik Önnel a kapcsolatot, hogy egyeztethessenek a részletekről, és megválaszolják a kérdéseit. Az ingatlanok listáját rendezheti ár szerint növekvő vagy csökkenő sorrendbe.</p>
 	</div>
@@ -15,7 +15,7 @@
 			<h2>Ingatlan feltöltése</h2>
 			<?php if(array_key_exists('save', $_POST)): ?>
 				<?php $controller->uploadEstate(); ?>
-				<!-- <meta http-equiv="refresh" content="0"> -->
+				<meta http-equiv="refresh" content="0">
 			<?php endif; ?>
 			<form method="POST" enctype="multipart/form-data">
 				<label for="city">Város <em>&#x2a;</em></label>
@@ -72,10 +72,10 @@
 
 	<?php if(isset($estates)): ?>
 		<?php foreach($estates as $estate): ?>
-			<div class="estate-div">
-				<div class="estate-image-div"><img src="<?=PUBLIC_DIR.'images/estate_agency/'.$estate['image_name']?>"></div>
-				<div class="estate-data-div">
-					<div>
+			<div class="records-div">
+				<div class="record-div">
+					<div class="record-image-div"><img src="<?=PUBLIC_DIR.'images/estate_agency/'.$estate['image_name']?>"></div>
+					<div class="record-data-div">
 						<p class="estate-address"><b>Cím: </b> <?=$estate['zipcode'].' '.$estate['name'].', '.$estate['street_name'].' '.$estate['street_number'].'.'?></p>
 						<p class="estate-selling-price"><b>Eladási ár:</b> <?=$estate['selling_price'].' Ft'?></p>
 						<p class="estate-purchase-price"><b>Vételárár:</b> <?=$estate['purchase_price'].' Ft'?></p>
@@ -88,7 +88,7 @@
 								<?php if(!$controller->isAlreadyReserved($estate['id'])): ?>
 									<input type="submit" name="<?='reserve'.$estate['id']?>" value="Lefoglal" />
 									<?php if(array_key_exists('reserve'.$estate['id'], $_POST)): ?>
-											<?php $controller->reserve($estate['id']); ?>
+										<?php $controller->reserve($estate['id']); ?>
 											<meta http-equiv="refresh" content="0">
 									<?php endif; ?>
 									<?php else: ?>
@@ -96,13 +96,13 @@
 											$reserver = $controller->getReserverDetails();
 										?>
 										<div>Az ingatlant már lefoglalta: <?=$reserver['last_name'].' '.$reserver['first_name']?>.</div>
-										<?php if($reserver['id'] == $_SESSION['uid']): ?>
+										<?php if($reserver['id'] == $_SESSION['uid'] && $estate['client_id'] != $_SESSION['uid']): ?>
 											<input type="submit" name="<?='undo'.$estate['id']?>" value="Lefoglalás visszavonása" />
 											<?php if(array_key_exists('undo'.$estate['id'], $_POST)): ?>
-													<?php $controller->undoReservation($estate['id']) ?>
-													<meta http-equiv="refresh" content="0">
-											<?php endif; ?>
+												<?php $controller->undoReservation($estate['id']) ?>
+												<meta http-equiv="refresh" content="0">
 										<?php endif; ?>
+									<?php endif; ?>
 								<?php endif; ?>
 							<?php endif; ?>
 						</form>
