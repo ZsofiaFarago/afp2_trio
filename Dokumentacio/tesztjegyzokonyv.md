@@ -12,3 +12,4 @@
 |21|Dohanyos Patrik (OVR1Q7)|Training oldal - termek eltavolitasa a kosarbol|Kosarhoz adott termek eltavalitasa.|A termeket sikeresen eltavolitja a kosarbol.|
 |22|Dohanyos Patrik (OVR1Q7)|Training oldal - Fizetes|Fizetes felulet vizualis attekintese.|A kosar tartalma sikeresen megjelenik, az osszeget megfeleloen szamolja ki szallitasi koltseggel. A kivalasztott fizetesi mod utan es cim megadasa utan Fizetesre kattintva a rendeles sikeres leadasra kerul.|
 |23|Dohanyos Patrik (OVR1Q7)|Training oldal - sikeres rendeles 1|Rendeles utan torlodnek-e a termkek a kosarbol?|A rendeles leadas utan a kosarunk tartalma ismet ures lesz.|
+|24|Dohanyos Patrik (OVR1Q7)|Training oldal - sikeres rendeles 2|Sikeres rendeles eseten a leadott termekek megjelennek-e a "Rendeleseid" menupont alatt.|A megrendelt termkek sikeresen megjelennek kilistazva a hozzajuk tartozo informaciokkal pl. szallitasi cim.|
