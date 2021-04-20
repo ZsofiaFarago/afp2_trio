@@ -10,3 +10,4 @@
 |19|Dohanyos Patrik (OVR1Q7)|Training oldal - bejelentkezes utan kosarhoz adas|Termek(ek) hozzadasa a kosarhoz bejelentkezes utan.|A termek(ek)et sikeresen hozzaadja a kosarhoz.|
 |20|Dohanyos Patrik (OVR1Q7)|Training oldal - kosar tartalmanak megjelenitese|A kosar tartalmanak megjelentese az aktualis termekekkel.|A hozzaadott termekek hianytalanul megjelennek.|
 |21|Dohanyos Patrik (OVR1Q7)|Training oldal - termek eltavolitasa a kosarbol|Kosarhoz adott termek eltavalitasa.|A termeket sikeresen eltavolitja a kosarbol.|
+|22|Dohanyos Patrik (OVR1Q7)|Training oldal - Fizetes|Fizetes felulet vizualis attekintese.|A kosar tartalma sikeresen megjelenik, az osszeget megfeleloen szamolja ki szallitasi koltseggel. A kivalasztott fizetesi mod utan es cim megadasa utan Fizetesre kattintva a rendeles sikeres leadasra kerul.|
