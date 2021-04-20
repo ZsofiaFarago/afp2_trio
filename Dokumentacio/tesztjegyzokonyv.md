@@ -8,3 +8,4 @@
 |17|Dohanyos Patrik (OVR1Q7)|Training oldal - regisztracio|Regisztracio eseten barmely mezo kihagyasa.|Barmely mezo kihagyasa eseten nem enged tovabb es szol a hiba okarol, email mezoben csakis emailt fogad el (@).|
 |18|Dohanyos Patrik (OVR1Q7)|Training oldal - bejelentkezes|Bejelentkezeskor email es nev mezo kotelezo.|Hibauzenetet kapunk, ha barmelyik mezot kihagyjuk, vagy az email mezoben nem emailt irunk.|
 |19|Dohanyos Patrik (OVR1Q7)|Training oldal - bejelentkezes utan kosarhoz adas|Termek(ek) hozzadasa a kosarhoz bejelentkezes utan.|A termek(ek)et sikeresen hozzaadja a kosarhoz.|
+|20|Dohanyos Patrik (OVR1Q7)|Training oldal - kosar tartalmanak megjelenitese|A kosar tartalmanak megjelentese az aktualis termekekkel.|A hozzaadott termekek hianytalanul megjelennek.|
