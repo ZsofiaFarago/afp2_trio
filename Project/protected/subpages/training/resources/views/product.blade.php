@@ -48,7 +48,22 @@
 </div>
 
 <div class="chat_box">
-  
+  <div id="chat" class="conv-form-wrapper">
+    <form action="" method="GET" class="hidden">
+      <select name="text_message" data-conv-question="Üdvözlöm az Added Muscle-nál. Miben segíthetek?">
+        <option value="delivery_fee">Szállítási díj</option>
+      </select>
+      <div data-conv-fork="text_message">
+        <div data-conv-case="delivery_fee">
+          <input type="text" data-conv-question="A megrendelésekre egységesen 1290 Ft a szállítási költség." data-no-answer="true">
+        </div>
+        
+      </div>
+      <select name="text_message" data-conv-question="Segithetek meg valamiben?">
+        <option value="delivery_fee">Nem, köszönöm</option>
+      </select>
+    </form>
+  </div>
 </div>
 {{-- CHATBOT END --}}
 
