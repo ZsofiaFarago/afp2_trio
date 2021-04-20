@@ -15,3 +15,4 @@
 |24|Dohanyos Patrik (OVR1Q7)|Training oldal - sikeres rendeles 2|Sikeres rendeles eseten a leadott termekek megjelennek-e a "Rendeleseid" menupont alatt.|A megrendelt termkek sikeresen megjelennek kilistazva a hozzajuk tartozo informaciokkal pl. szallitasi cim.|
 |25|Dohanyos Patrik (OVR1Q7)|Training oldal - kijelentkezes|Kijelentkezes gombra kattintva felhasznalo kileptetese.|A felhasznalo sikeresen kijelentkezik es atiranyitodik a fooldalra.|
 |26|Dohanyos Patrik (OVR1Q7)|Training oldal - chat|A fooldalon levo chatbotra kattintva sikeresen megjelenik a chatablak es udvozol a bot.|A chatbot sikeresen udvozol.|
+|27|Dohanyos Patrik (OVR1Q7)|Training oldal - chat uzenetek|Interakcio tesztelese a chatbottal, a megadott temakor(ok)kel.|A bot megfelelo valaszt ad az eppen kivalasztott temara.|
