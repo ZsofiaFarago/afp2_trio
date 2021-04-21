@@ -1,8 +1,20 @@
 # Tesztjegyzőkönyv
 |Sorszám|Tesztelő neve, Neptun kódja|Funkció|Tesztelés módja, leírása|Eredmény|
 |-------|---------------------------|-------|------------------------|--------|
-|1.|Faragó Zsófia (B118Z5)|Ingatlanos oldal- Szakértők menüpont: minden ingatlanügynök képe és adatai megjelenik az adatbázisból|A megfelelő menüpontba történő navigálás után az adatlapok azonnal láthatóak, megfelelően formázva minden adat és kép megjelenik.|Sikeres.|
-||||||
+|1.|Faragó Zsófia (B118Z5)|Ingatlanos oldal: adatbázis-kapcsolat|MySQL Workbench segítségével a szükséges adatok (host, felhasználónév, jelszó, séma) megadása után az adatbázison végrehajtunk néhány CRUD műveletet.|A kapcsolat létrejött, a séma és táblái hozzáférhetőek, rajta CRUD műveletek végezhetők.|
+|2.|Faragó Zsófia (B118Z5)|Ingatlanos oldal: stíluslap és reszponzivitás|Az ingatlanos oldal összes menüpontjának ellenőrzése különböző képernyőszélességgel.|A tartalom és az űrlapok minden esetben használhatóak, a tartalom igazodik minden képernyőszélességhez, de a táblázatok és a textarea mezők legkisebb ablakméretben nem.|
+|3.|Faragó Zsófia (B118Z5)||||
+|4.|Faragó Zsófia (B118Z5)||||
+|5.|Faragó Zsófia (B118Z5)||||
+|6.|Faragó Zsófia (B118Z5)||||
+|7.|Faragó Zsófia (B118Z5)||||
+|8.|Faragó Zsófia (B118Z5)||||
+|9.|Faragó Zsófia (B118Z5)||||
+|10.|Faragó Zsófia (B118Z5)||||
+|11.|Faragó Zsófia (B118Z5)||||
+|12.|Faragó Zsófia (B118Z5)||||
+|13.|Faragó Zsófia (B118Z5)||||
+|14.|Faragó Zsófia (B118Z5)|Ingatlanos oldal- Szakértők menüpont: minden ingatlanügynök képe és adatai megjelenik az adatbázisból|A megfelelő menüpontba történő navigálás után az adatlapok azonnal láthatóak, megfelelően formázva minden adat és kép megjelenik.|Sikeres.|1
 |15|Dohanyos Patrik (OVR1Q7)|Training oldal - kereses funkcio|A navbarban elhelyezkedo kereses hasznalata az adatbazsiban szereplo termekekre|A keresett termekek sikeresen megjelennek.|
 |16|Dohanyos Patrik (OVR1Q7)|Training oldal - termek kosarba helyezese bejelentkezes nelkul|Termek kosarba helyezese bejelentkezes nelkul.|Mivel nincs bejelentkezett felhasznalo igy atiranyitodik a bejelentkezesi fulre.|
 |17|Dohanyos Patrik (OVR1Q7)|Training oldal - regisztracio|Regisztracio eseten barmely mezo kihagyasa.|Barmely mezo kihagyasa eseten nem enged tovabb es szol a hiba okarol, email mezoben csakis emailt fogad el (@).|
