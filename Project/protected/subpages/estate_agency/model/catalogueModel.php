@@ -7,7 +7,7 @@
 	    }
 		
 		public function getAllEstates() {
-			$query = "SELECT estate.id as id, estate.selling_price, estate.purchase_price, estate.area, estate.room_number, estate.description, estate.image_name, client.id as user_id, client.first_name, client.last_name, client.phone, client.email, address.street_name, address.street_number, city.name, city.zipcode FROM estate INNER JOIN client ON estate.client_id = client.id INNER JOIN address ON estate.address_id = address.id INNER JOIN city ON city_id = city.id;";
+			$query = "SELECT estate.id as id, estate.selling_price, estate.purchase_price, estate.area, estate.room_number, estate.description, estate.image_name, client.id as client_id, client.first_name, client.last_name, client.phone, client.email, address.street_name, address.street_number, city.name, city.zipcode FROM estate INNER JOIN client ON estate.client_id = client.id INNER JOIN address ON estate.address_id = address.id INNER JOIN city ON city_id = city.id;";
 			$estateList = $this->db->getList($query, []);
 			return $estateList;
 		}

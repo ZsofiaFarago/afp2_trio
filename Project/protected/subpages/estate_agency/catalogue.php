@@ -85,22 +85,23 @@
 						<p class="estate-uploader"><b>Feltöltötte: </b><?=$estate['last_name'].' '.$estate['first_name'].' ('.$estate['email'].', '.$estate['phone'].')'?></p>
 						<form method="POST">
 							<?php if($controller->isUserLoggedIn()): ?>
-								<?php if(!$controller->isAlreadyReserved($estate['id'])): ?>
+								<?php $isReserved = $controller->isAlreadyReserved($estate['id']); ?>
+								<?php if(!$isReserved && $estate['client_id'] != $_SESSION['uid']): ?>
 									<input type="submit" name="<?='reserve'.$estate['id']?>" value="Lefoglal" />
 									<?php if(array_key_exists('reserve'.$estate['id'], $_POST)): ?>
 										<?php $controller->reserve($estate['id']); ?>
-											<meta http-equiv="refresh" content="0">
+										<meta http-equiv="refresh" content="0">
 									<?php endif; ?>
-									<?php else: ?>
-										<?php
-											$reserver = $controller->getReserverDetails();
-										?>
-										<div>Az ingatlant már lefoglalta: <?=$reserver['last_name'].' '.$reserver['first_name']?>.</div>
-										<?php if($reserver['id'] == $_SESSION['uid'] && $estate['client_id'] != $_SESSION['uid']): ?>
-											<input type="submit" name="<?='undo'.$estate['id']?>" value="Lefoglalás visszavonása" />
-											<?php if(array_key_exists('undo'.$estate['id'], $_POST)): ?>
-												<?php $controller->undoReservation($estate['id']) ?>
-												<meta http-equiv="refresh" content="0">
+								<?php elseif($isReserved): ?>
+									<?php
+										$reserver = $controller->getReserverDetails();
+									?>
+									<div>Az ingatlant már lefoglalta: <?=$reserver['last_name'].' '.$reserver['first_name']?>.</div>
+									<?php if($reserver['id'] == $_SESSION['uid']): ?>
+										<input type="submit" name="<?='undo'.$estate['id']?>" value="Lefoglalás visszavonása" />
+										<?php if(array_key_exists('undo'.$estate['id'], $_POST)): ?>
+											<?php $controller->undoReservation($estate['id']) ?>
+											<meta http-equiv="refresh" content="0">
 										<?php endif; ?>
 									<?php endif; ?>
 								<?php endif; ?>
