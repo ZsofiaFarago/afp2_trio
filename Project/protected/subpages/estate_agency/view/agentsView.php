@@ -1,8 +1,8 @@
 <?php if(isset($agents)): ?>
 	<?php foreach($agents as $agent): ?>
-		<div class="agent-div">
-			<div class="agent-image-div"><img src="<?=PUBLIC_DIR.'images/estate_agency/'.$agent['image_name']?>"></div>
-			<div class="agent-data-div">
+		<div class="record-div">
+			<div class="record-image-div"><img src="<?=PUBLIC_DIR.'images/estate_agency/'.$agent['image_name']?>"></div>
+			<div class="record-data-div">
 				<div>
 					<p class="agent-name"><b>Név:</b> <?=$agent['first_name'].' '.$agent['last_name']?></p>
 					<p class="agent-profession"><b>Szakterület:</b> <?=$agent['speciality']?></p>

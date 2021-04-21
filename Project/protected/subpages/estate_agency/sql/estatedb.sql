@@ -107,7 +107,11 @@ CREATE TABLE IF NOT EXISTS estatedb.service (
   size FLOAT NOT NULL,
   type VARCHAR(50) NOT NULL,
   address_id INT NOT NULL,
+  client_id INT NOT NULL,
   PRIMARY KEY (id),
+  CONSTRAINT fk_service_client
+    FOREIGN KEY (client_id)
+    REFERENCES estatedb.client (id),
   CONSTRAINT fk_service_address
     FOREIGN KEY (address_id)
     REFERENCES estatedb.address (id));

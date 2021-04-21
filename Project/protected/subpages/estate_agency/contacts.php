@@ -36,7 +36,7 @@
 			</select>
 
 			<label for="message">Üzenet<em>&#x2a;</em></label>
-			<input type="textarea" id="message" name="message" required=""></textarea>
+			<textarea id="message" name="message" required="" cols="61" rows="5" style="display: block;"></textarea>
 
 			<h3>A *-gal jelölt mezők kitöltése kötelező.</h3>
 			<button id="send" name="send" type="submit">Küldés</button>
