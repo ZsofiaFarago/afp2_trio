@@ -43,3 +43,4 @@
 |40|Ravasz Bálint AMA0IT|Álláskereső oldal - szűrők használata|A szűrők a kívánt találatokat adják, a home gombbal a főoldalra visszatérve pedig az összes hirdetés látható|
 |41|Ravasz Bálint AMA0IT|Álláskereső oldal - jogosultságok tesztelése|Belépés nélkül csak olvasni,belépés után feladni és módosítani, adminként pedig törölni lehet|
 
+
