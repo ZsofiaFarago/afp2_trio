@@ -40,7 +40,7 @@
 |37|Ravasz Bálint AMA0IT|Álláskereső oldal - create művelet|Create gomb használata|Az oldal átlép a hirdetés feladás oldalra, ahol a kitöltés után sikeresen publikálja azt|
 |38|Ravasz Bálint AMA0IT|Álláskereső oldal - edit művelet|Edit gomb használata|Az oldal átlép a hirdetés feladás oldalra, ahol a módosítás után sikeresen újra publikálja azt|
 |39|Ravasz Bálint AMA0IT|Álláskereső oldal - delete művelet|Delete gomb használata|Az oldal eltávolítja a kívánt hirdetést, majd visszatér a főoldalra|
-|40|Ravasz Bálint AMA0IT|Álláskereső oldal - szűrők használata|A szűrők a kívánt találatokat adják, a home gombbal a főoldalra visszatérve pedig az összes hirdetés látható|
-|41|Ravasz Bálint AMA0IT|Álláskereső oldal - jogosultságok tesztelése|Belépés nélkül csak olvasni,belépés után feladni és módosítani, adminként pedig törölni lehet|
+|40|Ravasz Bálint AMA0IT|Álláskereső oldal - szűrők használata|A megadott szűrők használata keresésre|A szűrők a kívánt találatokat adják, a home gombbal a főoldalra visszatérve pedig az összes hirdetés látható|
+|41|Ravasz Bálint AMA0IT|Álláskereső oldal - jogosultságok tesztelése|CRUD műveletek tesztelése|Belépés nélkül csak olvasni,belépés után feladni és módosítani, adminként pedig törölni lehet|
 
 
