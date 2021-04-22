@@ -40,3 +40,12 @@
 |37|Pásztor Marcell D5YZPU|Mozi oldal - Főmenü|A weboldal sikeresen implementálódott a gyűjtőoldalba|Implementáció sikeres|
 |38|Pásztor Marcell D5YZPU|Mozi oldal - Főoldal|A weboldal főoldala hibamentesen megjelenik a felhasználó számára|Főoldal megjelenése sikeres|
 |39|Pásztor Marcell D5YZPU|Mozi oldal - Műsorlista|A műsorlistában sikeresen, hibamentesen megjelennek a filmek.|Filmek megjelenése sikeres.|
+|40|Pásztor Marcell D5YZPU|Mozi oldal - Műsorlista|Alap felhasználó számára foglalás nem lehetséges|Felhasználói ellenőrzés sikeres.|
+|41|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói regisztráció|Regisztrációs felület sikeresen megjelenik.|Regisztrációs felület rendeltetésszerű.|
+|42|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói regisztráció|Regisztrációs mezők ellenőrzése - email ellenőrzés, jelszó követelmények.|Regisztrációs mezők ellenőrzése sikeres.|
+|43|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói regisztráció|Helyes regisztráció esetén adatbázisba rögzítés|Adatbázisba rögzítés sikeres.|
+|44|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói bejelentkezés|Bejelentkezési felület sikeresen megjelenik.|Bejelentkezési felület rendeltetésszerű.|
+|45|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói bejelentkezés|A bejelentkezés adatbázisból való lekérése|Adatbázisból lekérés sikeres.|
+|46|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói session|A weboldalon felhasználói session kezelése|Session hibátlanul működik.|
+|47|Pásztor Marcell D5YZPU|Mozi oldal - Kijelentkezés|A weboldalon kijelentkezés után session törlése, eltávolítása, visszaállítása.|Kijelentkezés után a session visszaáll alaphelyzetbe.|
+|48|Pásztor Marcell D5YZPU|Mozi oldal - Filmek adatbázisa|Filmek adatbázisának működése, tárolása.|A filmek megfelelően tárolódnak az adatbázisban.|
