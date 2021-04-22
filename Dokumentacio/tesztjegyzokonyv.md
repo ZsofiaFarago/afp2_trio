@@ -37,3 +37,6 @@
 |34.|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során hibás emailt adunk meg|A bejelentkezés sikertelen, és ezt az oldal jelzi is|
 |35.|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során hibás jelszót adunk meg|A bejelentkezés sikertelen, és ezt az oldal jelzi is|
 |36|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során helyes email és jelszó kombiációt adunk meg|A bejelentkezés sikeres|
+|37|Pásztor Marcell D5YZPU|Mozi oldal - Főmenü|A weboldal sikeresen implementálódott a gyűjtőoldalba|Implementáció sikeres|
+|38|Pásztor Marcell D5YZPU|Mozi oldal - Főoldal|A weboldal főoldala hibamentesen megjelenik a felhasználó számára|Főoldal megjelenése sikeres|
+|39|Pásztor Marcell D5YZPU|Mozi oldal - Műsorlista|A műsorlistában sikeresen, hibamentesen megjelennek a filmek.|Filmek megjelenése sikeres.|
