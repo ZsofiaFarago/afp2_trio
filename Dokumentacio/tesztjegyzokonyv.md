@@ -32,4 +32,8 @@
 |29.|Dohanyos Patrik (OVR1Q7)|Training oldal - oldal reszponziv|Az oldal megjelenese illeszkedik a kepernyo meretehez, kepernyomeret zsugoritasa eseten az oldal tartalma megfeleloen utkozes nelkul jelenik meg.|Az oldal reszponzivan mukodik.|
 |30.|Ravasz Bálint AMA0IT|Álláskereső oldal - regisztráció|Regisztráció során nem email formátumot adunk meg |A regisztráció sikertelen, és az oldal közli, hogy email formátum szükséges.|
 |31.|Ravasz Bálint AMA0IT|Álláskereső oldal - regisztráció|Regisztráció során nem 6 karakter hosszú jelszót adunk meg |A regisztráció sikertelen, és az oldal közli, hogy a jelszónak minimum 6 karakternek kell lennie.|
-|32.|Ravasz Bálint AMA0IT|Álláskereső oldal - oldal reszponzív| Az oldal megjelenése illeszkedik a képernyő méretéhez, képernyőméret zsugorítása esetén az oldal tartalma megfelelően ütközés nélkül jelenik meg. |Az oldal reszponzívan működik|
+|32|Ravasz Bálint AMA0IT|Álláskereső oldal - regisztráció|Regisztráció során mindent helyesen töltünk ki|A regisztráció sikeres, a user bekerül az adatbázisba|
+|33.|Ravasz Bálint AMA0IT|Álláskereső oldal - oldal reszponzív| Az oldal megjelenése illeszkedik a képernyő méretéhez, képernyőméret zsugorítása esetén az oldal tartalma megfelelően ütközés nélkül jelenik meg. |Az oldal reszponzívan működik|
+|34.|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során hibás emailt adunk meg|A bejelentkezés sikertelen, és ezt az oldal jelzi is|
+|35.|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során hibás jelszót adunk meg|A bejelentkezés sikertelen, és ezt az oldal jelzi is|
+|36|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során helyes email és jelszó kombiációt adunk meg|A bejelentkezés sikeres|
