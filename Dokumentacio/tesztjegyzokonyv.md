@@ -42,5 +42,6 @@
 |39|Ravasz Bálint AMA0IT|Álláskereső oldal - delete művelet|Delete gomb használata|Az oldal eltávolítja a kívánt hirdetést, majd visszatér a főoldalra|
 |40|Ravasz Bálint AMA0IT|Álláskereső oldal - szűrők használata|A megadott szűrők használata keresésre|A szűrők a kívánt találatokat adják, a home gombbal a főoldalra visszatérve pedig az összes hirdetés látható|
 |41|Ravasz Bálint AMA0IT|Álláskereső oldal - jogosultságok tesztelése|CRUD műveletek tesztelése|Belépés nélkül csak olvasni,belépés után feladni és módosítani, adminként pedig törölni lehet|
+|42|Ravasz Bálint AMA0IT|Álláskereső oldal - kijelentkezés tesztelése|A logout gomb használata|Bejelentkezés után a logout gomb megjelenik, és sikeresen kijelentkezteti a felhasználót|
 
 
