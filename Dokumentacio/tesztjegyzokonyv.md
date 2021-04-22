@@ -30,3 +30,6 @@
 |27.|Dohanyos Patrik (OVR1Q7)|Training oldal - chat|A fooldalon levo chatbotra kattintva sikeresen megjelenik a chatablak es udvozol a bot.|A chatbot sikeresen udvozol.|
 |28.|Dohanyos Patrik (OVR1Q7)|Training oldal - chat uzenetek|Interakcio tesztelese a chatbottal, a megadott temakor(ok)kel.|A bot megfelelo valaszt ad az eppen kivalasztott temara.|
 |29.|Dohanyos Patrik (OVR1Q7)|Training oldal - oldal reszponziv|Az oldal megjelenese illeszkedik a kepernyo meretehez, kepernyomeret zsugoritasa eseten az oldal tartalma megfeleloen utkozes nelkul jelenik meg.|Az oldal reszponzivan mukodik.|
+|30.|Ravasz Bálint AMA0IT|Álláskereső oldal - regisztráció|Regisztráció során nem email formátumot adunk meg |A regisztráció sikertelen, és az oldal közli, hogy email formátum szükséges.|
+|31.|Ravasz Bálint AMA0IT|Álláskereső oldal - regisztráció|Regisztráció során nem 6 karakter hosszú jelszót adunk meg |A regisztráció sikertelen, és az oldal közli, hogy a jelszónak minimum 6 karakternek kell lennie.|
+|32.|Ravasz Bálint AMA0IT|Álláskereső oldal - oldal reszponzív| Az oldal megjelenése illeszkedik a képernyő méretéhez, képernyőméret zsugorítása esetén az oldal tartalma megfelelően ütközés nélkül jelenik meg. |Az oldal reszponzívan működik|
