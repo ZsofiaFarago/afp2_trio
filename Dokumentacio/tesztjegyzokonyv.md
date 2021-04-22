@@ -37,6 +37,7 @@
 |34.|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során hibás emailt adunk meg|A bejelentkezés sikertelen, és ezt az oldal jelzi is|
 |35.|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során hibás jelszót adunk meg|A bejelentkezés sikertelen, és ezt az oldal jelzi is|
 |36|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során helyes email és jelszó kombiációt adunk meg|A bejelentkezés sikeres|
+<<<<<<< HEAD
 |37|Pásztor Marcell D5YZPU|Mozi oldal - Főmenü|A weboldal sikeresen implementálódott a gyűjtőoldalba|Implementáció sikeres|
 |38|Pásztor Marcell D5YZPU|Mozi oldal - Főoldal|A weboldal főoldala hibamentesen megjelenik a felhasználó számára|Főoldal megjelenése sikeres|
 |39|Pásztor Marcell D5YZPU|Mozi oldal - Műsorlista|A műsorlistában sikeresen, hibamentesen megjelennek a filmek.|Filmek megjelenése sikeres.|
@@ -49,3 +50,13 @@
 |46|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói session|A weboldalon felhasználói session kezelése|Session hibátlanul működik.|
 |47|Pásztor Marcell D5YZPU|Mozi oldal - Kijelentkezés|A weboldalon kijelentkezés után session törlése, eltávolítása, visszaállítása.|Kijelentkezés után a session visszaáll alaphelyzetbe.|
 |48|Pásztor Marcell D5YZPU|Mozi oldal - Filmek adatbázisa|Filmek adatbázisának működése, tárolása.|A filmek megfelelően tárolódnak az adatbázisban.|
+=======
+|37|Ravasz Bálint AMA0IT|Álláskereső oldal - create művelet|Create gomb használata|Az oldal átlép a hirdetés feladás oldalra, ahol a kitöltés után sikeresen publikálja azt|
+|38|Ravasz Bálint AMA0IT|Álláskereső oldal - edit művelet|Edit gomb használata|Az oldal átlép a hirdetés feladás oldalra, ahol a módosítás után sikeresen újra publikálja azt|
+|39|Ravasz Bálint AMA0IT|Álláskereső oldal - delete művelet|Delete gomb használata|Az oldal eltávolítja a kívánt hirdetést, majd visszatér a főoldalra|
+|40|Ravasz Bálint AMA0IT|Álláskereső oldal - szűrők használata|A megadott szűrők használata keresésre|A szűrők a kívánt találatokat adják, a home gombbal a főoldalra visszatérve pedig az összes hirdetés látható|
+|41|Ravasz Bálint AMA0IT|Álláskereső oldal - jogosultságok tesztelése|CRUD műveletek tesztelése|Belépés nélkül csak olvasni,belépés után feladni és módosítani, adminként pedig törölni lehet|
+|42|Ravasz Bálint AMA0IT|Álláskereső oldal - kijelentkezés tesztelése|A logout gomb használata|Bejelentkezés után a logout gomb megjelenik, és sikeresen kijelentkezteti a felhasználót|
+
+
+>>>>>>> master
