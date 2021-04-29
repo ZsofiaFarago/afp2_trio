@@ -286,7 +286,7 @@ body {
 	color: #00a000;
 }
 
-#calculators_page, #services-page {
+#calculators_page, #services-page, #catalogue_div {
 	background-color: #F0F0F0;
 	padding: 20px;
 	margin: 0% 10%;
@@ -294,7 +294,7 @@ body {
 }
 
 @media screen and (max-width: 940px) {
-	#calculators_page {
+	#calculators_page, #catalogue_div {
 		margin: 20px 0px;
 	}
 }
@@ -454,6 +454,7 @@ table thead tr:nth-child(2) th {
 .form textarea:focus {
   border: 1px solid #00a000;
 }
+
 .form button {
   display: block;
   line-height: 24pt;
@@ -465,9 +466,10 @@ table thead tr:nth-child(2) th {
   transition: 0.2s all ease-in-out;
   border-bottom: 2px solid transparent;
   outline: none;
+  cursor: pointer;
 }
 
-.form button:hover {
+.form button:hover, #catalogue_div input[type=submit]:hover  {
   background: inherit;
   color: #00a000;
   border-bottom: 2px solid #00a000;
@@ -510,7 +512,7 @@ table thead tr:nth-child(2) th {
 	margin: 0 auto;
 }
 
-#agents-div {
+.records-div {
 	width: auto;
 	height: 100%;
 	margin: 0 auto;
@@ -523,7 +525,7 @@ table thead tr:nth-child(2) th {
 	margin-bottom: 20px;
 }
 
-.agent-div {
+.record-div {
 	width: 20%;
 	margin-bottom: 20px;
 	background-color: #2d2d2e;
@@ -532,28 +534,45 @@ table thead tr:nth-child(2) th {
 	color: white;
 }
 
-.agent-div b {
+.record-div b {
 	color: #00a000;
 }
 
-.agent-image-div, .agent-image-div img, .agent-data-div {
+.record-image-div, .record-image-div img, .record-data-div {
 	width: 100%;
 }
 
-.agent-image-div {
+.record-image-div {
 	padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1500px) {
-  .agent-div {
+  .record-div {
     width: 40%;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .agent-div {
+  .record-div {
     width: 80%;
   }
+}
+
+/* Katalógus */
+
+#catalogue_div .record-div {
+	width: 1000px;
+}
+
+#catalogue_div input[type=submit] {
+  background-color: #00a000;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 20px;
+  line-height: 24pt;
+  margin-top: 10px;
 }
 
 /* Reszponzív */
