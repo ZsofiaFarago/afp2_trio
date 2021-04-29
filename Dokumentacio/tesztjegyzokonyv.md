@@ -30,3 +30,36 @@
 |27.|Dohanyos Patrik (OVR1Q7)|Training oldal - chat|A fooldalon levo chatbotra kattintva sikeresen megjelenik a chatablak es udvozol a bot.|A chatbot sikeresen udvozol.|
 |28.|Dohanyos Patrik (OVR1Q7)|Training oldal - chat uzenetek|Interakcio tesztelese a chatbottal, a megadott temakor(ok)kel.|A bot megfelelo valaszt ad az eppen kivalasztott temara.|
 |29.|Dohanyos Patrik (OVR1Q7)|Training oldal - oldal reszponziv|Az oldal megjelenese illeszkedik a kepernyo meretehez, kepernyomeret zsugoritasa eseten az oldal tartalma megfeleloen utkozes nelkul jelenik meg.|Az oldal reszponzivan mukodik.|
+|30.|Ravasz Bálint AMA0IT|Álláskereső oldal - regisztráció|Regisztráció során nem email formátumot adunk meg |A regisztráció sikertelen, és az oldal közli, hogy email formátum szükséges.|
+|31.|Ravasz Bálint AMA0IT|Álláskereső oldal - regisztráció|Regisztráció során nem 6 karakter hosszú jelszót adunk meg |A regisztráció sikertelen, és az oldal közli, hogy a jelszónak minimum 6 karakternek kell lennie.|
+|32|Ravasz Bálint AMA0IT|Álláskereső oldal - regisztráció|Regisztráció során mindent helyesen töltünk ki|A regisztráció sikeres, a user bekerül az adatbázisba|
+|33.|Ravasz Bálint AMA0IT|Álláskereső oldal - oldal reszponzív| Az oldal megjelenése illeszkedik a képernyő méretéhez, képernyőméret zsugorítása esetén az oldal tartalma megfelelően ütközés nélkül jelenik meg. |Az oldal reszponzívan működik|
+|34.|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során hibás emailt adunk meg|A bejelentkezés sikertelen, és ezt az oldal jelzi is|
+|35.|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során hibás jelszót adunk meg|A bejelentkezés sikertelen, és ezt az oldal jelzi is|
+|36|Ravasz Bálint AMA0IT|Álláskereső oldal - bejelentkezés|Bejelentkezés során helyes email és jelszó kombiációt adunk meg|A bejelentkezés sikeres|
+|37|Pásztor Marcell D5YZPU|Mozi oldal - Főmenü|A weboldal sikeresen implementálódott a gyűjtőoldalba|Implementáció sikeres|
+|38|Pásztor Marcell D5YZPU|Mozi oldal - Főoldal|A weboldal főoldala hibamentesen megjelenik a felhasználó számára|Főoldal megjelenése sikeres|
+|39|Pásztor Marcell D5YZPU|Mozi oldal - Műsorlista|A műsorlistában sikeresen, hibamentesen megjelennek a filmek.|Filmek megjelenése sikeres.|
+|40|Pásztor Marcell D5YZPU|Mozi oldal - Műsorlista|Alap felhasználó számára foglalás nem lehetséges|Felhasználói ellenőrzés sikeres.|
+|41|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói regisztráció|Regisztrációs felület sikeresen megjelenik.|Regisztrációs felület rendeltetésszerű.|
+|42|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói regisztráció|Regisztrációs mezők ellenőrzése - email ellenőrzés, jelszó követelmények.|Regisztrációs mezők ellenőrzése sikeres.|
+|43|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói regisztráció|Helyes regisztráció esetén adatbázisba rögzítés|Adatbázisba rögzítés sikeres.|
+|44|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói bejelentkezés|Bejelentkezési felület sikeresen megjelenik.|Bejelentkezési felület rendeltetésszerű.|
+|45|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói bejelentkezés|A bejelentkezés adatbázisból való lekérése|Adatbázisból lekérés sikeres.|
+|46|Pásztor Marcell D5YZPU|Mozi oldal - Felhasználói session|A weboldalon felhasználói session kezelése|Session hibátlanul működik.|
+|47|Pásztor Marcell D5YZPU|Mozi oldal - Kijelentkezés|A weboldalon kijelentkezés után session törlése, eltávolítása, visszaállítása.|Kijelentkezés után a session visszaáll alaphelyzetbe.|
+|48|Pásztor Marcell D5YZPU|Mozi oldal - Filmek adatbázisa|Filmek adatbázisának működése, tárolása.|A filmek megfelelően tárolódnak az adatbázisban.|
+|49|Ravasz Bálint AMA0IT|Álláskereső oldal - create művelet|Create gomb használata|Az oldal átlép a hirdetés feladás oldalra, ahol a kitöltés után sikeresen publikálja azt|
+|50|Ravasz Bálint AMA0IT|Álláskereső oldal - edit művelet|Edit gomb használata|Az oldal átlép a hirdetés feladás oldalra, ahol a módosítás után sikeresen újra publikálja azt|
+|51|Ravasz Bálint AMA0IT|Álláskereső oldal - delete művelet|Delete gomb használata|Az oldal eltávolítja a kívánt hirdetést, majd visszatér a főoldalra|
+|52|Ravasz Bálint AMA0IT|Álláskereső oldal - szűrők használata|A megadott szűrők használata keresésre|A szűrők a kívánt találatokat adják, a home gombbal a főoldalra visszatérve pedig az összes hirdetés látható|
+|53|Ravasz Bálint AMA0IT|Álláskereső oldal - jogosultságok tesztelése|CRUD műveletek tesztelése|Belépés nélkül csak olvasni,belépés után feladni és módosítani, adminként pedig törölni lehet|
+|54|Ravasz Bálint AMA0IT|Álláskereső oldal - kijelentkezés tesztelése|A logout gomb használata|Bejelentkezés után a logout gomb megjelenik, és sikeresen kijelentkezteti a felhasználót|
+|55|Pásztor Marcell D5YZPU|Mozi oldal - Foglalás gomb|Bejelentkezés esetén aktív sessionnal filmfoglalás gomb lehetséges|Felhasználó bejelentkezése esetén a mozifilmek alatt megjelenik a foglalás gomb.|
+|56|Pásztor Marcell D5YZPU|Mozi oldal - Foglalás gomb|A foglalás gomb felkeresésekor a válaszott film székei jelennek meg.|Rendeltetésszerűen működik, hiperhivatkozás helyes.
+|57|Pásztor Marcell D5YZPU|Mozi oldal - Foglalás adatbázisa|A székek betöltése adatbázisból|A székek sikeresen betöltődnek az adatbázisból.|
+|58|Pásztor Marcell D5YZPU|Mozi oldal - Foglalás székek linkjei|Minden székhez külön tartozik egy foglalói link ami véglegesíti a foglalást.|Rendeltetésszerűen működik.|
+|59|Pásztor Marcell D5YZPU|Mozi oldal - Foglalás székek adatbázisából|A foglalás bejegyződik az adatbázisba.|Rendeltetésszerűen működik.|
+|60|Pásztor Marcell D5YZPU|Mozi oldal - Foglalás székek elérhetősége.|A székek elérhetősége sikeresen betöltődik az adatbázisból adat szerint.|Rendeles működik.|
+|61|Pásztor Marcell D5YZPU|Mozi oldal - Foglalás foglalt székre.|Foglalás ütközés ellenőrzése.|A már foglalt széket nem lehet újrafoglalni, felhasználó tájékoztatva.|
+|62|Pásztor Marcell D5YZPU|Mozi oldal - Új felhasználó számára foglalások megjelenítése.|Új felhasználók is ugyanúgy látják a székeket attól függetlenül, hogy foglaltak-e.|Rendeltetésszerűen működik.|
